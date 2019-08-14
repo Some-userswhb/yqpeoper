@@ -1,0 +1,684 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>单位建会</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/dwjh.css">
+	<!--智能客服样式-->
+	<link rel="stylesheet" href="css/znkf.css">
+	<!--全局样式-->
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		.nav {
+			margin-top: 10px;
+		}
+
+		/*阳泉新添加*/
+		.sm_box {
+			margin-left: 100px;
+			margin-bottom: 30px;
+			width: 80%;
+		}
+		.sm_text {
+			float: left;
+			position: relative;
+		}
+		.sm_img {
+			background: url(images/jiahao.png) no-repeat;
+			background-position: center;
+		}
+		.sm_img {
+			float: left;
+			width: 260px;
+			height: 180px;
+			margin-left: 18px;
+		}
+		#renxiang {
+			opacity: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.tianjia img {
+			width: 100%;
+			height: 100%;
+		}
+		.tianjia {
+			position: absolute;
+			left: 13px;
+			top: -48px;
+			width: 255px;
+			height: 176px;
+		}
+		.sq_content select{
+			width: 121px !important;
+		}
+		.sm_img{
+			border: none;
+		}
+	</style>
+</head>
+<body>
+<div id="nameselect" v-cloak>
+		<div class="zg_box">
+			<div class="zg_info">
+				<div class="zg_top">
+					<div class="nav_left">
+						<a href="##"><img src="images/logo.png"></a>
+					</div>
+					<div class="nav_center clearfix">
+
+						<div class="tianqi">
+							<iframe width="420" scrolling="no" height="60" frameborder="0" allowtransparency="true"
+									src="//i.tianqi.com/index.php?c=code&id=12&icon=1&num=5&site=12"></iframe>
+						</div>
+					</div>
+					<div class="nav_righter">
+						<i class="icon iconfont icon--fanhuishouye"></i>
+						<a href="index.html">返回网站</a>
+					</div>
+				</div>
+				<div class="my_gh clearfix">
+					<div class="my_ghtitle clearfix">
+						<div class="my_ghtitleleft">
+							<i class="icon iconfont icon-shouye"></i>
+							<a href="index.html">当前位置：首页></a>
+							<span>单位建会</span>
+						</div>
+						<div class="my_ghtitleright">
+							<a href="zg_index.html">  返回服务大厅  </a>
+						</div>
+					</div>
+					<div class="my_ghcontent clearfix">
+						<div class="my_ghcontentleft">
+							<div class="rh_title">
+								<h4>单位建会</h4>
+							</div>
+							<div class="rh_list">
+								<ul>
+									<li class="work-guide">
+										<p class="bordred">办理指南</p>
+										<i class="icon iconfont icon-jiaobiao"></i>
+									</li>
+									<li class="work-process">
+										<p>办理流程</p>
+										<i class="icon iconfont icon-jiaobiao"></i>
+									</li>
+									<li class="work-online">
+										<p>在线办理</p>
+										<i class="icon iconfont icon-jiaobiao"></i>
+									</li>
+									<li class="work-query">
+										<p>进度查询</p>
+										<i class="icon iconfont icon-jiaobiao"></i>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--建会申请表-->
+						<div class="my_ghcontentright tab-togg on">
+							<div class="rh_text" style="margin-top: 30px;">
+								<h4>单位建会申请表</h4>
+								<span>单位建会办理：</span>
+								<p>请按单位建会完善相应信息申请，我们将及时与您取得联系。</p>
+								<span>单位建会的好处：</span>
+								<p>1、中国特色社会主义下的工会组织既保障企业方的利益，又保障工人合法权益，缓冲工人与企业的矛盾</p>
+								<p>2、现在工会经费由税务部门代收，建立工会可以充分利用合理经费，保障了企业的利益。</p>
+								<p>3、建立工会组织的企业可参与评选劳模、建设工人先锋号等社会荣誉，</p>
+								<p>4、工会开展的社会主义劳动竞塞，有助于提高企业生产效率，技术革新等</p>
+								<p>5、工会有自己独立的宣传媒体，可以充分利用这一媒体宣传企业文化，同时也是企业管理规范，制度健全的一个标志。</p>
+							</div>
+						</div>
+						<!--办理流程-->
+
+						<div class="banli-process tab-togg">
+							<div style="margin-top: 50px">
+								<img src="images/liucheng.png" alt="">
+
+							</div>
+
+						</div>
+						<!-- 在线办理-->
+						<div class="banli-online tab-togg">
+							<div class="sq">
+								<div class="sq_list" style="margin-top: 30px;">
+									<h4>单位建会申请表</h4>
+								</div>
+								<form action="" method="">
+									<div class="sq_content">
+										<a href=""><i>*</i>单位名称：</a>
+										<input type="text" placeholder="请输入所在单位名称" name="text" />
+									</div>
+									<!--营业执照-->
+									<!--<div class="sm_box clearfix" style="margin-left: 115px;">
+										&lt;!&ndash;左侧&ndash;&gt;
+										<div class="sm_text">
+											<a href="##"><i>*</i>营业执照：</a>
+
+
+										</div>
+										&lt;!&ndash;右侧&ndash;&gt;
+										<div class="sm_img" style="position: relative;">
+											<div class="tianjia">
+												<input type="file" v-model="yingyePic"
+													   @change="yingyePicSend">
+												<img src="images/jiahao.png">
+											</div>
+
+										</div>
+									</div>-->
+
+									<div class="sm_box clearfix" style="margin-left: 105px">
+
+										<div class="sm_text">
+											<a href="##"><i>*</i>营业执照：</a>
+											<div class="tianjia" >
+												<img src="images/yingyepic.png" id="idimg"/>
+											</div>
+										</div>
+
+										<div class="sm_img">
+											<input type="file" id="renxiang"  onchange="previewFile()"
+												   @change="yingyePicSend" style="cursor: pointer">
+										</div>
+
+									</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+									<div class="sq_content" style="margin-left: -65px;">
+										<a href="##"><i>*</i>社会统一信用代码：</a>
+										<input type="text" placeholder="请输入社会统一信用代码" name="text" />
+									</div>
+									<div class="sq_content">
+										<a href=""><i>*</i>行政区划：</a>
+										<select  v-model="sheng">
+											<option value="01">请选择</option>
+											<option  value="山西省">山西省</option>
+										</select>
+
+										<select v-model="shiji">
+											<option selected="selected" value="01">请选择</option>
+											<option value="吕梁市">吕梁市</option>
+											<option value="临汾市">临汾市</option>
+											<option value="阳泉市">阳泉市</option>
+											<option value="04">太原市</option>
+											<option value="04">大同市</option>
+											<option value="04">长治市</option>
+											<option value="04">晋城市</option>
+											<option value="04">朔州市</option>
+											<option value="04">忻州市</option>
+											<option value="04">运城市</option>
+											<option value="04">晋中市</option>
+										</select>
+
+										<select v-model="quxian">
+											<option value="01">请选择</option>
+											<option value="市辖区">市辖区</option>
+											<option value="城区">城区</option>
+											<option value="矿区">矿区</option>
+											<option value="郊区">郊区</option>
+											<option value="平定县">平定县</option>
+											<option value="盂县">盂县</option>
+										</select>
+
+										<select v-model="jiedao">
+											<option value="01">请选择</option>
+											<option value="上站街道">上站街道</option>
+											<option value="下站街道">下站街道</option>
+											<option value="北大街街道">北大街街道</option>
+											<option value="南山路街道">南山路街道</option>
+											<option value="义井街道">义井街道</option>
+											<option value="坡底街道">坡底街道</option>
+										</select>
+
+									</div>
+									<div class="sq_content" style="margin-left: 15px;">
+										<a href="##"><i>*</i>联系人：</a>
+										<input type="text" placeholder="请输入联系人姓名" name="text" />
+									</div>
+									<div class="sq_content">
+										<a href="##"><i>*</i>联系电话：</a>
+										<input type="text" placeholder="请输入联系人电话（手机号码）" name="text" />
+									</div>
+									<div class="sq_content" style="margin-left: -160px;">
+										<a href="##"><i>*</i>验证码：</a>
+										<input type="text" placeholder="请输入验证码" name="text" class="input-val" style="width: 158px; height: 40px;"/>
+										<button type="button">点击获取验证码</button>
+									</div>
+									<div class="anniu">
+										<button type="button" class="tijiao active" @click="addUnit">提交</button>
+										<button type="reset" class="chongzhi">重置信息</button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<!--进度查询-->
+						<div class="jindu-query tab-togg">
+							<div class="sp_title" style="margin-top: 30px;">
+								<h4>审批状态</h4>
+							</div>
+							<div class="sp_list">
+								<ul class="clearfix">
+									<li class="next">
+										<a href="">
+											<div class="sp_img">
+												<i class="icon iconfont icon-qietushimingzhijiaocheng"></i>
+											</div>
+											<div class="sp_text">
+												<p>建会申请提交</p>
+											</div>
+										</a>
+									</li>
+									<li class="before">
+										<a href="">
+											<div class="sp_tubiao">
+												<i class="icon iconfont icon-jiantou-you-copy"></i>
+											</div>
+										</a>
+									</li>
+									<li class="next">
+										<a href="">
+											<div class="sp_img">
+												<i class="icon iconfont icon-ruhui"></i>
+											</div>
+											<div class="sp_text">
+												<p>所属工会审批</p>
+											</div>
+										</a>
+									</li>
+									<li class="before">
+										<a href="">
+											<div class="sp_tubiao">
+												<i class="icon iconfont icon-jiantou-you-copy"></i>
+											</div>
+										</a>
+									</li>
+									<li class="next">
+										<a href="">
+											<div class="sp_img">
+												<i class="icon iconfont icon-icon122"></i>
+											</div>
+											<div class="sp_text">
+												<p>建会入库</p>
+											</div>
+										</a>
+									</li>
+									<li class="before">
+										<a href="">
+											<div class="sp_tubiao">
+												<i class="icon iconfont icon-jiantou-you-copy"></i>
+											</div>
+										</a>
+									</li>
+									<li class="next">
+										<a href="">
+											<div class="sp_img">
+												<i class="icon iconfont icon-wancheng"></i>
+											</div>
+											<div class="sp_text">
+												<p>建会成功</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 友情链接 -->
+				<div style="margin:35px 0 15px 15px;" class="clearfix">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#all" data-toggle="tab">全总及省级工会</a></li>
+							<li><a href="#qu" data-toggle="tab">区县工会</a></li>
+							<li><a href="#jc" data-toggle="tab">基层工会</a></li>
+							<li><a href="#meiti" data-toggle="tab">新闻媒体网站</a></li>
+						</ul>
+					    <div  class="tab-content clearfix" style="height: 85px">
+						     <div class="tab-pane active" id="all">
+							<ul class="nav nav-tabs" style="border:0">
+								<li><a href="http://www.acftu.org/">中华全国总工会</a></li>
+								<li><a href="http://www.sxgh.org.cn/">山西省总工会</a></li>
+								<li><a href="http://www.bjzgh.org/">北京市总工会</a></li>
+								<li><a href="http://www.shzgh.org/">上海市总工会</a></li>
+								<li><a href="http://www.xmzgh.org/">厦门市总工会</a></li>
+								<li><a href="http://www.cqgh.org/">重庆市总工会</a></li>
+								<li><a href="http://www.hebgh.org/">河北省总工会</a></li>
+								<li><a href="http://www.hbzgh.org.cn/">湖北省总工会</a></li>
+								<li><a href="https://www.ahghw.org/">安徽省总工会</a></li>
+
+							</ul>
+						     </div>
+						     <div class="tab-pane fade" id="qu">
+							<ul class="nav nav-tabs" style="border:0">
+
+								<li><a href="javascript:;">城区总工会</a></li>
+								<li><a href="javascript:;">郊区总工会</a></li>
+								<li><a href="javascript:;">开发区总工会</a></li>
+								<li><a href="javascript:;">平定县总工会</a></li>
+								<li><a href="javascript:;">盂县总工会</a></li>
+							</ul>
+						     </div>
+						     <div class="tab-pane fade" id="jc">
+							<ul class="nav nav-tabs" style="border:0">
+								<li><a href="javascript:;">公交建通工委</a></li>
+								<li><a href="javascript:;">文教工委</a></li>
+								<li><a href="javascript:;">财贸工委</a></li>
+								<li><a href="javascript:;">煤矿工委</a></li>
+								<li><a href="javascript:;">市直机关</a></li>
+								<li><a href="javascript:;">市级行业工会</a></li>
+								<li><a href="javascript:;">阳煤集团工会</a></li>
+							</ul>
+						     </div>
+						     <div class="tab-pane fade" id="meiti">
+							<ul class="nav nav-tabs" style="border:0">
+								<li><a href="http://acftu.workercn.cn">工会网媒话工会（中工网、山西省总网站合办） </a></li>
+								<li><a href="http://www.sxszcwb.org">山西省总工会财务部软件交流平台</a></li>
+							</ul>
+						     </div>
+					    </div>
+			    </div>
+			</div>
+		</div>
+			<!-- 底部 -->
+		<div class="zg_bottom" style="border-top:2px solid #db2c28;background-color: #d9d9d9;padding: 20px;">
+			<div style="width:1200px;margin:30px auto;text-align:center;">
+				<div class="zg_bottom_link">
+					<li>
+						<a href="##">关于我们</a>
+					</li>
+					<li class="zg_fg">|</li>
+					<li>
+						<a href="##">问题答复</a>
+					</li>
+					<li class="zg_fg">|</li>
+					<li>
+						<a href="##">导航地图</a>
+					</li>
+					<li class="zg_fg">|</li>
+					<li>
+						<a href="##">联系我们</a>
+					</li>
+				</div>
+				<div>地址：山西省阳泉市桃南东路192号   电话：2022724</div>
+				<div>版权所有：© 阳泉市总工会 版权所有</div>
+				<div>备案：晋ICP备13007903-1</div>
+				<div class="copy_img">
+					<a href="##"><img src="images/footer_img.png"></a>
+				</div>
+			</div>
+		</div>
+		<div class="slide">
+			<ul>
+				<li class="open-hyzx">
+					<i class="icon iconfont icon-member"></i>
+					<a href="##" onclick="window.open('denglu.html')" onclick="clear()">{{membercenter}}</a>
+				</li>
+				<li><i class="icon iconfont icon-diligently"></i><a href="wdfw.html">我的服务</a></li>
+				<li><i class="icon iconfont icon-kefu1 kefu"></i><a href="##">智能客服</a></li>
+				<li><i class="icon iconfont icon-xinlang"></i><a href="##">微博</a></li>
+				<li><i class="icon iconfont icon-weixin2"></i><a href="##">微信</a></li>
+				<li><i class="icon iconfont icon-APP"></i><a href="##">APP</a></li>
+				<li id="top"><i class="icon iconfont icon-fanhuidingbu-"></i><a href="##">TOP</a></li>
+			</ul>
+			<div class="sina">
+				<a href="">
+					<img src="images/sina.png" width="100px" height="100px">
+				</a>
+				<p>新浪微博二维码</p>
+			</div>
+			<div class="ewm">
+				<a href="">
+					<img src="images/erweima.jpg" width="100px" height="100px">
+				</a>
+				<p>工会微信公众号</p>
+			</div>
+			<div class="exit">
+				<img src="images/user.png" width="80px" height="80px" />
+				<p>{{userPhone}}</p>
+				<button>退出</button>
+			</div>
+		</div>
+		<!--智能客服-->
+		<div class="customer-service" >
+			<div class="kf_box">
+				<div class="kf clearfix">
+					<div class="kf_left">
+						<a href=""><img src="images/gh_x.png" width="23px" height="23px"></a>
+						<span>工会智能小K</span>
+					</div>
+					<div class="kf_right">
+						<i class="icon iconfont icon-xiajiantou"></i>
+					</div>
+				</div>
+			</div>
+			<div class="chat_box">
+				<div id="chat" class="chat clearfix">
+					<div class="chat_left">
+						<a href=""><img src="images/gh_l.png" style="margin-bottom: 5px;"></a>
+						<span>客服</span>
+						<!--<i>2019-3-22  12:12</i>-->
+						<p>我是阳泉工会智能机器人，请问您有什么需要吗？</p>
+					</div>
+
+
+				</div>
+				<div class="down"></div>
+				<div class="shuru">
+					<input type="text" placeholder="请输入文字..."  v-model="userinp"/>
+				</div>
+				<div class="send clearfix">
+					<div class="send_left">
+						<i class="icon iconfont icon-smiling" ></i>
+					</div>
+					<div class="send_right">
+						<button type="button" @click="sendModel">发送</button>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vue2.5.22.js"></script>
+<script src="js/axios.0.18.0.js"></script>
+<script src="js/qs.6.60.js"></script>
+<script src="js/content.js"></script>
+<script src="js/usertoken.js"></script>
+
+<script>
+
+    var vm = new Vue({
+        el: "#nameselect",
+        data: {
+            isactive:false,
+            userinp:'',
+            userPhone:'',
+            membercenter:'',
+            yingyePic:'',
+
+            sheng:'山西省',
+            shiji:'阳泉市',
+            quxian:'城区',
+            jiedao:'上站街道',
+            address:''
+        },
+        methods:{
+
+            sendModel(){
+                kfhuifu();
+            },
+            //单位建会
+            addUnit(){
+				var that = this
+				that.address = that.sheng + that.shiji +that.quxian + that.jiedao
+				console.log(that.address)
+                /*$.ajax({
+                    type:'post',
+                    url: unionUrl + '/passLaborweb/api/laborun/enterprisesUnit/addPC',
+                    contentType:'application/json;charset=UTF-8',
+					//"businessLicensePic":that.yingyePic,
+                    data:JSON.stringify({
+						"unitName":'道儿煤业',
+						"socialCreditCode":"140000000050",
+						"businessLicensePic":'http://59.49.99.231/file/images/idfan20190619214305329.jpg',
+						"administratName":address,
+						"principal":"吴红兵",
+						"principalPhone":"18519707840",
+						"unitAddr":'山西普罗迪克',
+						"token":userTok.token
+                    }),
+
+                    success:  function (result) {
+                        console.log(result)
+                    }
+                });*/
+
+
+
+
+
+
+
+
+            
+
+
+
+
+			},
+            //营业执照
+            yingyePicSend (e){  // 上传照片
+                var that = this
+                var self = this;
+                let file = e.target.files[0];
+				/* eslint-disable no-undef */
+                // 创建form对象
+                var param = new FormData();
+                param.append('file', file, file.name);// 通过append向form对象添加数据
+                //param.append('chunk', '0') // 添加form表单中其他数据
+                // FormData私有类对象，访问不到，可以通过get判断值是否传进去
+                let config = {
+                    headers: {'Content-Type': 'multipart/form-data'}
+                };
+                axios.post(unionUrl + '/passLaborweb/api/laborun/file/upload', param, config)
+
+                    .then(res => {
+
+                        that.yingyePic = res.data.data.newFileName
+                        console.log(res.data.data.newFileName)
+                    })
+					.catch(err => {
+					    alert('图片错误')
+					})
+
+            },
+
+        },
+        mounted(){
+
+            const that = this;
+
+
+            if(userTok.token == null){
+                this.membercenter = '请登录';
+                $('.slide ul li:nth-child(2)').hide();
+
+                //跳转登录界面 去登录
+                $('.open-hyzx').click(function () {
+                    window.open('denglu.html')
+                });
+
+            }else{
+                this.membercenter = '会员中心'
+                this.userPhone = userTok.phone
+                $('.slide ul li:nth-child(2)').hide();
+                tuilogin()
+                //登录成功 跳转会员中心
+                $('.open-hyzx').click(function () {
+                    window.open('hyzx.html')
+                });
+
+            }
+
+
+
+
+        }
+
+
+
+    })
+
+
+</script>
+<script>
+
+        function previewFile() {
+            console.log(123)
+
+            // 通过标签选择器获取HTML元素
+            var preview = document.getElementById('idimg');
+            var file = document.getElementById('renxiang').files[0];
+            // Js内置文件流
+            var reader = new FileReader();
+
+            // 更新img标签的src属性为图片的本地路径，就可以显示了
+            reader.onloadend = function () {
+                preview.src = reader.result;
+            }
+
+            // 图片文件不空就显示
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+                // 图片文件是空的
+                preview.src = "images/yingyepic.png";
+            }
+        }
+
+</script>
+<!--智能客服-->
+<script src="js/znkf.js"></script>
+<script>
+	$(function () {
+
+        function tabtogg(clicClass,togclass,clica,clici) {
+            $(clicClass).click(function () {
+                $('.tab-togg').removeClass('on');
+                $(togclass).addClass('on');
+                var hei = $(togclass).height();
+                $('.my_ghcontent').css('height',hei);
+                $('.rh_list li p').removeClass('bordred');
+                $(clica).addClass('bordred');
+                $('.rh_list li i').css('color','#000');
+                $(clici).css('color','#db2c28')
+            })
+
+        }
+        tabtogg('.work-guide','.my_ghcontentright','.work-guide p',' .work-guide i')
+        tabtogg('.work-process','.banli-process','.work-process p',' .work-process i')
+        tabtogg('.work-online','.banli-online','.work-online p',' .work-online i')
+        tabtogg('.work-query','.jindu-query','.work-query p',' .work-query i')
+
+
+
+
+    })
+</script>
+
+
+</html>

@@ -1,0 +1,54 @@
+﻿	<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>阳泉市总工会</title>
+	<link rel="icon" href="images/picture.png" type="image/x-icon"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/jjs.css">
+	<!--智能客服样式-->
+	<link rel="stylesheet" href="css/znkf.css">
+	<!--全局样式-->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div style="width: 200px;height: 500px;background-color: #ffecec;margin: 0 auto">
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+	</ul>
+	<button>哈哈</button>
+</div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+	$(function () {
+
+        $("button").click(function(){
+            $("li").each(function(){
+                $(this).css('color','red')
+            });
+        });
+
+        var arr = [1,2,3,4,5,6,7,8,9];
+		console.log(arr);
+		$.each(arr,function (index,item) {
+			console.log(index,item)
+        })
+
+
+
+    })
+</script>
+
+</html>

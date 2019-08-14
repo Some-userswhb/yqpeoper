@@ -1,0 +1,5 @@
+.my_ghtitleright a {
+    font-size: 14px;
+    color: #db2c28;
+    font-weight: bold;
+}

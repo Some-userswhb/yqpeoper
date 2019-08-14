@@ -1,0 +1,126 @@
+
+
+.customer-service{
+	width: 400px;
+	position: absolute;
+	right: 80px;
+	bottom: -460px;
+	z-index: 1000;
+	background-color: #fff;
+	transition: .8s;
+	display: none;
+
+}
+
+
+
+
+.kf_box{
+	width: 100%;
+	background: #de3f2a;
+}
+.kf{
+	padding: 0 10px;
+}
+.kf_left{
+	float: left;
+}
+.kf_left span{
+	font-size: 16px;
+	color: #fff;
+	line-height: 40px;
+	padding-left: 10px;
+}
+.kf_right{
+	float: right;
+}
+.kf_right i{
+	font-size: 27px;
+	color: #fff;
+	line-height: 40px;
+}
+.chat_box{
+	width: 400px;
+	margin: 0 auto;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+}
+.chat{
+	width: 400px;
+	padding: 20px 10px;
+	height: 300px;
+	overflow-y: scroll;
+}
+.chat_left{float: left;}
+.chat_left span{
+	font-size: 18px;
+	color: #303030;
+	padding-left: 10px;
+}
+.chat_left i{
+	font-size: 14px;
+	color: #737373;
+	font-style: normal;
+	padding-left: 10px;
+}
+.chat_left p{
+	font-size: 16px;
+	color: #303030;
+	background: #fff2f0;
+	border-radius: 4px;
+	padding: 10px;
+}
+.chat_right{float: right;}
+.chat_right span{
+	font-size: 18px;
+	color: #303030;
+	padding-left: 10px;
+}
+.chat_right i{
+	font-size: 14px;
+	color: #737373;
+	font-style: normal;
+}
+.chat_right p{
+	width: 230px;
+	font-size: 16px;
+	color: #303030;
+	background: #fff2f0;
+	border-radius: 4px;
+	padding: 10px;
+}
+.chat_text{
+	margin-left: 70px;
+	margin-top: 5px;
+}
+.shuru input{
+	border: none;
+	padding-left: 10px;
+	font-size: 16px;
+	color: #969595;
+	outline: none;
+	width: 100%;
+	height: 70px;
+
+}
+.send{
+	width: 400px;
+	margin: 0 auto 15px;
+	padding: 0 10px;
+}
+.send_left{float: left;}
+.send_left i{
+	font-size: 21px;
+	color: #303030;
+}
+.send_right{float: right;}
+.send_right button{
+	width: 63px;
+	height: 29px;
+	font-size: 16px;
+	color: #fff;
+	border: none;
+	background-color: #de3f2a;
+	border-radius: 4px;
+}

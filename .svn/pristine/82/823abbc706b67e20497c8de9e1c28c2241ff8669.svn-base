@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人入会</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/grrh.css">
+    <!--智能客服样式-->
+    <link rel="stylesheet" href="css/znkf.css">
+    <!--全局样式-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body >
+<div id="nameselect" @click="hidePanel" >
+    <div class="hello"  style="width: 500px;height: 500px; border: 1px solid #000;">
+
+        <div id="myPanel" v-if="panelShow" style="width: 200px;height: 300px;background-color: red">alsdkfjlsdakf</div>
+
+    </div>
+</div>
+
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vue2.5.22.js"></script>
+<script src="js/axios.0.18.0.js"></script>
+<script src="js/qs.6.60.js"></script>
+<script src="js/content.js"></script>
+<script src="js/usertoken.js"></script>
+<script>
+
+    var number = 50;
+
+
+    var obj = {
+        number:60,
+        getNum:function () {
+            var number = 70;
+            return this.number
+        }
+    }
+
+    //跟两个var 没有关系   直接调用这个函数 this指向当前obj  obj.number = 60
+    console.log(obj.getNum())     //60
+
+    //call 改变this指向
+    console.log(obj.getNum.call()); //50
+    //指向当前括号里面的对象   所以=20
+    console.log(obj.getNum.call({number:20}))   //20
+
+
+</script>
+
+</html>

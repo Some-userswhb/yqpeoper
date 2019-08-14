@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>修改个人信息</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/grxx.css">
+	<!--智能客服样式-->
+	<link rel="stylesheet" href="css/znkf.css">
+	<!--全局样式-->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="nameselect">
+	<div class="zg_box">
+		<div class="zg_info">
+			<div class="zg_top">
+				<div class="nav_left">
+					<a href="##"><img src="images/logo.png"></a>
+				</div>
+				<div class="nav_center clearfix">
+					<div class="tubiao">
+						<i class="icon iconfont icon-sun"></i>
+					</div>
+					<div class="tianqi">
+						<iframe width="420" scrolling="no" height="60" frameborder="0" allowtransparency="true"
+								src="//i.tianqi.com/index.php?c=code&id=12&icon=1&num=5&site=12"></iframe>
+					</div>
+				</div>
+				<div class="nav_righter">
+					<i class="icon iconfont icon--fanhuishouye"></i>
+					<a href="index.html">返回网站</a>
+				</div>
+			</div>
+			<div class="my_gh clearfix">
+				<div class="my_ghtitle clearfix">
+					<div class="my_ghtitleleft">
+						<i class="icon iconfont icon-shouye"></i>
+						<a href="index.html">当前位置：首页></a>
+						<span>会员中心</span>
+					</div>
+					<div class="my_ghtitleright">
+						<a href="zg_index.html"> < 返回服务大厅</a>
+					</div>
+				</div>
+				<!-- 修改信息 -->
+				<div class="information">
+					<div class="information_title">
+						<h4>修改信息</h4>
+					</div>
+					<div class="sq">
+						<form action="" method="">
+							<div class="sq_content clearfix" >
+								<a href=""><i>*</i>登录账号：</a>
+								<input type="text" placeholder="请输入您的登录账号" name="text" disabled/>
+							</div>
+							<div class="sq_content clearfix">
+								<a href=""><i>*</i>真实姓名：</a>
+								<input type="text" placeholder="请输入您的真实姓名" name="text" disabled/>
+							</div>
+							<div class="sq_content clearfix">
+								<a href=""><i>*</i>原手机号码：</a>
+								<input type="text" placeholder="请输入您的原手机号码" name="text" />
+							</div>
+							<div class="sq_content clearfix">
+								<a href=""><i>*</i>短信验证码：</a>
+								<input type="text" placeholder="请输入短信验证码" name="text" style="width: 140px; height: 40px;" />
+								<button type="submit" class="sentyzm">发送验证码</button>
+							</div>
+							<div class="sq_content clearfix">
+								<a href=""><i>*</i>新手机号码：</a>
+								<input type="text" placeholder="请输入您的新手机号码" name="text" />
+							</div>
+							<div class="sq_content clearfix">
+								<a href=""><i>*</i>短信验证码：</a>
+								<input type="text" placeholder="请输入短信验证码" name="text" style="width: 140px; height: 40px;" />
+								<button type="submit" class="sentyzm">发送验证码</button>
+							</div>
+							<div class="anniu" style="margin-bottom: 20px">
+								<input type="button" value="确认"
+								@click="changepassword" style="background: #db2c28;"/>
+								<input type="button" value="返回" style="margin-left: 40px;background: #cccccc;" onclick="javascrtpt:window.location.href='hyzx.html'">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		<!-- 友情链接 -->
+				<div style="margin:35px 0 15px 15px;" class="clearfix">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#all" data-toggle="tab">全总及省级工会</a></li>
+							<li><a href="#qu" data-toggle="tab">区县工会</a></li>
+							<li><a href="#jc" data-toggle="tab">基层工会</a></li>
+							<li><a href="#meiti" data-toggle="tab">新闻媒体网站</a></li>
+						</ul>
+					    <div  class="tab-content clearfix" style="height: 85px">
+						     <div class="tab-pane active" id="all">
+							<ul class="nav nav-tabs" style="border:0">
+								<li><a href="http://www.acftu.org/">中华全国总工会</a></li>
+								<li><a href="http://www.sxgh.org.cn/">山西省总工会</a></li>
+								<li><a href="http://www.bjzgh.org/">北京市总工会</a></li>
+								<li><a href="http://www.shzgh.org/">上海市总工会</a></li>
+								<li><a href="http://www.xmzgh.org/">厦门市总工会</a></li>
+								<li><a href="http://www.cqgh.org/">重庆市总工会</a></li>
+								<li><a href="http://www.hebgh.org/">河北省总工会</a></li>
+								<li><a href="http://www.hbzgh.org.cn/">湖北省总工会</a></li>
+								<li><a href="https://www.ahghw.org/">安徽省总工会</a></li>
+
+							</ul>
+						     </div>
+						     <div class="tab-pane fade" id="qu">
+							<ul class="nav nav-tabs" style="border:0">
+
+								<li><a href="javascript:;">城区总工会</a></li>
+								<li><a href="javascript:;">郊区总工会</a></li>
+								<li><a href="javascript:;">开发区总工会</a></li>
+								<li><a href="javascript:;">平定县总工会</a></li>
+								<li><a href="javascript:;">盂县总工会</a></li>
+							</ul>
+						     </div>
+						     <div class="tab-pane fade" id="jc">
+							<ul class="nav nav-tabs" style="border:0">
+								<li><a href="javascript:;">公交建通工委</a></li>
+								<li><a href="javascript:;">文教工委</a></li>
+								<li><a href="javascript:;">财贸工委</a></li>
+								<li><a href="javascript:;">煤矿工委</a></li>
+								<li><a href="javascript:;">市直机关</a></li>
+								<li><a href="javascript:;">市级行业工会</a></li>
+								<li><a href="javascript:;">阳煤集团工会</a></li>
+							</ul>
+						     </div>
+						     <div class="tab-pane fade" id="meiti">
+							<ul class="nav nav-tabs" style="border:0">
+								<li><a href="http://acftu.workercn.cn">工会网媒话工会（中工网、山西省总网站合办） </a></li>
+								<li><a href="http://www.sxszcwb.org">山西省总工会财务部软件交流平台</a></li>
+							</ul>
+						     </div>
+					    </div>
+			    </div>
+			</div>
+		</div>
+		<!-- 底部 -->
+	<div class="zg_bottom" style="border-top:2px solid #db2c28;background-color: #d9d9d9;padding: 20px;">
+		<div style="width:1200px;margin:30px auto;text-align:center;">
+			<div class="zg_bottom_link">
+				<li>
+					<a href="">关于我们</a>
+				</li>
+				<li class="zg_fg">|</li>
+				<li>
+					<a href="##">问题答复</a>
+				</li>
+				<li class="zg_fg">|</li>
+				<li>
+					<a href="##">导航地图</a>
+				</li>
+				<li class="zg_fg">|</li>
+				<li>
+					<a href="##">联系我们</a>
+				</li>
+			</div>
+			<div>地址：山西省阳泉市桃南东路192号   电话：2022724</div>
+			<div>版权所有：© 阳泉市总工会 版权所有</div>
+			<div>备案：晋ICP备13007903-1</div>
+			<div class="copy_img">
+				<a href="##"><img src="images/footer_img.png"></a>
+			</div>
+		</div>
+	</div>
+	<div class="slide">
+		<ul>
+			<li class="open-hyzx">
+				<i class="icon iconfont icon-member"></i>
+				<a href="##" onclick="window.open('denglu.html')" onclick="clear()">{{membercenter}}</a>
+			</li>
+			<li><i class="icon iconfont icon-diligently"></i><a href="wdfw.html">我的服务</a></li>
+			<li class="kefu"><i class="icon iconfont icon-kefu1 "></i><a href="##">智能客服</a></li>
+			<li><i class="icon iconfont icon-xinlang"></i><a href="##">微博</a></li>
+			<li><i class="icon iconfont icon-weixin2"></i><a href="##">微信</a></li>
+			<li><i class="icon iconfont icon-APP"></i><a href="##">APP</a></li>
+			<li id="top"><i class="icon iconfont icon-fanhuidingbu-"></i><a href="##">TOP</a></li>
+		</ul>
+		<div class="sina">
+			<a href="">
+				<img src="images/sina.png" width="100px" height="100px">
+			</a>
+			<p>新浪微博二维码</p>
+		</div>
+		<div class="ewm">
+			<a href="">
+				<img src="images/erweima.jpg" width="100px" height="100px">
+			</a>
+			<p>工会微信公众号</p>
+		</div>
+		<div class="exit">
+			<img src="images/user.png" width="80px" height="80px" />
+			<p>{{userPhone}}</p>
+			<button>退出</button>
+		</div>
+	</div>
+		<!--智能客服-->
+	<div class="customer-service" >
+		<div class="kf_box">
+			<div class="kf clearfix">
+				<div class="kf_left">
+					<a href=""><img src="images/gh_x.png" width="23px" height="23px"></a>
+					<span>工会智能小K</span>
+				</div>
+				<div class="kf_right">
+					<i class="icon iconfont icon-xiajiantou"></i>
+				</div>
+			</div>
+		</div>
+		<div class="chat_box">
+			<div id="chat" class="chat clearfix">
+				<div class="chat_left">
+					<a href=""><img src="images/gh_l.png" style="margin-bottom: 5px;"></a>
+					<span>客服</span>
+					<!--<i>2019-3-22  12:12</i>-->
+					<p>我是阳泉工会智能机器人，请问您有什么需要吗？</p>
+				</div>
+
+
+
+			</div>
+			<div class="down"></div>
+			<div class="shuru">
+				<input type="text" placeholder="请输入文字..."  v-model="userinp"/>
+			</div>
+			<div class="send clearfix">
+				<div class="send_left">
+					<i class="icon iconfont icon-smiling" ></i>
+				</div>
+				<div class="send_right">
+					<button type="button" @click="sendModel">发送</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/vue2.5.22.js"></script>
+<script src="js/axios.0.18.0.js"></script>
+<script src="js/qs.6.60.js"></script>
+
+<script src="js/content.js"></script>
+<script src="js/usertoken.js"></script>
+<script>
+    var vm = new Vue({
+        el: "#nameselect",
+        data: {
+            isactive:false,
+            friendship:[
+            {groupName:'全总及省级工会',linkName:'平定县总工会'},
+            {groupName:'区县工会',linkName:'盂县总工会'},
+            {groupName:'基层工会',linkName:'阳泉市总工会'},
+            {groupName:'新闻媒体网站',linkName:'阳泉市矿区总工会'},
+            {groupName:'',linkName:'阳泉市郊区总工会'}
+            ],
+            oldpassword:'',
+            yespassword:'',
+            newpassword:'',
+            phone:'',
+            userinp:'',
+			userPhone:'',
+
+            humanFace:'',
+			IDpositive:'',
+			IDanti:'',
+			userName:'',
+			nationality:'',
+			birthday:'',
+			IDnumber:'',
+
+			renpic:'',
+			IDzhengpic:'',
+			IDfanpic:'',
+            membercenter:''
+        },
+        methods:{
+
+            //修改密码
+            changepassword(){
+            	
+                var that = this;
+                if(that.yespassword != that.newpassword){
+                    alert('两次输入的密码不一致 请您重新输入')
+                    that.yespassword = '';
+                    that.newpassword = '';
+				}else{
+
+                    var chanpass = location.search
+					var token = chanpass.substring(1)
+					console.log(token)
+                    $.ajax({
+                        url: "http://112.35.92.177:90/sso/ssoUser/updatePassword",
+                        data: {
+                            "password":that.phone,
+                            "newPassword": that.oldpassword,
+							"token":token
+                        },
+                        async:true,
+                        dataType: "json",
+                        success: function (result) {
+
+							alert(result.msg)
+                        }
+                    })
+				}
+
+
+
+
+            },
+            sendModel(){
+                kfhuifu();
+			},
+			//实名认证
+            authenticate(){
+				var that = this
+               $.ajax({
+                    url: "http://112.35.92.177:90/passLaborweb/api/laborun/realnameRecord/add",
+                    data:{
+                        "realName": "两两",
+                        "phone": "15975639502",
+                        "sex": 1,
+                        "nation": "民族",
+                        "birthDate": "1988-01-01",
+                        "cardNo": "330721198800000003",
+                        "cardFrontPic": that.renpic,
+                        "cardReversePic": that.IDzhengpic,
+                        "portraitPic": that.IDfanpic,
+                        "channel": 1,
+                        "remark": "备注",
+                        "token": "1777"
+                    },
+                    async:true,
+                    dataType: "json",
+                    success: function (result) {
+						console.log(result)
+						console.log(that.renpic)
+						console.log(that.IDzhengpic)
+						console.log(that.IDfanpic)
+
+                    }
+                })
+
+
+                /*axios({
+                    method: 'post',
+                    url: "http://112.35.92.177:90/passLaborweb/api/laborun/realnameRecord/add",
+
+                    data:Qs.stringify ({
+                        "realName": "两两",
+                        "phone": "15975639502",
+                        "sex": 1,
+                        "nation": "民族",
+                        "birthDate": "1988-01-01",
+                        "cardNo": "330721198800000003",
+                        "cardFrontPic": "1111",
+                        "cardReversePic": "1111",
+                        "portraitPic": "1111",
+                        "channel": 1,
+                        "remark": "备注",
+                        "token": "1777"
+                    })
+                }).then(function (data) {
+                    console.log(data)
+                })*/
+
+
+
+
+
+
+
+			},
+
+            renupdate (e){  // 上传照片
+				var that = this
+                var self = this;
+                let file = e.target.files[0];
+				/* eslint-disable no-undef */
+                // 创建form对象
+                var param = new FormData();
+                param.append('file', file, file.name);// 通过append向form对象添加数据
+                //param.append('chunk', '0') // 添加form表单中其他数据
+                 // FormData私有类对象，访问不到，可以通过get判断值是否传进去
+                let config = {
+                    headers: {'Content-Type': 'multipart/form-data'}
+                };
+                axios.post('http://112.35.92.177:90/passLaborweb/api/laborun/file/upload', param, config)
+
+                    .then(response => {
+                        /*if (response.data.code === 0){
+                            self.ImgUrl = response.data.data
+                        }
+                        if (response.data.msg === 'success') {
+                            alert('上传成功')
+                        }*/
+                        that.renpic   = response.data.data.newFileName
+                    })
+            },
+            IDzhengupdate (e){  // 上传照片
+				var that = this
+                var self = this;
+                let file = e.target.files[0];
+				/* eslint-disable no-undef */
+                // 创建form对象
+                var param = new FormData();
+                param.append('file', file, file.name);// 通过append向form对象添加数据
+                //param.append('chunk', '0') // 添加form表单中其他数据
+                // FormData私有类对象，访问不到，可以通过get判断值是否传进去
+                let config = {
+                    headers: {'Content-Type': 'multipart/form-data'}
+                };
+                axios.post('http://112.35.92.177:90/passLaborweb/api/laborun/file/upload', param, config)
+
+                    .then(response => {
+						/*if (response.data.code === 0){
+						 self.ImgUrl = response.data.data
+						 }
+						 if (response.data.msg === 'success') {
+						 alert('上传成功')
+						 }*/
+
+                        that.IDzhengpic = response.data.data.newFileName
+                    })
+            },
+            IDfanupdate (e){  // 上传照片
+				var that = this
+                var self = this;
+                let file = e.target.files[0];
+				/* eslint-disable no-undef */
+                // 创建form对象
+                var param = new FormData();
+                param.append('file', file, file.name);// 通过append向form对象添加数据
+                //param.append('chunk', '0') // 添加form表单中其他数据
+                // FormData私有类对象，访问不到，可以通过get判断值是否传进去
+                let config = {
+                    headers: {'Content-Type': 'multipart/form-data'}
+                };
+                axios.post('http://112.35.92.177:90/passLaborweb/api/laborun/file/upload', param, config)
+
+                    .then(response => {
+						/*if (response.data.code === 0){
+						 self.ImgUrl = response.data.data
+						 }
+						 if (response.data.msg === 'success') {
+						 alert('上传成功')
+						 }*/
+                        that.IDfanpic = response.data.data.newFileName
+                    })
+            }
+
+
+
+
+        },
+        mounted(){
+
+            const that = this;
+
+
+
+            if(userTok.token == null){
+                this.membercenter = '请登录';
+                $('.slide ul li:nth-child(2)').hide();
+
+                //跳转登录界面 去登录
+                $('.open-hyzx').click(function () {
+                    window.open('denglu.html')
+                });
+
+            }else{
+                this.membercenter = '会员中心'
+                this.userPhone = userTok.phone
+                $('.slide ul li:nth-child(2)').hide();
+                tuilogin()
+                //登录成功 跳转会员中心
+                $('.open-hyzx').click(function () {
+                    window.open('hyzx.html')
+                });
+
+            }
+
+
+
+
+        }
+
+
+
+    })
+
+
+</script>
+<!--智能客服-->
+<script src="js/znkf.js"></script>
+<script>
+	 $(function(){
+	  var show_num = [];
+	  draw(show_num);
+	  $("#cfont").on('click',function(){
+	   draw(show_num);
+	  })
+	  $(".btn").on('click',function(){
+	   var val = $(".input-val").val().toLowerCase();
+	   var num = show_num.join("");
+	   if(val==''){
+		alert('请输入验证码！');
+	   }else if(val == num){
+		alert('提交成功！');
+		$(".input-val").val('');
+		// draw(show_num);
+	   }else{
+		alert('验证码错误！请重新输入！');
+		$(".input-val").val('');
+		// draw(show_num);
+	   }
+	  })
+
+	 })
+</script>
+</html>

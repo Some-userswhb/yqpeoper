@@ -1,0 +1,122 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var pldkGlobal = {
+		url : {
+			contentList : "http://10.0.10.124:8012/api/content/list",
+			categoryList : "http://10.0.10.124:8012/api/category/list",
+			mapClassityList : "http://localhost/api/mapClassify/list",
+			mapList : "http://localhost/api/map/list",
+
+            baseUrl : "http://192.168.0.110:8012"
+		},
+		category : {
+			xinwen : 198,
+			redian : 198,
+			jujiao : 198,
+			weiquan : 198,
+			yaowen : 198,
+			shiping : 198,
+			guanzhu : 198,
+			hard : 198
+		},
+		data : {}
+	}
+	
+	function receviceError(e){
+		console.log(e);
+	}
+	
+	/**
+	* 分页查询文件列表。
+	*
+	* 参数说明
+	*	id：整型，必须，栏目ID
+	* 	handler: 函数，必须，需要定义两个参数：栏目的ID，数据，当请求成功后会执行。
+	*	start：分页起始行，整型，非必须，默认为1。
+	*	size：每页数量，整型，非必须，默认为10。
+	*/
+	function getContentList(id, handler, start, size){
+		if (!start){
+			start = 1;
+		}
+		if (!size){
+			size = 10;
+		}
+		
+		$.ajax({
+			url: pldkGlobal.url.contentList,
+			data : {
+				"categoryId" : id,
+				"iDisplayStart" : start,
+				"iDisplayLength" : size
+			},
+			async : false,
+			dataType : "json",
+			type : "GET",
+			success : function(d){handler(id, d)},
+			error : receviceError
+		});
+	}
+	
+	/**
+	* 获取栏目
+	*
+	* 参数说明
+	*	id：整型，必须，栏目ID
+	* 	handler: 函数，必须，需要定义一个参数：数据，当请求成功后会执行。
+	*/
+	function getCategoryList(id, handler){
+		$.ajax({
+			url: pldkGlobal.url.categoryList,
+			data : {
+				"parentId" : id
+			},
+			async : false,
+			dataType : "json",
+			type : "GET",
+			success : handler,
+			error : receviceError
+		});
+	}
+	
+	/**
+	* 
+	*/
+	function getMapClassityList(handler) {
+		$.ajax({
+			url: pldkGlobal.url.mapClassityList,
+			data : {
+			},
+			async : false,
+			dataType : "json",
+			type : "GET",
+			success : handler,
+			error : receviceError
+		});
+	}
+	
+	function getMapList(classityId, handler) {
+		$.ajax({
+			url: pldkGlobal.url.mapList,
+			data : {
+				"classfiyID" : classityId
+			},
+			async : false,
+			dataType : "json",
+			type : "GET",
+			success : handler,
+			error : receviceError
+		});
+	}

@@ -1,0 +1,1053 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>阳泉市总工会</title>
+    <link rel="icon" href="images/picture.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/hyzx.css">
+    <link rel="stylesheet" href="css/flyz.css">
+    <link rel="stylesheet" href="css/xlgh.css">
+    <!--智能客服样式-->
+    <link rel="stylesheet" href="css/znkf.css">
+    <!--全局样式-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .sm_img{
+            background: url('images/jiahao.png') no-repeat;
+            background-position: center;
+        }
+        #renxiang{
+            opacity:0 ;
+            width: 100%;
+            height: 100%;
+        }
+        .my-fuwu{
+            transition: 1s;
+            /*height:0 ;*/
+            display: none;
+            overflow: hidden;
+        }
+        .hei{
+            /*height: 130px;*/
+            display: block;
+            transition: 1s;
+        }
+        .rotate{
+            transform: rotate(90deg);
+            transition: 1s;
+        }
+        .my-fuwu li p{
+            border-left: none !important;
+            margin-left: 30px;
+        }
+
+
+        .IDzheng-wrap{
+            position: absolute;
+            left: 125px;
+            top: 1px;
+            width: 236px;
+            height: 137px;
+            z-index: 5;
+            margin-left: 15px;
+        }
+        .IDzheng-wrap img {
+            width: 100%;
+            height: 100%;
+        }
+        .green{
+            color: green;
+        }
+        .jwn_box{
+            border-bottom: 1px dashed #cccccc;
+            padding: 15px 0;
+        }
+        .jwn_img{
+            float: left;
+            width: 250px;
+            height: 189px;
+        }
+        .jwn_text{
+            float: left;
+            margin-left: 20px;
+            width: 556px;
+        }
+        .jwn_text h4{
+            font-size: 16px;
+            color: #333333;
+            font-weight: bold;
+        }
+        .jwn_text p{
+            width: 565px;
+            font-size: 14px;
+            color: #474747;
+            line-height: 24px;
+            margin-top: 20px;
+        }
+        .jwn_text span{
+            float:left;
+            margin-right: 6px;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666666;
+            width: 200px;
+        }
+        .jwn_text i{
+            float: right;
+            font-style: normal;
+            font-size: 14px;
+            color: #666666;
+            margin-top: 30px;
+        }
+        .layer-button div{
+            width: 110px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background: #cccccc;
+            border: none;
+            color: #000;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .layer-button div.actived{
+            background: #db2c28;
+            color: #fff;
+        }
+        .rh_list li.active i {
+            color:#db2c28;
+        }
+        .same_box{
+            margin-bottom: 15px;
+        }
+        .dafubox{
+            height: 262px;
+            overflow: hidden;
+            overflow-y: auto;
+            margin-top: 15px;
+        }
+        .tjpic2{
+            position: absolute;
+            left: 170px;
+            top: 0px;
+            width: 233px;
+            height: 170px;
+        }
+    </style>
+</head>
+<body>
+<div id="nameselect">
+    <div class="zg_box">
+        <div class="zg_info">
+            <div class="zg_top">
+                <div class="nav_left">
+                    <a href="##"><img src="images/logo.png"></a>
+                </div>
+                <div class="tubiao">
+                    <p>{{nowTime}}</p>
+                    <p>{{nowDay}}</p>
+                </div>
+                <div class="nav_center clearfix">
+                    <div class="tianqi">
+                        <iframe width="350" scrolling="no" height="60" frameborder="0" allowtransparency="true"
+                                src="//i.tianqi.com/index.php?c=code&id=12&icon=1&num=5&site=12"></iframe>
+                    </div>
+                </div>
+                <div class="nav_righter" onclick="window.open('index.html','_self')">
+                    <i class="icon iconfont icon--fanhuishouye"></i>
+                    <a href="javascript:;">返回首页</a>
+                </div>
+            </div>
+            <!--选项卡区-->
+            <div class="my_gh clearfix">
+                <div class="my_ghtitle clearfix">
+                    <div class="my_ghtitleleft">
+                        <i class="icon iconfont icon-shouye"></i>
+                        <a href="index.html">当前位置：首页></a>
+                        <span>心理关怀</span>
+                    </div>
+                    <div class="my_ghtitleright">
+                        <a href="zg_index.html"> < 返回服务大厅</a>
+                    </div>
+                </div>
+                <div class="my_ghcontent  clearfix">
+                    <div class="my_ghcontentleft">
+                        <div class="rh_title">
+                            <h4>心理关怀</h4>
+                        </div>
+                        <div class="rh_list">
+                            <ul>
+                                <li class="securitySettings same">
+                                    <p class="bordred">留言咨询</p>
+                                    <i class="icon iconfont icon-jiaobiao" style="color: rgb(219, 44, 40);"></i>
+                                </li>
+                                <ul class="my-fuwu">
+                                    <li class="my-union">
+                                        <p>留言咨询申请</p>
+                                        <!-- <i class="icon iconfont icon-jiaobiao"></i> -->
+                                    </li>
+                                    <li class="my-transfer">
+                                        <p>我的咨询</p>
+                                        <!-- <i class="icon iconfont icon-jiaobiao"></i> -->
+
+                                    </li>
+                                </ul>
+                                <li class="personalinfo same">
+                                    <p>在线预约</p>
+                                    <i class="icon iconfont icon-jiaobiao"></i>
+                                </li>
+                                <ul class="my-fuwu">
+                                    <li class="my-tiao">
+                                        <p>在线预约申请</p>
+                                        <!-- <i class="icon iconfont icon-jiaobiao"></i> -->
+                                    </li>
+                                    <li class="my-dai">
+                                        <p>我的预约</p>
+                                        <!-- <i class="icon iconfont icon-jiaobiao"></i> -->
+                                    </li>
+                                </ul>
+                                <li class="Lawyerservice">
+                                    <p>心理专家入驻</p>
+                                    <i class="icon iconfont icon-jiaobiao"></i>
+                                </li>
+                                <li class="Caringhotline">
+                                    <p>关爱热线</p>
+                                    <i class="icon iconfont icon-jiaobiao"></i>
+                                </li>
+                                <li class="Myanswer">
+                                    <p>我来答</p>
+                                    <i class="icon iconfont icon-jiaobiao"></i>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="toggWrap clearfix">
+                        <!--留言咨询-->
+                        <div class="my_personalinfo tab-togg on">
+                            <div class="layer-button">
+                                <div class="actived">心理知识</div>
+                                <div style="margin-left: 15px;">心灵鸡汤</div>
+                            </div>
+                            <div class="jwn_box clearfix">
+                                <div class="jwn_img">
+                                    <img src="images/ceshi1.jpg" width="250px"/>
+                                </div>
+                                <div class="jwn_text">
+                                    <h4></h4>
+                                    <p>
+                                    </p>
+                                    <span></span>
+                                    <i></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!--留言咨询申请-->
+                        <div class="my-enterUnion tab-togg">
+                            <div class="sq">
+                                <div class="sq_list">
+                                    <h4>法律咨询申请</h4>
+                                </div>
+                                <form action="" method="">
+                                    <div class="xci_capt">
+                                        <a href="javascript:;"><i>*</i>请选择您要咨询的问题标签：</a>
+                                    </div>
+                                    <div class="xlgh-list">
+                                        <ul class="clearfix">
+                                            <li>情绪压力</li>
+                                            <li>工作压力</li>
+                                            <li>恋爱关系</li>
+                                            <li>人际关系</li>
+                                            <li>职业发展</li>
+                                            <li>家庭关系</li>
+                                            <li>子女教育</li>
+                                            <li>个人成长</li>
+                                            <li>其他</li>
+                                        </ul>
+                                    </div>
+                                    <div class="xci_content">
+                                        <a href="javascript:;"><i>*</i>咨询主题：</a>
+                                        <input type="text" placeholder="请输入主题(20字以内)" name="text" v-model="conName"/>
+                                    </div>
+                                    <div class="xci_content">
+                                        <a href="javascript:;"><i>*</i>详细描述：</a>
+                                        <textarea placeholder="请输入咨询内容(最多500字)" v-model="conContent"></textarea>
+                                    </div>
+                                    <div class="anniu">
+                                        <button type="button" class="tijiao active" @click="zixunTi()">提交</button>
+                                        <button type="reset" class="chongzhi">重置信息</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--我的咨询-->
+                        <div class="my-turnUnion  tab-togg">
+                            <div class="layer-reply">
+                                <div class="layer-titlebox">
+                                    <div class="big_box" style="margin-bottom: 20px;">
+                                        <div>
+                                            <div class="layer-title clearfix">
+                                                <h4></h4>
+                                                <span>#农民工工资#</span>
+                                            </div>
+                                            <p class="lpic">
+
+                                            </p>
+                                            <i></i>
+                                        </div>
+                                        <div class="layer-content clearfix">
+                                            <i class="icon iconfont icon-dahuifu"></i>
+                                            <span>律师回复(2条)</span>
+                                        </div>
+                                        <div class="layer-person clearfix">
+                                            <div class="layer-img">
+                                                <img src="images/user.png" />
+                                            </div>
+                                            <div class="layer-text">
+                                                <h4>刘静律师</h4>
+                                                <span>2019-05-10</span>
+                                                <p>律师服务态度很好，很专业，真正的为职工着想。律师服务态度很好</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="jwn_list">
+                                        <ul class="clearfix">
+                                            <li class="active"><a href="">1</a></li>
+                                            <li><a href="">2</a></li>
+                                            <li><a href="">3</a></li>
+                                            <li><a href="">4</a></li>
+                                            <li><a href="">5</a></li>
+                                            <li><a href="">6</a></li>
+                                            <li><a href="">上一页</a></li>
+                                            <li><a href="">下一页</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--在线预约-->
+                        <div class="shiming tab-togg" >
+                        </div>
+                        <!--心里专家入驻-->
+                        <div class="layer-ruzhu tab-togg">
+                            <div class="rh_boxed">
+                                <div class="rh_text">
+                                    <h4>心理专家入驻</h4>
+                                    <i>心理专家入驻须知：</i>
+                                    <p>满足咨询师执业资格，具备完全民事行为能力的自然人，均可申请以专家的身份加入
+                                        阳泉市工会心理关怀服务平台，面向职工群众提供心理咨询相关服务。阳泉市总工
+                                        会热诚欢迎各位咨询师的加入
+                                    </p>
+                                    <span>咨询师入驻的具体要求：</span>
+                                    <p>1、大专（包含）以上学历，专业不限；</p>
+                                    <p>2、具有国家2级（包含）以上心理咨询师资格证书；</p>
+                                    <p>3、每周在线服务时长不少于48小时；</p>
+                                    <p>4、申请人提供的所有资料需要真实准确；</p>
+                                    <p> 5、申请人提供的自身的保密信息，市总工会依据与申请人签署的保密协议承担保密
+                                        义务，咨询师在市总工会工作而提供的全部有保密要求的信息，申请人也应当依据
+                                        保密协议承担保密义务。
+                                    </p>
+                                </div>
+                                <div class="dl_more clearfix">
+                                    <input id="readme" class="checkbox" type="checkbox"/>
+                                    <label for="protocol">
+                                        我承诺我符合上诉工会法律援助的申请条件
+                                    </label>
+                                </div>
+                                <div class="layer-btn">
+                                    <button class="btn">确定</button>
+                                </div>
+                            </div>
+                            <div class="layer-table erji">
+                                <div class="sq_list" style="margin-bottom: 30px;">
+                                    <h4>心理专家入驻</h4>
+                                </div>
+                                <form action="" method="post">
+                                    <div class="zj_content">
+                                        <a href="javascript:;"><i>*</i>姓名：</a>
+                                        <input type="text" name="name"  class="stopClick"
+                                               placeholder="请输入姓名"/>
+                                    </div>
+                                    <div class="zj_xb">
+                                        <a href="javascript:;" style="margin: 10px 90px 0 0;"><i>*</i>性别：</a>
+                                        <input id="man" type="radio" checked="checked" name="sex" />男
+                                        <input id="woman" type="radio"  name="sex"/>女
+                                    </div>
+                                    <div class="mz_content">
+                                        <a href="javascript:;"><i>*</i>出生年月：</a>
+                                        <select  class="st2 stopClick ">
+                                            <option>1998</option>
+                                            <option>1998</option>
+                                            <option>1998</option>
+                                        </select>
+                                    </div>
+                                    <div class="zj_content">
+                                        <a href="javascript:;"><i>*</i>联系电话：</a>
+                                        <input type="text" name="name" placeholder="请输入联系电话"/>
+                                    </div>
+                                    <div class="mz_content" >
+                                        <a href="javascript:;"><i>*</i>学历：</a>
+                                        <select  class="st1">
+                                            <option>请选择</option>
+                                            <option>本科</option>
+                                            <option>专科</option>
+                                            <option>高中</option>
+                                            <option>初中</option>
+                                            <option>小学</option>
+                                        </select>
+                                    </div>
+                                    <div class="zj_content">
+                                        <a href="javascript:;"><i>*</i>毕业学校：</a>
+                                        <input type="text" name="name" placeholder="请输入毕业学校"/>
+                                    </div>
+                                    <div class="mz_content" >
+                                        <a href="javascript:;"><i>*</i>服务区县：</a>
+                                        <select  class="st1">
+                                            <option></option>
+
+                                        </select>
+                                    </div>
+                                    <div class="mz_content" >
+                                        <a href="javascript:;"><i>*</i>资质类别：</a>
+                                        <select  class="st1">
+                                            <option>请选择</option>
+                                            <option>请选择</option>
+                                            <option>请选择</option>
+                                        </select>
+                                    </div>
+                                    <div class="ly_contentbox clearfix">
+                                        <div class="ly_content">
+                                            <a href="javascript:;"><i>*</i>擅长领域：</a>
+                                        </div>
+                                        <div class="ly_list" style="margin-left: 35px;width: 70%">
+                                            <ul class="clearfix">
+                                                <li>恋爱咨询</li>
+                                                <li>情绪压力</li>
+                                                <li>个人成长</li>
+                                                <li>家庭关系</li>
+                                                <li>人际关系</li>
+                                                <li>子女教育</li>
+                                                <li>职业发展</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="sm_box clearfix" style="margin-left: 100px;">
+                                        <div class="sm_text">
+                                            <a href="javascript:;"><i>*</i>上传身份证件：</a>
+                                            <div class="IDzheng-wrap" style="margin-left: 42px;">
+                                                <img src="images/sfz_z.png"  id="idimg17" />
+
+                                            </div>
+                                        </div>
+                                        <!--身份证正面-->
+                                        <div class="zj_img zj_pic" style="margin: 0 0 0 40px;">
+                                            <div class="tianjia1">
+                                                <input class="stopClick" id="idfile17" type="file" @change="IDzhengupdatels" onchange="previewFile17()" >
+                                            </div>
+                                        </div>
+
+                                        <!--身份证反面-->
+                                        <div class="zj_img zj_fanpic" style="margin-left: 40px;">
+                                            <div class="tianjia1">
+                                                <input class="stopClick" type="file" id="idfile18" @change="IDfanupdatels" onchange="previewFile18()">
+                                            </div>
+                                            <div class="idfan-wrap">
+                                                <img src="images/sfz_f.png"  id="idimg18" />
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sm_box clearfix" style="margin-left: 100px">
+                                        <div class="sm_text">
+                                            <a href="javascript:;"><i>*</i>上传执业证书：</a>
+                                            <div class="tianjia tjpic2" >
+                                                <img src="images/yingyepic.png" id="idimg19"/>
+                                            </div>
+                                        </div>
+                                        <div class="sm_img tianjia1" style="margin-left: 22px;">
+                                            <input type="file" id="idfile19"  onchange="previewFile19()"
+                                                   @change="yingyePicSendls">
+                                        </div>
+                                    </div>
+                                    <div class="anniu" style="text-align: center;">
+                                        <button type="button" class="tijiao active" @click="adRuzhu">提交</button>
+                                        <button type="reset" class="chongzhi">重置信息</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--关爱热线-->
+                        <div class="my-hotline tab-togg">
+                            <div class="xlgh-line">
+                                <img src="images/xlgh.png">
+                                <p class="xl-top">
+                                    当职工在工作学习、人际关系、恋爱婚姻、子女教育等方面
+                                    有疑惑困惑时，都可以拨打工会24小时全天候心理关爱热线
+                                    8888888，与专业的心理专家沟通交流。
+                                </p>
+                                <p>
+                                    热线将最为职工的“知心朋友”和“身边的咨询师”，倾听职工
+                                    的困难和困惑，对职工进行有效的疏导释压，为他们提供专
+                                    业的心理帮助。
+                                </p>
+                                <span>24小时关爱热线：0353-8888888</span>
+                            </div>
+                        </div>
+                        <!--我来答-->
+                        <div class="my-answer tab-togg">
+                            <div class="reply">
+                                <div class="same_box">
+                                    <div class="layer-titlebox" >
+                                        <div class="layer-title clearfix">
+                                            <h4></h4>
+                                            <span>#农民工工资#</span>
+                                        </div>
+                                        <p class="lpic">
+
+                                        </p>
+                                        <i></i>
+                                    </div>
+                                    <!-- 我来答按钮 -->
+                                    <div class="answer-circle">
+                                        <i class="icon iconfont icon-huida"></i>
+                                        <span>我来答</span>
+                                    </div>
+                                    <!-- 评价框 -->
+                                    <div class="pingjia_kuang" style="display: none;">
+                                        <textarea class="answer-textarea"></textarea>
+                                        <div class="answer-btn">
+                                            <button>发表评价</button>
+                                        </div>
+                                    </div>
+                                    <!-- 律师回复 -->
+                                    <div class="layer-content clearfix" style="margin-top: 20px;">
+                                        <i class="icon iconfont icon-dahuifu"></i>
+                                        <span>律师回复(2条)</span>
+                                    </div>
+                                    <div class="dafubox">
+                                        <div class="layer-content clearfix" style="padding-bottom: 10px;margin-bottom: 20px;" >
+                                            <div class="layer-person clearfix">
+                                                <div class="layer-img">
+                                                    <img src="images/user.png" />
+                                                </div>
+                                                <div class="layer-text">
+                                                    <h4></h4>
+                                                    <p></p>
+                                                    <p></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="jwn_list">
+                                <ul class="clearfix">
+                                    <li class="active"><a href="">1</a></li>
+                                    <li><a href="">2</a></li>
+                                    <li><a href="">3</a></li>
+                                    <li><a href="">4</a></li>
+                                    <li><a href="">5</a></li>
+                                    <li><a href="">6</a></li>
+                                    <li><a href="">上一页</a></li>
+                                    <li><a href="">下一页</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--在线预约申请-->
+                        <div class="my-tiaojie  tab-togg">
+                            <div class="sq">
+                                <div class="sq_list">
+                                    <h4>在线预约申请</h4>
+                                </div>
+                                <form action="" method="">
+                                    <div class="xci_capt">
+                                        <a href="javascript:;"><i>*</i>请选择您要咨询的问题标签：</a>
+                                    </div>
+                                    <div class="xlgh-list">
+                                        <ul class="clearfix">
+                                            <li>情绪压力</li>
+                                            <li>工作压力</li>
+                                            <li>恋爱关系</li>
+                                            <li>人际关系</li>
+                                            <li>职业发展</li>
+                                            <li>家庭关系</li>
+                                            <li>子女教育</li>
+                                            <li>个人成长</li>
+                                            <li>其他</li>
+                                        </ul>
+                                    </div>
+                                    <div class="xci_content">
+                                        <a href="javascript:;"><i>*</i>姓名：</a>
+                                        <input type="text" placeholder="请输入姓名" name="text" v-model="conName"/>
+                                    </div>
+                                    <div class="xci_content">
+                                        <a href="javascript:;"><i>*</i>年龄：</a>
+                                        <input type="text" placeholder="请输入年龄" name="text" v-model="conName"/>
+                                    </div>
+                                    <div class="xlgh_xb clearfix" style="width: 630px;margin: 30px auto 0">
+                                        <div style="float: left;width: 130px">
+                                            <a href="javascript:;"><i>*</i>性别：</a>
+                                        </div>
+                                        <div style="float: left;width: 130px">
+                                            <input  type="radio" checked="checked" name="sex"  style="margin: 0 10px;"/>男
+                                            <input  type="radio"  name="sex" style="margin: 0 10px 0 40px;"/>女
+                                        </div>
+                                    </div>
+                                    <div class="xci_content">
+                                        <a href="javascript:;"><i>*</i>手机号：</a>
+                                        <input type="text" placeholder="请输入手机号" name="text" v-model="conName"/>
+                                    </div>
+                                    <div class="xci_content">
+                                        <a href="javascript:;"><i>*</i>预约时间：</a>
+                                        <select  class="st2">
+                                            <option>请选择时间</option>
+                                            <option>2010</option>
+                                            <option>2011</option>
+                                            <option>2012</option>
+                                            <option>2013</option>
+                                            <option>2014</option>
+                                        </select>
+                                    </div>
+                                    <div class="anniu">
+                                        <button type="button" class="tijiao active" @click="zixunTi()">提交</button>
+                                        <button type="reset" class="chongzhi">重置信息</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- 我的预约-->
+                        <div class="my-daishu  tab-togg">
+                            <div class="yuyue clearfix">
+                                <div class="yuyue-time">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <h4>2019年6月24日</h4>
+                                        </li>
+                                        <li>
+                                            <h4>星期一</h4>
+                                        </li>
+                                        <li>
+                                            <h4>上午10:00</h4>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="information">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <i class="icon iconfont icon-nan"></i>
+                                            <span>张先生</span>
+                                        </li>
+                                        <li>
+                                            <span>29岁</span>
+                                        </li>
+                                        <li>
+                                            <span>阳煤集团职工</span>
+                                        </li>
+                                        <li>
+                                            <span>手机号:13003581234</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="gh-time">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <span>2019年6月24日</span>
+                                        </li>
+                                        <li>
+                                            <span>9:35发起预约</span>
+                                        </li>
+                                        <li>
+                                            <span>#恋爱婚姻#</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="xlgh-button">
+                                    <button class="qr-btn">等待确认</button>
+                                    <button class="qx-btn">取消预约</button>
+                                </div>
+                            </div>
+                            <div class="xlgh-xian"></div>
+                            <div class="yuyue clearfix">
+                                <div class="yuyue-time">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <h4>2019年6月24日</h4>
+                                        </li>
+                                        <li>
+                                            <h4>星期一</h4>
+                                        </li>
+                                        <li>
+                                            <h4>上午10:00</h4>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="information">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <i class="icon iconfont icon-nan"></i>
+                                            <span>张先生</span>
+                                        </li>
+                                        <li>
+                                            <span>29岁</span>
+                                        </li>
+                                        <li>
+                                            <span>阳煤集团职工</span>
+                                        </li>
+                                        <li>
+                                            <span>手机号:13003581234</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="gh-time">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <span>2019年6月24日</span>
+                                        </li>
+                                        <li>
+                                            <span>9:35发起预约</span>
+                                        </li>
+                                        <li>
+                                            <span>#恋爱婚姻#</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="xlgh-button">
+                                    <button class="cg-btn">预约成功</button>
+                                </div>
+                            </div>
+                            <div class="xlgh-xian"></div>
+                            <div class="yuyue clearfix">
+                                <div class="yuyue-time">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <h4>2019年6月24日</h4>
+                                        </li>
+                                        <li>
+                                            <h4>星期一</h4>
+                                        </li>
+                                        <li>
+                                            <h4>上午10:00</h4>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="information">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <i class="icon iconfont icon-nan"></i>
+                                            <span>张先生</span>
+                                        </li>
+                                        <li>
+                                            <span>29岁</span>
+                                        </li>
+                                        <li>
+                                            <span>阳煤集团职工</span>
+                                        </li>
+                                        <li>
+                                            <span>手机号:13003581234</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="gh-time">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <span>2019年6月24日</span>
+                                        </li>
+                                        <li>
+                                            <span>9:35发起预约</span>
+                                        </li>
+                                        <li>
+                                            <span>#恋爱婚姻#</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="xlgh-jishi clearfix">
+                                    <div class="xlgh-daojishi">
+                                        <i class="icon iconfont icon-1111139"></i>
+                                        <span>倒计时:</span>
+                                        <i class="xlgh-shijian">23:30:26</i>
+                                        <span>超过24小时未确认系统自动取消</span>
+                                    </div>
+                                    <div class="xlgh-button">
+                                        <button class="cg-btn">确认预约</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="xlgh-xian"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 友情链接 -->
+            <div style="margin:35px 0 15px 15px;" class="clearfix">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#all" data-toggle="tab">全总及省级工会</a></li>
+                    <li><a href="#qu" data-toggle="tab">区县工会</a></li>
+                    <li><a href="#jc" data-toggle="tab">基层工会</a></li>
+                    <li><a href="#meiti" data-toggle="tab">新闻媒体网站</a></li>
+                </ul>
+                <div  class="tab-content clearfix" style="height: 85px">
+                    <div class="tab-pane active" id="all">
+                        <ul class="nav nav-tabs" style="border:0">
+                            <li><a href="http://www.acftu.org/">中华全国总工会</a></li>
+                            <li><a href="http://www.sxgh.org.cn/">山西省总工会</a></li>
+                            <li><a href="http://www.bjzgh.org/">北京市总工会</a></li>
+                            <li><a href="http://www.shzgh.org/">上海市总工会</a></li>
+                            <li><a href="http://www.xmzgh.org/">厦门市总工会</a></li>
+                            <li><a href="http://www.cqgh.org/">重庆市总工会</a></li>
+                            <li><a href="http://www.hebgh.org/">河北省总工会</a></li>
+                            <li><a href="http://www.hbzgh.org.cn/">湖北省总工会</a></li>
+                            <li><a href="https://www.ahghw.org/">安徽省总工会</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="qu">
+                        <ul class="nav nav-tabs" style="border:0">
+
+                            <li><a href="javascript:;">城区总工会</a></li>
+                            <li><a href="javascript:;">郊区总工会</a></li>
+                            <li><a href="javascript:;">开发区总工会</a></li>
+                            <li><a href="javascript:;">平定县总工会</a></li>
+                            <li><a href="javascript:;">盂县总工会</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="jc">
+                        <ul class="nav nav-tabs" style="border:0">
+                            <li><a href="javascript:;">公交建通工委</a></li>
+                            <li><a href="javascript:;">文教工委</a></li>
+                            <li><a href="javascript:;">财贸工委</a></li>
+                            <li><a href="javascript:;">煤矿工委</a></li>
+                            <li><a href="javascript:;">市直机关</a></li>
+                            <li><a href="javascript:;">市级行业工会</a></li>
+                            <li><a href="javascript:;">阳煤集团工会</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="meiti">
+                        <ul class="nav nav-tabs" style="border:0">
+                            <li><a href="http://acftu.workercn.cn">工会网媒话工会（中工网、山西省总网站合办） </a></li>
+                            <li><a href="http://www.sxszcwb.org">山西省总工会财务部软件交流平台</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 底部 -->
+    <div class="zg_bottom" style="border-top:2px solid #db2c28;background-color: #d9d9d9;padding: 20px;">
+        <div style="width:1200px;margin:30px auto;text-align:center;">
+            <div>地址：山西省阳泉市桃南东路192号   电话：2022724</div>
+            <div>E--mail:szghwgb@163.com</div>
+            <div>版权所有：© 阳泉市总工会 版权所有</div>
+            <div>备案：晋ICP备13007903-1</div>
+            <div class="copy_img">
+                <a href="javascript:;"><img src="images/footer_img.png"></a>
+            </div>
+        </div>
+    </div>
+    <!--右侧功能栏-->
+    <div class="slide">
+        <ul>
+            <li class="open-hyzx">
+                <i class="icon iconfont icon-member"></i>
+                <a href="##">{{membercenter}}</a>
+            </li>
+            <li><i class="icon iconfont icon-diligently"></i><a href="wdfw.html">我的服务</a></li>
+            <li class="kefu"><i class="icon iconfont icon-kefu1 "></i><a href="##">智能客服</a></li>
+            <li><i class="icon iconfont icon-xinlang"></i><a href="##">微博</a></li>
+            <li><i class="icon iconfont icon-weixin2"></i><a href="##">微信</a></li>
+            <li><i class="icon iconfont icon-APP"></i><a href="##">APP</a></li>
+            <li id="top"><i class="icon iconfont icon-fanhuidingbu-"></i><a href="##">TOP</a></li>
+        </ul>
+        <div class="sina">
+            <a href="">
+                <img src="images/sina.png" width="100px" height="100px">
+            </a>
+            <p>新浪微博二维码</p>
+        </div>
+        <div class="ewm">
+            <a href="">
+                <img src="images/erweima.jpg" width="100px" height="100px">
+            </a>
+            <p>工会微信公众号</p>
+        </div>
+        <div class="exit">
+            <img :src="userHeaderPic" width="80px" height="80px" onclick="window.open('hyzx.html')"/>
+            <p>{{userPhone}}</p>
+            <button @click="clear()">退出</button>
+        </div>
+    </div>
+    <!--智能客服-->
+    <div class="customer-service" >
+        <div class="kf_box">
+            <div class="kf clearfix">
+                <div class="kf_left">
+                    <a href=""><img src="images/gh_x.png" width="23px" height="23px"></a>
+                    <span>工会智能小K</span>
+                </div>
+                <div class="kf_right">
+                    <i class="icon iconfont icon-xiajiantou"></i>
+                </div>
+            </div>
+        </div>
+        <div class="chat_box">
+            <div id="chat" class="chat clearfix">
+                <div class="chat_left">
+                    <a href=""><img src="images/gh_l.png" style="margin-bottom: 5px;"></a>
+                    <span>客服</span>
+                    <i>{{kfnowTime}}</i>
+                    <p>我是阳泉工会智能机器人，请问您有什么需要吗？</p>
+                </div>
+
+            </div>
+            <div class="down"></div>
+            <div class="shuru">
+                <input type="text" placeholder="请输入文字..."  v-model="userinp"/>
+            </div>
+            <div class="send clearfix">
+                <div class="send_left">
+                    <i class="icon iconfont icon-smiling" ></i>
+                </div>
+                <div class="send_right">
+                    <button type="button" @click="sendModel">发送</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+
+        /*
+         *  1.要点击的元素 类名
+         *	2.要切换的元素 tab
+         * */
+        var heig = $('.tab-togg').height();
+        $('.my_ghcontent').css('height',heig)
+
+        $(".btn").on("click",function(){
+            var dd=$(".erji").height();
+            // console.log(dd)
+            $('.my_ghcontent').css('height',dd)
+        })
+        // var heig = $('.layer-table').height();
+        // $('.layer-table').css('height',heig)
+
+
+        function tabtogg(clicClass,togclass,clica,clici) {
+            $(clicClass).click(function () {
+                $('.tab-togg').removeClass('on')
+                $(togclass).addClass('on')
+                var hei = $(togclass).height();
+                $('.my_ghcontent').css('height',hei)
+                $('.rh_list li p').removeClass('bordred')
+                $(clica).addClass('bordred')
+                $('.rh_list li i').css('color','#000')
+                $(clici).css('color','#db2c28')
+            })
+
+        }
+
+
+
+        tabtogg('.securitySettings','.my_personalinfo','.securitySettings p','.securitySettings i')
+        tabtogg('.personalinfo','.shiming','.personalinfo p','.personalinfo i')
+        tabtogg('.ChairmanMailbox','.my-yuanzhu','.ChairmanMailbox p','.ChairmanMailbox i')
+        tabtogg('.Lawyerservice','.layer-ruzhu','.Lawyerservice p','.Lawyerservice i')
+        tabtogg('.Caringhotline','.my-hotline','.Caringhotline p','.Caringhotline i')
+        tabtogg('.Myanswer','.my-answer','.Myanswer p','.Myanswer i')
+        // tabtogg('.renwu_list','.xinxiang','.renwu_list p','.renwu_list i')
+
+
+
+
+        tabtogg('.my-union','.my-enterUnion','.my-union p','.my-union i')
+        tabtogg('.my-transfer','.my-turnUnion','.my-transfer p','.my-transfer i')
+        tabtogg('.my-tiao','.my-tiaojie','.my-tiao p','.my-tiao i')
+        tabtogg('.my-dai','.my-daishu','.my-dai p','.my-dai i')
+        tabtogg('.my-over','.renwu_over','.my-over p','.my-over i')
+        tabtogg('.my-wei','.renwu_myover','.my-wei p','.my-wei i')
+        tabtogg('.unit-crate','.unit-building','.unit-crate p','.unit-crate i')
+        tabtogg('.legal-person','.legal-content','.legal-person p','.legal-person i')
+        tabtogg('.my-letter','.my-letterbox','.my-letter p','.my-letter i')
+        // tabtogg('.securitySettings ','.my-enterUnion','.securitySettings  p','.securitySettings  i')
+        tabtogg('.my-renwuover','.my-overcountt','.my-renwuover p','.my-renwuover i')
+        tabtogg('.my-renwuwei','.my-weicountt','.my-renwuwei p','.my-renwuwei i')
+
+
+        $('.same').click(function () {
+            $(this).next().addClass("hei").prev().siblings().removeClass("hei");
+            $(this).find("i").addClass("rotate").parent().siblings().find("i").removeClass("rotate");
+            if($(this).next().hasClass('hei')){
+                // alert(111);
+                // $(this).prev().removeClass('active');
+                $(this).next().removeClass('hei')
+                $(this).find("i").removeClass('rotate')
+
+            }else{
+                // $(this).prev().addClass('active');
+                $(this).next().addClass('hei')
+                $(this).find("i").addClass('rotate')
+            }
+        })
+        $('.layer-btn button').click(function(){
+            $('.rh_boxed').css('display','none');
+            $('.layer-table').css('display','block');
+        })
+
+    })
+
+</script> <!-- 改成你的路径 -->
+<script src="js/vue2.5.22.js"></script>
+<script src="js/axios.0.18.0.js"></script>
+<script src="js/qs.6.60.js"></script>
+<script src="js/usertoken.js"></script>
+<script>
+    var vm = new Vue({
+        el:'#nameselect',
+        data:{
+            username:'',
+            password:'',
+            userinp:'',
+            nowTime:'',
+            nowDay:''
+        },
+        methods:{
+
+
+            sendModel(){
+                kfhuifu();
+            },
+
+
+        },
+
+        mounted(){
+            var that = this
+            this.nowTime = nowTimeDay;
+            console.log(nowTimeDay);
+            getDay();
+            this.nowDay = nowDay;
+        }
+    })
+</script>
+
+<!--智能客服-->
+<script src="js/znkf.js"></script>
+
+</html>

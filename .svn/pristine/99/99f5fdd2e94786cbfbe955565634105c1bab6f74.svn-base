@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的信箱</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/hyzx.css">
+	<!--智能客服样式-->
+	<link rel="stylesheet" href="css/znkf.css">
+	<!--全局样式-->
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		.sm_img{
+			background: url('images/jiahao.png') no-repeat;
+			background-position: center;
+		}
+		#renxiang{
+			opacity:0 ;
+			width: 100%;
+			height: 100%;
+		}
+		.my-fuwu{
+			transition: 1s;
+			height:0 ;
+			overflow: hidden;
+		}
+		.hei{
+			height: 315px;
+		}
+		.rotate{
+			transform: rotate(90deg);
+			transition: 1s;
+		}
+		.my-fuwu li p{
+			border-left: none !important;
+			margin-left: 30px;
+		}
+
+
+		.IDzheng-wrap{
+			position: absolute;
+			left: 109px;
+			top: 1px;
+			width: 236px;
+			height: 137px;
+			z-index: 5;
+			margin-left: 15px;
+		}
+		.IDzheng-wrap img {
+			width: 100%;
+			height: 100%;
+		}
+		.green{
+			color: green;
+		}
+		.mailbox{
+			width: 600px;
+			margin: 0 auto;	
+			overflow: hidden;	
+		}
+		.mailbox h4{
+			font-size: 24px;
+			color: rgb(255,152,0);
+			text-align: center;
+		}
+		.mail-content{
+			margin-top: 30px;
+			overflow: hidden;
+		}
+		.mail-content i{
+			float: left;
+			font-size: 18px;
+			font-weight: bold;
+			line-height: 34px;
+			color: #db2c28;
+			font-style: normal;
+		}
+		.mail-content span{
+			float: left;
+			width: 590px;
+			font-size: 16px;
+			line-height: 34px;
+			color: #000;
+			padding-left: 10px;
+		}
+		.mail-time{
+			margin-top: 20px;
+			float: right;
+		}
+		.mail-time i{
+			font-style: normal;
+			font-size: 14px;
+			color: #999999;
+		}
+		.mail-time span{
+			font-size: 14px;
+			color: #999999;
+			padding-left: 30px;
+		}
+		.mail-xian{
+			margin: 30px auto 0;
+			width: 600px;
+			height: 2px;
+			background: #cccccc;
+		}
+		.mail-reply{
+			width: 600px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		.reply-title{
+			width: 600px;
+			margin: 30px auto 0;
+			overflow: hidden;
+		}
+		.reply-left{
+			float: left;
+		}
+		.reply-left h4{
+			font-size: 20px;
+			color: #db2c28;
+			font-weight: bold;
+		}
+		.reply-right{
+			float: right;
+		}
+		.reply-right span{
+			display: block;
+			width: 90px;
+			font-size: 14px;
+			color: #fff;
+			background-color: rgb(139, 195, 74);
+			text-align: center;
+			line-height: 30px;
+			border-radius: 5px;
+		}
+		.reply-text p{
+			width: 600px;
+			margin: 30px auto 0;
+			font-size: 16px;
+			line-height: 34px;
+			color: #000;
+			text-indent: 32px;
+		}
+
+	</style>
+</head>
+<body>
+<div id="nameselect" v-cloak>
+	<div class="zg_box">
+		<div class="zg_info">
+			<div class="zg_top">
+				<div class="nav_left">
+					<a href="##"><img src="images/logo.png"></a>
+				</div>
+				<div class="nav_center clearfix">
+					<div class="tubiao">
+						<i class="icon iconfont icon-sun"></i>
+					</div>
+					<div class="tianqi">
+						<iframe width="420" scrolling="no" height="60" frameborder="0" allowtransparency="true"
+								src="//i.tianqi.com/index.php?c=code&id=12&icon=1&num=5&site=12"></iframe>
+					</div>
+				</div>
+				<div class="nav_righter">
+					<i class="icon iconfont icon--fanhuishouye"></i>
+					<a href="index.html">返回网站</a>
+				</div>
+			</div>
+			<!--选项卡区-->
+			<div class="my_gh clearfix">
+				<div class="my_ghtitle clearfix">
+					<div class="my_ghtitleleft">
+						<i class="icon iconfont icon-shouye"></i>
+						<a href="index.html">当前位置：首页></a>
+						<span>会员中心</span>
+					</div>
+					<div class="my_ghtitleright">
+						<a href="zg_index.html"> < 返回服务大厅</a>
+					</div>
+				</div>
+				
+				<div class="mailbox">
+					<h4>我的信箱详情</h4>
+					<div class="mail-content">
+						<i>*</i>
+						<span>标题：公司副总经理可以兼任工会主席吗？</span>						
+					</div>
+					<div class="mail-content">
+						<i>*</i>
+						<span>
+							内容：您好，我们公司准备成立工会，但是选择工会主席有个
+							问题想咨询一下，公司副总经理可以兼任工会主席吗？谢谢	
+						</span>						
+					</div>
+					<div class="mail-time">
+						<i>发表时间</i>
+						<span>2019-10-02 12:42:21</span>
+					</div>
+				</div>
+				<div class="mail-xian"></div>
+				<div class="mail-reply">
+					<div class="reply-title">
+						<div class="reply-left">
+							<h4>回复内容</h4>
+						</div>
+						<div class="reply-right">
+							<span>已回复</span>
+						</div>
+					</div>
+					<div class="reply-text">
+						<p>您好：根据《工会法》的相关规定，企业行政负责人
+							(含行政副职)、合伙人及其近亲属，人力资源部门
+							负责人，外籍职工不得作为本企业工会主席候选人。
+						</p>
+					</div>
+					<div class="mail-time">
+						<i>发表时间</i>
+						<span>2019-10-02 12:42:21</span>
+					</div>
+				</div>
+				<!-- 友情链接 -->
+				<div style="margin:60px 0 15px 15px;" class="clearfix">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#all" data-toggle="tab">全总及省级工会</a></li>
+							<li><a href="#qu" data-toggle="tab">区县工会</a></li>
+							<li><a href="#jc" data-toggle="tab">基层工会</a></li>
+							<li><a href="#meiti" data-toggle="tab">新闻媒体网站</a></li>
+						</ul>
+					    <div  class="tab-content clearfix" style="height: 85px">
+						     <div class="tab-pane active" id="all">
+							<ul class="nav nav-tabs" style="border:0">
+								<li><a href="http://www.acftu.org/">中华全国总工会</a></li>
+								<li><a href="http://www.sxgh.org.cn/">山西省总工会</a></li>
+								<li><a href="http://www.bjzgh.org/">北京市总工会</a></li>
+								<li><a href="http://www.shzgh.org/">上海市总工会</a></li>
+								<li><a href="http://www.xmzgh.org/">厦门市总工会</a></li>
+								<li><a href="http://www.cqgh.org/">重庆市总工会</a></li>
+								<li><a href="http://www.hebgh.org/">河北省总工会</a></li>
+								<li><a href="http://www.hbzgh.org.cn/">湖北省总工会</a></li>
+								<li><a href="https://www.ahghw.org/">安徽省总工会</a></li>
+
+							</ul>
+						     </div>
+						     <div class="tab-pane fade" id="qu">
+							<ul class="nav nav-tabs" style="border:0">
+
+								<li><a href="javascript:;">城区总工会</a></li>
+								<li><a href="javascript:;">郊区总工会</a></li>
+								<li><a href="javascript:;">开发区总工会</a></li>
+								<li><a href="javascript:;">平定县总工会</a></li>
+								<li><a href="javascript:;">盂县总工会</a></li>
+							</ul>
+						     </div>
+						     <div class="tab-pane fade" id="jc">
+							<ul class="nav nav-tabs" style="border:0">
+								<li><a href="javascript:;">公交建通工委</a></li>
+								<li><a href="javascript:;">文教工委</a></li>
+								<li><a href="javascript:;">财贸工委</a></li>
+								<li><a href="javascript:;">煤矿工委</a></li>
+								<li><a href="javascript:;">市直机关</a></li>
+								<li><a href="javascript:;">市级行业工会</a></li>
+								<li><a href="javascript:;">阳煤集团工会</a></li>
+							</ul>
+						     </div>
+						     <div class="tab-pane fade" id="meiti">
+							<ul class="nav nav-tabs" style="border:0">
+								<li><a href="http://acftu.workercn.cn">工会网媒话工会（中工网、山西省总网站合办） </a></li>
+								<li><a href="http://www.sxszcwb.org">山西省总工会财务部软件交流平台</a></li>
+							</ul>
+						     </div>
+					    </div>
+			    </div>
+		</div>
+	</div>
+
+
+	<!-- 底部 -->
+	<div class="zg_bottom" style="border-top:2px solid #db2c28;background-color: #d9d9d9;padding: 20px;">
+		<div style="width:1200px;margin:30px auto;text-align:center;">
+			<div class="zg_bottom_link">
+				<li>
+					<a href="">关于我们</a>
+				</li>
+				<li class="zg_fg">|</li>
+				<li>
+					<a href="##">问题答复</a>
+				</li>
+				<li class="zg_fg">|</li>
+				<li>
+					<a href="##">导航地图</a>
+				</li>
+				<li class="zg_fg">|</li>
+				<li>
+					<a href="##">联系我们</a>
+				</li>
+			</div>
+			<div>地址：山西省阳泉市桃南东路192号   电话：2022724</div>
+			<div>版权所有：© 阳泉市总工会 版权所有</div>
+			<div>备案：晋ICP备13007903-1</div>
+			<div class="copy_img">
+				<a href="##"><img src="images/footer_img.png"></a>
+			</div>
+		</div>
+	</div>
+	<!--右侧功能栏-->
+	<div class="slide">
+		<ul>
+			<li class="open-hyzx">
+				<i class="icon iconfont icon-member"></i>
+				<a onclick="window.open('denglu.html')" onclick="clear()">{{membercenter}}</a>
+			</li>
+			<li><i class="icon iconfont icon-diligently"></i><a href="wdfw.html">我的服务</a></li>
+			<li class="kefu"><i class="icon iconfont icon-kefu1 "></i><a href="##">智能客服</a></li>
+			<li><i class="icon iconfont icon-xinlang"></i><a href="##">微博</a></li>
+			<li><i class="icon iconfont icon-weixin2"></i><a href="##">微信</a></li>
+			<li><i class="icon iconfont icon-APP"></i><a href="##">APP</a></li>
+			<li id="top"><i class="icon iconfont icon-fanhuidingbu-"></i><a href="##">TOP</a></li>
+		</ul>
+		<div class="sina">
+			<a href="">
+				<img src="images/sina.png" width="100px" height="100px">
+			</a>
+			<p>新浪微博二维码</p>
+		</div>
+		<div class="ewm">
+			<a href="">
+				<img src="images/erweima.jpg" width="100px" height="100px">
+			</a>
+			<p>工会微信公众号</p>
+		</div>
+		<div class="exit">
+			<img src="images/user.png" width="80px" height="80px" />
+			<p>{{userPhone}}</p>
+			<button onclick="window.open('denglu.html')">退出</button>
+		</div>
+	</div>
+		<!--智能客服-->
+	<div class="customer-service" >
+		<div class="kf_box">
+			<div class="kf clearfix">
+				<div class="kf_left">
+					<a href=""><img src="images/gh_x.png" width="23px" height="23px"></a>
+					<span>工会智能小K</span>
+				</div>
+				<div class="kf_right">
+					<i class="icon iconfont icon-xiajiantou"></i>
+				</div>
+			</div>
+		</div>
+		<div class="chat_box">
+			<div id="chat" class="chat clearfix">
+				<div class="chat_left">
+					<a href=""><img src="images/gh_l.png" style="margin-bottom: 5px;"></a>
+					<span>客服</span>
+					<i>{{kfnowTime}}</i>
+					<p>我是阳泉工会智能机器人，请问您有什么需要吗？</p>
+				</div>
+
+			</div>
+			<div class="down"></div>
+			<div class="shuru">
+				<input type="text" placeholder="请输入文字..."  v-model="userinp"/>
+			</div>
+			<div class="send clearfix">
+				<div class="send_left">
+					<i class="icon iconfont icon-smiling" ></i>
+				</div>
+				<div class="send_right">
+					<button type="button" @click="sendModel">发送</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/vue2.5.22.js"></script>
+<script src="js/axios.0.18.0.js"></script>
+<script src="js/qs.6.60.js"></script>
+
+<script src="js/content.js"></script>
+<script src="js/usertoken.js"></script>
+<script>
+    var vm = new Vue({
+        el: "#nameselect",
+        data: {
+            isactive:false,
+            oldpassword:'',
+            yespassword:'',
+            newpassword:'',
+            phone:'',
+            userinp:'',
+			userPhone:'',
+
+
+            usertoken:'',
+
+			/*实名认证*/
+			renpic:'',      //人像采集
+			IDzhengpic:'',	//正面身份证
+			IDfanpic:'',    //反面身份证
+            userName:'',	//姓名
+            nationality:'', //民族
+            birthday:'',	//出生日期
+            IDnumber:'',	//证件号码
+
+
+            IDpositive:'',
+            IDanti:'',
+
+
+
+         	/*个人信息*/
+            loginAccount:'',  //登录账号
+            loginName:'',			 //真实姓名
+			loginNumber:'',   //手机号码
+
+            membercenter:'',
+
+			kfnowTime:'',
+            Nationality:[
+				{name:'汉族'},
+				{name:'满族'},
+				{name:'蒙古族'},
+				{name:'回族'},
+				{name:'藏族'},
+				{name:'维吾尔族'},
+				{name:'苗族'},
+				{name:'彝族'},
+				{name:'壮族'},
+				{name:'布依族'},
+				{name:'侗族'},
+				{name:'瑶族'},
+				{name:'白族'},
+				{name:'土家族'},
+				{name:'哈尼族'},
+				{name:'哈萨克族'},
+				{name:'傣族'},
+				{name:'黎族'},
+				{name:'傈僳族'},
+				{name:'佤族'},
+				{name:'傈僳族'},
+				{name:'畲族'},
+				{name:'高山族'},
+				{name:'傈僳族'},
+				{name:'拉祜族'},
+				{name:'水族'},
+				{name:'东乡族'},
+				{name:'纳西族'},
+				{name:'景颇族'},
+				{name:'柯尔克孜族'},
+				{name:'土族'},
+				{name:'达斡尔族'},
+				{name:'仫佬族'},
+				{name:'羌族'},
+				{name:'布朗族'},
+				{name:'撒拉族'},
+				{name:'毛南族'},
+				{name:'仡佬族'},
+				{name:'锡伯族'},
+				{name:'阿昌族'},
+				{name:'普米族'},
+				{name:'朝鲜族'},
+				{name:'塔吉克族'},
+				{name:'怒族'},
+				{name:'乌孜别克族'},
+				{name:'俄罗斯族'},
+				{name:'鄂温克族'},
+				{name:'德昂族'},
+				{name:'保安族'},
+				{name:'裕固族'},
+				{name:'京族'},
+				{name:'塔塔尔族'},
+				{name:'独龙族'},
+				{name:'鄂伦春族'},
+				{name:'赫哲族'},
+				{name:'门巴族'},
+				{name:'珞巴族'},
+				{name:'基诺族'},
+			],
+        },
+        methods:{
+
+            //修改密码
+            changepassword(){
+            	
+                var that = this;
+                if(that.yespassword != that.newpassword){
+                    alert('两次输入的密码不一致 请您重新输入')
+                    that.yespassword = '';
+                    that.newpassword = '';
+				}else{
+
+
+
+
+                    $.ajax({
+                        url: unionUrl + "/sso/ssoUser/updatePassword",
+                        data: {
+                            "password":that.oldpassword,
+                            "newPassword": that.newpassword,
+							"token":userTok.token
+                        },
+                        async:true,
+                        dataType: "json",
+                        success: function (result) {
+
+							console.log(result)
+                        }
+                    })
+				}
+
+
+
+
+            },
+            //客服
+            sendModel(){
+                kfhuifu();
+			},
+			//实名认证
+            authenticate(){
+				var that = this
+                axios({
+                    method: 'POST',
+                    url: unionUrl + "/passLaborweb/api/laborun/realnameRecord/add",
+                    data:{
+					   "realName": that.userName,
+					   "phone": that.loginNumber,
+					   "sex": 1,
+					   "nation": "汉族",
+					   "birthDate": that.birthday,
+					   "cardNo": that.IDnumber,
+					   "cardFrontPic": that.IDzhengpic,
+					   "cardReversePic":that.IDfanpic,
+					   "portraitPic":that.renpic ,
+					   "channel": 3,
+					   "remark":'山西老陈醋',
+					   "token": userTok.token
+                    }
+                }).then( res => {
+                    console.log(res.data)
+					console.log(that.renpic)
+					console.log(that.IDzhengpic)
+					console.log(that.IDfanpic)
+					console.log(userTok.token)
+				}).catch(err =>{
+				    console.log(err)
+				})
+
+
+
+			},
+			//身份证图片上传
+            renupdate (e){  // 上传照片
+				var that = this
+                var self = this;
+                let file = e.target.files[0];
+				/* eslint-disable no-undef */
+                // 创建form对象
+                var param = new FormData();
+                param.append('file', file, file.name);// 通过append向form对象添加数据
+                //param.append('chunk', '0') // 添加form表单中其他数据
+                 // FormData私有类对象，访问不到，可以通过get判断值是否传进去
+                let config = {
+                    headers: {'Content-Type': 'multipart/form-data'}
+                };
+                axios.post(unionUrl + '/passLaborweb/api/laborun/file/upload', param, config)
+
+                    .then(response => {
+                        /*if (response.data.code === 0){
+                            self.ImgUrl = response.data.data
+                        }
+                        if (response.data.msg === 'success') {
+                            alert('上传成功')
+                        }*/
+                        that.renpic   = response.data.data.newFileName
+						console.log(response.data.data.newFileName)
+                    })
+
+
+
+
+
+
+
+            },
+            IDzhengupdate (e){  // 上传照片
+				var that = this
+                var self = this;
+                let file = e.target.files[0];
+				/* eslint-disable no-undef */
+                // 创建form对象
+                var param = new FormData();
+                param.append('file', file, file.name);// 通过append向form对象添加数据
+                //param.append('chunk', '0') // 添加form表单中其他数据
+                // FormData私有类对象，访问不到，可以通过get判断值是否传进去
+                let config = {
+                    headers: {'Content-Type': 'multipart/form-data'}
+                };
+                axios.post(unionUrl + '/passLaborweb/api/laborun/file/upload', param, config)
+
+                    .then(response => {
+						/*if (response.data.code === 0){
+						 self.ImgUrl = response.data.data
+						 }
+						 if (response.data.msg === 'success') {
+						 alert('上传成功')
+						 }*/
+
+                        that.IDzhengpic = response.data.data.newFileName
+						console.log(that.IDzhengpic)
+                    })
+            },
+            IDfanupdate (e){  // 上传照片
+				var that = this
+                var self = this;
+                let file = e.target.files[0];
+				/* eslint-disable no-undef */
+                // 创建form对象
+                var param = new FormData();
+                param.append('file', file, file.name);// 通过append向form对象添加数据
+                //param.append('chunk', '0') // 添加form表单中其他数据
+                // FormData私有类对象，访问不到，可以通过get判断值是否传进去
+                let config = {
+                    headers: {'Content-Type': 'multipart/form-data'}
+                };
+                axios.post(unionUrl + '/passLaborweb/api/laborun/file/upload', param, config)
+
+                    .then(response => {
+						/*if (response.data.code === 0){
+						 self.ImgUrl = response.data.data
+						 }
+						 if (response.data.msg === 'success') {
+						 alert('上传成功')
+						 }*/
+                        that.IDfanpic = response.data.data.newFileName
+						console.log(that.IDfanpic)
+                    })
+            },
+
+			//获取用户信息
+			getUserInfo(){
+                var that = this
+                that.loginAccount = userTok.phone,  //登录账号
+                that.loginName = userTok.name,		//真实姓名
+                that.loginNumber = userTok.phone    //手机号码
+
+			}
+
+
+
+        },
+        mounted(){
+
+            const that = this;
+            that.getUserInfo()
+
+
+
+			//获取用户手机号
+            var chanpass = location.search
+            that.usertoken = chanpass.substring(1)
+			that.kfnowTime = nowTime   //获取客服当前时间
+
+
+
+
+			//验证是否登录
+            if(userTok.token == null){
+                this.membercenter = '请登录';
+                $('.slide ul li:nth-child(2)').hide();
+                //跳转登录界面 去登录
+                $('.open-hyzx').click(function () {
+                    window.open('denglu.html')
+                });
+            }else{
+                this.membercenter = '会员中心'
+                this.userPhone = userTok.phone
+                $('.slide ul li:nth-child(2)').hide();
+                tuilogin()
+                //登录成功 跳转会员中心
+                $('.open-hyzx').click(function () {
+                    window.open('hyzx.html')
+                });
+
+            }
+
+        }
+
+
+
+    })
+
+
+</script>
+<!--智能客服-->
+<script src="js/znkf.js"></script>
+
+
+
+</html>

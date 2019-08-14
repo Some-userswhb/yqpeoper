@@ -1,0 +1,2326 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>法律援助</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/hyzx.css">
+	<link rel="stylesheet" href="css/flyz.css">
+	<!--智能客服样式-->
+	<link rel="stylesheet" href="css/znkf.css">
+	<!--全局样式-->
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		.sm_img{
+			background: url('images/jiahao.png') no-repeat;
+			background-position: center;
+		}
+		#renxiang{
+			opacity:0 ;
+			width: 100%;
+			height: 100%;
+		}
+		.my-fuwu{
+			transition: 1s;
+			/*height:0 ;*/
+			display: none;
+			overflow: hidden;
+		}
+		.hei{
+			/*height: 130px;*/
+			display: block;
+			transition: 1s;
+		}
+		.rotate{
+			transform: rotate(90deg);
+			transition: 1s;
+		}
+		.my-fuwu li p{
+			border-left: none !important;
+			margin-left: 30px;
+		}
+
+
+		.IDzheng-wrap{
+			position: absolute;
+			left: 109px;
+			top: 1px;
+			width: 236px;
+			height: 137px;
+			z-index: 5;
+			margin-left: 15px;
+		}
+		.IDzheng-wrap img {
+			width: 100%;
+			height: 100%;
+		}
+		.green{
+			color: green;
+		}
+		.jwn_box{
+			border-bottom: 1px dashed #cccccc;
+			padding: 15px 0;
+		}
+		.jwn_img{
+			float: left;
+		}
+		.jwn_text{
+			float: left;
+			margin-left: 20px;
+		}
+		.jwn_text h4{
+			font-size: 16px;
+			color: #333333;
+			font-weight: bold;
+		}
+		.jwn_text p{
+			width: 565px;
+			font-size: 14px;
+			color: #474747;
+			line-height: 24px;
+			margin-top: 20px;
+		}
+		.jwn_text span{
+			float:left;
+			margin-right: 6px;
+			margin-top: 30px;
+			font-size: 14px;
+			color: #666666;
+		}
+		.jwn_text i{
+			float: right;
+			font-style: normal;
+			font-size: 14px;
+			color: #666666;
+			margin-top: 30px;
+		}
+		.layer-button button{
+			width: 110px;
+			height: 30px;
+			background: #cccccc;
+			border: none;
+			color: #000;
+		}
+		.layer-button button.actived{
+			background: #db2c28;
+			color: #fff;
+		}
+		.rh_list li.active i {
+         color:#db2c28;
+		}
+	</style>
+</head>
+<body>
+<div id="nameselect" v-cloak>
+	<div class="zg_box">
+		<div class="zg_info">
+			<div class="zg_top">
+				<div class="nav_left">
+					<a href="##"><img src="images/logo.png"></a>
+				</div>
+				<div class="tubiao">
+					
+				</div>
+				<div class="nav_center clearfix">
+					<div class="tianqi">
+						<iframe width="420" scrolling="no" height="60" frameborder="0" allowtransparency="true"
+								src="//i.tianqi.com/index.php?c=code&id=12&icon=1&num=5&site=12"></iframe>
+					</div>
+				</div>
+				<div class="nav_righter" onclick="window.open('index.html','_self')">
+					<i class="icon iconfont icon--fanhuishouye"></i>
+					<a href="javascript:;">返回首页</a>
+				</div>
+			</div>
+			<!--选项卡区-->
+			<div class="my_gh clearfix">
+				<div class="my_ghtitle clearfix">
+					<div class="my_ghtitleleft">
+						<i class="icon iconfont icon-shouye"></i>
+						<a href="index.html">当前位置：首页></a>
+						<span>法律援助</span>
+					</div>
+					<div class="my_ghtitleright">
+						<a href="zg_index.html"> < 返回服务大厅</a>
+					</div>
+				</div>
+
+				<div class="my_ghcontent  clearfix">
+					<div class="my_ghcontentleft">
+						<div class="rh_title">
+							<h4>法律援助</h4>
+						</div>
+						<div class="rh_list">
+							<ul>
+								<li class="securitySettings same">
+									<p class="bordred">法律咨询</p>
+									<i class="icon iconfont icon-jiaobiao" style="color: rgb(219, 44, 40);"></i>
+								</li>
+								<ul class="my-fuwu">
+									<li class="my-union">
+										<p>法律咨询申请</p>
+										<!-- <i class="icon iconfont icon-jiaobiao"></i> -->
+									</li>
+									<li class="my-transfer">
+										<p>我的咨询</p>
+										<!-- <i class="icon iconfont icon-jiaobiao"></i> -->
+
+									</li>
+								</ul>
+								<li class="personalinfo same">
+									<p>法律援助</p>
+									<i class="icon iconfont icon-jiaobiao"></i>
+								</li>
+                                <ul class="my-fuwu">
+									<li class="my-tiao">
+										<p>我要调解</p>
+										<!-- <i class="icon iconfont icon-jiaobiao"></i> -->
+									</li>
+									<li class="my-dai">
+										<p>我要代书</p>
+										<!-- <i class="icon iconfont icon-jiaobiao"></i> -->
+									</li>
+									<li class="my-zhong">
+										<p>我要仲裁</p>
+										<!-- <i class="icon iconfont icon-jiaobiao"></i> -->
+									</li>
+									<li class="my-su">
+										<p>我要诉讼</p>
+										<!-- <i class="icon iconfont icon-jiaobiao"></i> -->
+									</li>
+								</ul>
+								<li class="nameAttest same">
+									<p>八大员快速通道</p>
+									<i class="icon iconfont icon-jiaobiao"></i>
+								</li>
+								<li class="ChairmanMailbox same">
+									<p>援助记录</p>
+									<i class="icon iconfont icon-jiaobiao"></i>
+								</li>
+								<ul class="my-fuwu">
+									<li class="my-over">
+										<p>已完成</p>
+										<!-- <i class="icon iconfont icon-jiaobiao"></i> -->
+									</li>
+									<li class="my-wei">
+										<p>未完成</p>
+										<!-- <i class="icon iconfont icon-jiaobiao"></i> -->
+
+									</li>
+								</ul>
+								<!-- 任务列表 -->
+								<li class="renwu_list same">
+									<p>任务列表</p>
+									<i class="icon iconfont icon-jiaobiao"></i>
+								</li>
+								<ul class="my-fuwu">
+									<li class="my-renwuover">
+										<p>已完成</p>
+										<!-- <i class="icon iconfont icon-jiaobiao"></i> -->
+									</li>
+									<li class="my-renwuwei">
+										<p>未完成</p>
+										<!-- <i class="icon iconfont icon-jiaobiao"></i> -->
+
+									</li>
+								</ul>
+								<li class="Lawyerservice same">
+									<p>律师入驻</p>
+									<i class="icon iconfont icon-jiaobiao"></i>
+								</li>
+								<li class="Myanswer same">
+									<p>我来答</p>
+									<i class="icon iconfont icon-jiaobiao"></i>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<!--法律咨询-->
+					<div class="my_personalinfo tab-togg on">
+						<div class="layer-button">
+							<button class="actived">援助案例</button>
+							<button style="margin-left: 15px;">律师说法</button>
+						</div>
+						<div class="jwn_box clearfix" v-for="item in newsList">
+							<div class="jwn_img">
+								<img src="images/ceshi.png" width="250px"/>
+							</div>
+							<div class="jwn_text">
+								<h4>{{item.pubContent}}</h4>
+								<p>{{item.pubContent}}
+								</p>
+								<span>{{item.pubContent}}</span>
+								<i>{{item.pubName}}</i>
+							</div>
+						</div>
+						<!-- <div class="jwn_box clearfix">
+							<div class="jwn_img">
+								<img src="images/ceshi.png" width="250px"/>
+							</div>
+							<div class="jwn_text">
+								<h4>办公室工作职责</h4>
+								<p>负责文秘、档案、信息、统计、机要保密
+									工作； 负责综合反映全市工会工作和职
+									工队伍的重要情 况和动态；协调和督查
+									主席办公会、常委会、全 委会对全市各
+									级工会和市总工会机关各部门、直 属事
+									业单位工作部署与要求的落实；负责市
+									总工 会文件和领导讲话的起草与文稿审
+									核工作；负责 纪检、监察工作。
+								</p>
+								<span>发布时间：2019-06-06 17:35:42</span>
+								<i>发布者：阳泉工会</i>
+							</div>
+						</div> -->
+					</div>
+					<!--法律援助-->
+					<div class="shiming tab-togg" >
+						法律援助
+						法律援助
+					</div>
+					<!--八大员快速通道-->
+					<div class="xinxiang  tab-togg">
+						八大员快速通道
+						八大员快速通道
+					</div>
+					<!--援助记录-->
+					<div class="my-yuanzhu tab-togg">
+						援助记录
+						援助记录
+					</div>
+					<!--律师入驻-->
+					<div class="layer-ruzhu tab-togg">
+						<div class="rh_text">
+							<h4>我的入会</h4>
+							<i>入驻须知：</i>
+							<span>社会律师入驻应当具备以下条件：</span>
+							<p>1、政治素质高，拥护党的理论和路线方针政策，一般应是中国共产党党员；</p>
+							<p>2、具有良好的职业道德和社会责任感</p>
+							<p>3、在所从事的劳动纠纷调解、仲裁、职工法律维权等领域具有一定影响和经验的法律专家，或者具有2年以上执业经验，专业能力较强的律师；</p>
+							<p>4、严格遵纪守法，未受过刑事处分，包括司法行政部门的行政处罚或者律师协会的行业处分；</p>
+							<p>5、阳泉市总工会规定的其他要求</p>
+						</div>
+						<div class="dl_more clearfix">
+							<input id="readme" class="checkbox" type="checkbox"/>
+	                        <label for="protocol">
+								我已阅读并同意以上入驻须知
+							</label>
+						</div>
+						<div class="layer-btn">
+							<button>确定</button>
+						</div>
+						<div class="layer-table">
+							<div class="sq_list" style="margin-bottom: 30px;">
+								<h4>律师入驻</h4>
+							</div>
+							<form action="" method="post">	
+								<div class="zj_content">
+									<a href="##"><i>*</i>姓名：</a>
+									<input type="text" name="name" v-model="userName" class="stopClick"
+										   placeholder="请输入姓名"/>
+								</div>
+								<div class="zj_xb">
+									<a href="##" style="margin: 10px 60px 0 0;"><i>*</i>性别：</a>
+									<input id="man" type="radio" checked="checked" name="sex" />男
+									<input id="woman" type="radio"  name="sex"/>女
+								</div>
+	
+								<div class="mz_content" >
+									<a href="##"><i>*</i>民族：</a>
+									<select  class="st1 stopClick " v-model="nationality" >
+										<option  v-for="item in Nationality">{{item.name}}</option>
+									</select>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>身份证号：</a>
+									<input class="stopClick" type="text"
+										   name="hm" maxlength="18" placeholder="请输入18位身份证号" v-model="IDnumber"/>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>户籍所在地：</a>
+									<input type="text" name="name" placeholder="请输入户籍所在地"/>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>联系电话：</a>
+									<input type="text" name="name" placeholder="请输入联系电话"/>
+								</div>
+								<div class="mz_content" >
+									<a href="##"><i>*</i>学历：</a>
+									<select  class="st1">
+										<option>请选择</option>
+										<option>请选择</option>
+										<option>请选择</option>
+										<option>请选择</option>
+									</select>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>毕业学校：</a>
+									<input type="text" name="name" placeholder="请输入毕业学校"/>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>执业机构：</a>
+									<input type="text" name="name" placeholder="请输入执业机构"/>
+								</div>
+								<div class="mz_content" >
+									<a href="##"><i>*</i>服务区县：</a>
+									<select  class="st1">
+										<option>请选择</option>
+										<option>请选择</option>
+										<option>请选择</option>
+										<option>请选择</option>
+									</select>
+								</div>
+								<div class="mz_content" >
+									<a href="##"><i>*</i>党派：</a>
+									<select  class="st1">
+										<option>请选择</option>
+										<option>请选择</option>
+										<option>请选择</option>
+										<option>请选择</option>
+									</select>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>争议案由：</a>
+									<input type="text" name="name" placeholder="简要说明争议焦点"/>
+								</div>
+								<div class="ly_contentbox clearfix">
+									<div class="ly_content">
+										<a href="##"><i>*</i>擅长领域：</a>
+									</div>
+									<div class="ly_list">
+										<ul class="clearfix">
+											<li>刑事诉讼</li>
+											<li>行政诉讼</li>
+											<li>经济诉讼</li>
+											<li>婚姻家庭</li>
+											<li>工伤劳动</li>
+											<li>知识产权</li>
+											<li>债券债务</li>
+											<li>租赁/买卖房屋</li>
+											<li>保险理赔</li>
+											<li>交通/医疗事故</li>
+										</ul>
+									</div>
+								</div>
+								<div class="sm_box clearfix" style="margin-left: 80px;">
+									<div class="sm_text">
+										<a href="##"><i>*</i>上传身份证件：</a>
+										<div class="IDzheng-wrap" style="margin-left: 40px;">
+											<img src="images/sfz_z.png" :src="showIdzheng" id="idimg1" />
+	
+										</div>
+									</div>
+									<!--身份证正面-->
+									<div class="zj_img zj_pic" style="margin: 0 0 0 25px;">
+										<div class="tianjia1">
+											<input class="stopClick" id="idfile1" type="file" @change="IDzhengupdate" onchange="previewFile1()" >
+										</div>
+									</div>
+	
+									<!--身份证反面-->
+									<div class="zj_img zj_fanpic" style="margin-left: 20px;">
+										<div class="tianjia1">
+											<input class="stopClick" type="file" id="idfile2" @change="IDfanupdate" onchange="previewFile2()">
+										</div>
+										<div class="idfan-wrap">
+											<img src="images/sfz_f.png" :src='showIdfan' id="idimg2" />
+	
+										</div>
+									</div>
+								</div>
+								<div class="sm_box clearfix" style="margin-left: 85px">
+										<div class="sm_text">
+											<a href="##"><i>*</i>上传执业证书：</a>
+											<div class="tianjia tjpic" >
+												<img src="images/yingyepic.png"/>
+											</div>
+										</div>
+										<div class="sm_img" style="margin-left: 58px;">
+											<input type="file">
+										</div>
+									</div>
+
+								<div class="anniu" style="text-align: center;">
+									<button type="button" class="tijiao active">提交</button>
+									<button type="reset" class="chongzhi">重置信息</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!--我来答-->
+					<div class="my-answer tab-togg">
+						<div class="reply">
+							<div class="layer-titlebox">
+								<div class="layer-title clearfix">
+									<h4>关于拖欠工资问题</h4>
+									<span>#农民工工资#</span>
+								</div>
+								<p class="lpic">
+									今天，记者获悉，从5月13日开始，摩拜将
+									在上海地区执行新版计费规则，用车费用
+									由起步价和时长费两部分组成。起步价为
+									1元，15分钟以内为起步价，超过15分钟
+									收取时长费，即每15分钟0.5元，不满15
+									分钟的以15分钟计
+								</p>
+								<i>2019-03-10</i>
+							</div>
+							<div class="answer-circle">
+								<i class="icon iconfont icon-huida"></i>
+								<span>我来答</span>
+							</div>
+							<div class="answer-textarea"></div>
+							<div class="answer-btn">
+								<button>发表评价</button>
+							</div>
+							<div class="layer-content clearfix" style="margin-top: 20px;">
+								<i class="icon iconfont icon-dahuifu"></i>
+								<span>律师回复(2条)</span>
+							</div>
+							<div class="layer-person clearfix">
+								<div class="layer-img">
+									<img src="images/user.png" />
+								</div>
+								<div class="layer-text">
+									<h4>刘静律师</h4>
+									<span>2019-05-10</span>
+									<p>律师服务态度很好，很专业，真正的为职工着想。律师服务态度很好</p>
+								</div>
+							</div>
+							<div class="layer-person clearfix">
+								<div class="layer-img">
+									<img src="images/user.png" />
+								</div>
+								<div class="layer-text">
+									<h4>赵琦律师</h4>
+									<span>2019-05-10</span>
+									<p>律师服务态度很好，很专业，真正的为职工着想。律师服务态度很好</p>
+								</div>
+							</div>	
+							<div class="xian"></div>
+							<div class="layer-titlebox">
+								<div class="layer-title clearfix">
+									<h4>关于拖欠工资问题</h4>
+									<span>#农民工工资#</span>
+								</div>
+								<p class="lpic">
+									今天，记者获悉，从5月13日开始，摩拜将
+									在上海地区执行新版计费规则，用车费用
+									由起步价和时长费两部分组成。起步价为
+									1元，15分钟以内为起步价，超过15分钟
+									收取时长费，即每15分钟0.5元，不满15
+									分钟的以15分钟计
+								</p>
+								<i>2019-03-10</i>
+							</div>
+							<div class="answer-circle">
+								<i class="icon iconfont icon-huida"></i>
+								<span>我来答</span>
+							</div>
+							<div class="xian"></div>
+							<div class="layer-titlebox">
+								<div class="layer-title clearfix">
+									<h4>关于拖欠工资问题</h4>
+									<span>#农民工工资#</span>
+								</div>
+								<p class="lpic">
+									今天，记者获悉，从5月13日开始，摩拜将
+									在上海地区执行新版计费规则，用车费用
+									由起步价和时长费两部分组成。起步价为
+									1元，15分钟以内为起步价，超过15分钟
+									收取时长费，即每15分钟0.5元，不满15
+									分钟的以15分钟计
+								</p>
+								<i>2019-03-10</i>
+							</div>
+							<div class="answer-circle">
+								<i class="icon iconfont icon-huida"></i>
+								<span>我来答</span>
+							</div>
+							<div class="xian"></div>
+							<div class="jwn_list">
+								<ul class="clearfix">
+									<li class="active"><a href="">1</a></li>
+									<li><a href="">2</a></li>
+									<li><a href="">3</a></li>
+									<li><a href="">4</a></li>
+									<li><a href="">5</a></li>
+									<li><a href="">6</a></li>
+									<li><a href="">上一页</a></li>
+									<li><a href="">下一页</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--法律咨询申请-->
+					<div class="my-enterUnion tab-togg">
+						<div class="sq">
+							<div class="sq_list">
+								<h4>法律咨询申请</h4>
+							</div>
+							<form action="" method="">
+								<div class="sq_content">
+									<a href=""><i>*</i>姓名：</a>
+									<input type="text" placeholder="请输入姓名" name="text"/>
+								</div>
+								<div class="sq_content">
+									<a href=""><i>*</i>咨询类别：</a>
+									<select class="st1">
+										<option>请选择</option>
+										<option>请选择</option>
+										<option>请选择</option>
+										<option>请选择</option>
+										<option>请选择</option>
+										<option>请选择</option>
+									</select>
+								</div>
+								<div class="sq_content">
+									<a href=""><i>*</i>咨询主题：</a>
+									<input type="text" placeholder="请输入主题" name="text"/>
+								</div>
+								<div class="sq_content">
+									<a href=""><i>*</i>咨询内容：</a>
+									<textarea placeholder="请输入咨询内容(最多500字)"></textarea>
+								</div>
+								<div class="sm_box clearfix" style="margin-left: 105px">
+									<div class="sm_text">
+										<a href="##"><i>*</i>上传照片：</a>
+										<div class="tianjia" >
+											<img src="images/greyheader.jpg" id="idimg" />
+										</div>
+									</div>
+									<div class="sm_img">
+										<input type="file" id="renxiang"  onchange="previewFile()"
+											   @change="renupdate" style="cursor: pointer">
+									</div>
+								</div>
+								<div class="sq_content">
+									<a href=""><i>*</i>联系电话：</a>
+									<input type="text" placeholder="请输入联系电话" name="text"/>
+								</div>
+								<div class="anniu">
+									<button type="button" class="tijiao active">提交</button>
+									<button type="reset" class="chongzhi">重置信息</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!--我的咨询-->
+					<div class="my-turnUnion  tab-togg">
+						<div class="layer-reply">
+							<div class="layer-titlebox">
+								<div class="layer-title clearfix">
+									<h4>关于拖欠工资问题</h4>
+									<span>#农民工工资#</span>
+								</div>
+								<p class="lpic">
+									今天，记者获悉，从5月13日开始，摩拜将
+									在上海地区执行新版计费规则，用车费用
+									由起步价和时长费两部分组成。起步价为
+									1元，15分钟以内为起步价，超过15分钟
+									收取时长费，即每15分钟0.5元，不满15
+									分钟的以15分钟计
+								</p>
+								<i>2019-03-10</i>
+								<div class="layer-content clearfix">
+									<i class="icon iconfont icon-dahuifu"></i>
+									<span>律师回复(2条)</span>
+								</div>
+								<div class="layer-person clearfix">
+									<div class="layer-img">
+										<img src="images/user.png" />
+									</div>
+									<div class="layer-text">
+										<h4>刘静律师</h4>
+										<span>2019-05-10</span>
+										<p>律师服务态度很好，很专业，真正的为职工着想。律师服务态度很好</p>
+									</div>
+								</div>
+								<div class="layer-person clearfix">
+									<div class="layer-img">
+										<img src="images/user.png" />
+									</div>
+									<div class="layer-text">
+										<h4>赵琦律师</h4>
+										<span>2019-05-10</span>
+										<p>律师服务态度很好，很专业，真正的为职工着想。律师服务态度很好</p>
+									</div>
+								</div>
+								<div class="layer-titlebox flypic">
+									<div class="layer-title clearfix">
+										<h4>关于拖欠工资问题</h4>
+										<span>#农民工工资#</span>
+									</div>
+									<p class="lpic">
+										今天，记者获悉，从5月13日开始，摩拜将
+										在上海地区执行新版计费规则，用车费用
+										由起步价和时长费两部分组成。起步价为
+										1元，15分钟以内为起步价，超过15分钟
+										收取时长费，即每15分钟0.5元，不满15
+										分钟的以15分钟计
+									</p>
+									<i>2019-03-10</i>
+								</div>
+								<div class="layer-titlebox flypic">
+									<div class="layer-title clearfix">
+										<h4>关于拖欠工资问题</h4>
+										<span>#农民工工资#</span>
+									</div>
+									<p class="lpic">
+										今天，记者获悉，从5月13日开始，摩拜将
+										在上海地区执行新版计费规则，用车费用
+										由起步价和时长费两部分组成。起步价为
+										1元，15分钟以内为起步价，超过15分钟
+										收取时长费，即每15分钟0.5元，不满15
+										分钟的以15分钟计
+									</p>
+									<i>2019-03-10</i>
+								</div>
+								<div class="jwn_list">
+									<ul class="clearfix">
+										<li class="active"><a href="">1</a></li>
+										<li><a href="">2</a></li>
+										<li><a href="">3</a></li>
+										<li><a href="">4</a></li>
+										<li><a href="">5</a></li>
+										<li><a href="">6</a></li>
+										<li><a href="">上一页</a></li>
+										<li><a href="">下一页</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 我要调节 -->
+					<div class="my-tiaojie  tab-togg">
+                     我要调节
+                     我要调节
+
+					</div>
+                   <!-- 我要代书 -->
+                   <div class="my-daishu  tab-togg">
+                   		<div class="rh_textbox">
+							<div class="rh_text">
+								<h4>我要代书</h4>
+								<i>申请工会法律援助注意事项：</i>
+								<span>援助范围</span>
+								<p>1.劳动争议案件；</p>
+								<p>2.因劳动权益涉及的职工人身权、民主权、财产权受到侵犯的案件；</p>
+								<p>3.工会工作者因履行职责合法权益受到侵犯的案件；</p>
+								<p>4.工会组织合法权益受到侵犯的案件；</p>
+								<p>5.其他需要提供法律服务的事项。</p>
+							</div>
+							<div class="rh_text">
+								<span>申请条件</span> 
+								<p>符合下列条件之一的职工，可以申请免费的劳动争议诉讼服务：</p>
+								<p>1.农民工；</p>
+								<p>2.本市低保、失业证持有者；</p>
+								<p>3.符合本市低收入家庭认定标准的职工；</p>
+								<p>4.属于阳泉市总工会在“困难帮扶服务系统”中认定的困难职工；</p>
+								<p>5.残疾人；</p>
+								<p>6.收入低于本市最低工资标准的工会会员互助服务卡的持卡职工；</p>
+								<p>7.因履行工作职责，合法权益受到侵害的工会工作者；</p>
+								<p>8.因特殊情况，经审核，需要提供法律援助的其他人员。</p>
+							</div>
+							<div class="rh_text">
+								<span>需要准备的材料</span> 
+								<p>1.身份证原件及复印件；</p>
+								<p>2.低保证、低收入证明、失业证、残疾证、工会会员互助服务卡或经济状况证明等；</p>
+								<p>3.农民工无法确认为农村户口的，需提供户口本原件、户主页和本人页复印件；</p>
+								<p>4.案件的起诉书、上诉书、仲裁申请书、受理案件通知书等法律文书复印件；</p>
+							</div>
+							<div class="dl_more clearfix">
+								<input id="readme" class="checkbox" type="checkbox"/>
+		                        <label for="protocol">
+									我承诺我符合上诉工会法律援助的申请条件
+								</label>
+							</div>
+							<div class="layer-btn">
+								<button>确定</button>
+							</div>
+						</div>
+						<div class="layer-table">
+							<div class="sq_list" style="margin-bottom: 30px;">
+								<h4>我要代书</h4>
+							</div>
+							<form action="" method="post">	
+								<div class="zj_content">
+									<a href="##"><i>*</i>姓名：</a>
+									<input type="text" name="name" v-model="userName" class="stopClick"
+										   placeholder="请输入姓名"/>
+								</div>
+								<div class="zj_xb">
+									<a href="##" style="margin: 10px 60px 0 0;"><i>*</i>性别：</a>
+									<input id="man" type="radio" checked="checked" name="sex" />男
+									<input id="woman" type="radio"  name="sex"/>女
+								</div>
+	
+								<div class="mz_content" >
+									<a href="##"><i>*</i>民族：</a>
+									<select  class="st1 stopClick " v-model="nationality" >
+										<option  v-for="item in Nationality">{{item.name}}</option>
+									</select>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>职业：</a>
+									<input type="text" name="name" placeholder="请输入职业"/>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>身份证号：</a>
+									<input class="stopClick" type="text"
+										   name="hm" maxlength="18" placeholder="请输入18位身份证号" v-model="IDnumber"/>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>户籍所在地：</a>
+									<input type="text" name="name" placeholder="请输入户籍所在地"/>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>联系电话：</a>
+									<input type="text" name="name" placeholder="请输入联系电话"/>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>单位名称：</a>
+									<input type="text" name="name" placeholder="请输入单位名称"/>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>单位地址：</a>
+									<input type="text" name="name" placeholder="请输入单位地址"/>
+								</div>
+								<div class="mz_content" >
+									<a href="##"><i>*</i>申请类别：</a>
+									<select  class="st1">
+										<option>请选择</option>
+										<option>请选择</option>
+										<option>请选择</option>
+										<option>请选择</option>
+									</select>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>争议案由：</a>
+									<input type="text" name="name" placeholder="简要说明争议焦点"/>
+								</div>
+								<div class="sq_content">
+									<a href=""><i>*</i>案情描述：</a>
+									<textarea placeholder="请输入咨询内容(最多500字)"></textarea>
+								</div>
+								<div class="sm_box clearfix">
+									<div class="sm_text">
+										<a href="##"><i>*</i>上传身份证件：</a>
+										<div class="IDzheng-wrap" style="margin-left: 20px;">
+											<img src="images/sfz_z.png" :src="showIdzheng" id="idimg1" />
+	
+										</div>
+									</div>
+									<!--身份证正面-->
+									<div class="zj_img zj_pic" style="margin: 0 20px 0 0;">
+										<div class="tianjia1">
+											<input class="stopClick" id="idfile1" type="file" @change="IDzhengupdate" onchange="previewFile1()" >
+										</div>
+									</div>
+	
+									<!--身份证反面-->
+									<div class="zj_img zj_fanpic" style="margin-left: 10px;">
+										<div class="tianjia1">
+											<input class="stopClick" type="file" id="idfile2" @change="IDfanupdate" onchange="previewFile2()">
+										</div>
+										<div class="idfan-wrap">
+											<img src="images/sfz_f.png" :src='showIdfan' id="idimg2" />
+	
+										</div>
+									</div>
+								</div>
+								<div class="sm_box clearfix">
+									<div class="sm_text">
+										<a href="##"><i>*</i>上传资料：</a>
+										<div class="IDzheng-wrap" style="margin-left: 20px;">
+											<img src="images/sfz_z.png" :src="showIdzheng" id="idimg1" />
+	
+										</div>
+									</div>
+									<!--身份证正面-->
+									<div class="zj_img zj_pic" style="margin: 0 20px 0 25px;">
+										<div class="tianjia1">
+											<input class="stopClick" id="idfile1" type="file" @change="IDzhengupdate" onchange="previewFile1()" >
+										</div>
+									</div>
+	
+									<!--身份证反面-->
+									<div class="zj_img zj_fanpic" style="margin-left: 17px;">
+										<div class="tianjia1">
+											<input class="stopClick" type="file" id="idfile2" @change="IDfanupdate" onchange="previewFile2()">
+										</div>
+										<div class="idfan-wrap">
+											<img src="images/sfz_f.png" :src='showIdfan' id="idimg2" />
+	
+										</div>
+									</div>
+								</div>
+								<div class="anniu" style="text-align: center;">
+									<button type="button" class="tijiao active">提交</button>
+									<button type="reset" class="chongzhi">重置信息</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- 我要仲裁 -->
+					 <div class="my-zhongcai  tab-togg">
+                            <div class="sq_list" style="margin-bottom: 30px;">
+								<h4>我要仲裁</h4>
+							</div>
+							<form action="" method="post">	
+								<div class="zj_content">
+									<a href="##"><i>*</i>姓名：</a>
+									<input type="text" name="name" v-model="userName" class="stopClick"
+										   placeholder="请输入姓名"/>
+								</div>
+								<div class="zj_xb">
+									<a href="##" style="margin: 10px 60px 0 0;"><i>*</i>性别：</a>
+									<input id="man" type="radio" checked="checked" name="sex" />男
+									<input id="woman" type="radio"  name="sex"/>女
+								</div>
+	
+								<div class="mz_content" >
+									<a href="##"><i>*</i>民族：</a>
+									<select  class="st1 stopClick " v-model="nationality" >
+										<option  v-for="item in Nationality">{{item.name}}</option>
+									</select>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>职业：</a>
+									<input type="text" name="name" placeholder="请输入职业"/>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>身份证号：</a>
+									<input class="stopClick" type="text"
+										   name="hm" maxlength="18" placeholder="请输入18位身份证号" v-model="IDnumber"/>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>户籍所在地：</a>
+									<input type="text" name="name" placeholder="请输入户籍所在地"/>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>联系电话：</a>
+									<input type="text" name="name" placeholder="请输入联系电话"/>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>单位名称：</a>
+									<input type="text" name="name" placeholder="请输入单位名称"/>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>单位地址：</a>
+									<input type="text" name="name" placeholder="请输入单位地址"/>
+								</div>
+								<div class="mz_content" >
+									<a href="##"><i>*</i>申请类别：</a>
+									<select  class="st1">
+										<option>请选择</option>
+										<option>请选择</option>
+										<option>请选择</option>
+										<option>请选择</option>
+									</select>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>争议案由：</a>
+									<input type="text" name="name" placeholder="简要说明争议焦点"/>
+								</div>
+								<div class="sq_content">
+									<a href=""><i>*</i>案情描述：</a>
+									<textarea placeholder="请输入咨询内容(最多500字)"></textarea>
+								</div>
+								<div class="sm_box clearfix">
+									<div class="sm_text">
+										<a href="##"><i>*</i>上传身份证件：</a>
+										<div class="IDzheng-wrap" style="margin-left: 20px;">
+											<img src="images/sfz_z.png" :src="showIdzheng" id="idimg1" />
+	
+										</div>
+									</div>
+									<!--身份证正面-->
+									<div class="zj_img zj_pic" style="margin: 0 20px 0 0;">
+										<div class="tianjia1">
+											<input class="stopClick" id="idfile1" type="file" @change="IDzhengupdate" onchange="previewFile1()" >
+										</div>
+									</div>
+	
+									<!--身份证反面-->
+									<div class="zj_img zj_fanpic" style="margin-left: 10px;">
+										<div class="tianjia1">
+											<input class="stopClick" type="file" id="idfile2" @change="IDfanupdate" onchange="previewFile2()">
+										</div>
+										<div class="idfan-wrap">
+											<img src="images/sfz_f.png" :src='showIdfan' id="idimg2" />
+	
+										</div>
+									</div>
+								</div>
+								<div class="sm_box clearfix">
+									<div class="sm_text">
+										<a href="##"><i>*</i>上传资料：</a>
+										<div class="IDzheng-wrap" style="margin-left: 20px;">
+											<img src="images/sfz_z.png" :src="showIdzheng" id="idimg1" />
+	
+										</div>
+									</div>
+									<!--身份证正面-->
+									<div class="zj_img zj_pic" style="margin: 0 20px 0 25px;">
+										<div class="tianjia1">
+											<input class="stopClick" id="idfile1" type="file" @change="IDzhengupdate" onchange="previewFile1()" >
+										</div>
+									</div>
+	
+									<!--身份证反面-->
+									<div class="zj_img zj_fanpic" style="margin-left: 17px;">
+										<div class="tianjia1">
+											<input class="stopClick" type="file" id="idfile2" @change="IDfanupdate" onchange="previewFile2()">
+										</div>
+										<div class="idfan-wrap">
+											<img src="images/sfz_f.png" :src='showIdfan' id="idimg2" />
+	
+										</div>
+									</div>
+								</div>
+								<div class="anniu" style="text-align: center;">
+									<button type="button" class="tijiao active">提交</button>
+									<button type="reset" class="chongzhi">重置信息</button>
+								</div>
+							</form>
+
+					</div>
+					<!-- 我要诉讼 -->
+					 <div class="my-susong  tab-togg">
+                            <div class="sq_list" style="margin-bottom: 30px;">
+								<h4>我要诉讼</h4>
+							</div>
+							<form action="" method="post">	
+								<div class="zj_content">
+									<a href="##"><i>*</i>姓名：</a>
+									<input type="text" name="name" v-model="userName" class="stopClick"
+										   placeholder="请输入姓名"/>
+								</div>
+								<div class="zj_xb">
+									<a href="##" style="margin: 10px 60px 0 0;"><i>*</i>性别：</a>
+									<input id="man" type="radio" checked="checked" name="sex" />男
+									<input id="woman" type="radio"  name="sex"/>女
+								</div>
+	
+								<div class="mz_content" >
+									<a href="##"><i>*</i>民族：</a>
+									<select  class="st1 stopClick " v-model="nationality" >
+										<option  v-for="item in Nationality">{{item.name}}</option>
+									</select>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>职业：</a>
+									<input type="text" name="name" placeholder="请输入职业"/>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>身份证号：</a>
+									<input class="stopClick" type="text"
+										   name="hm" maxlength="18" placeholder="请输入18位身份证号" v-model="IDnumber"/>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>户籍所在地：</a>
+									<input type="text" name="name" placeholder="请输入户籍所在地"/>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>联系电话：</a>
+									<input type="text" name="name" placeholder="请输入联系电话"/>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>单位名称：</a>
+									<input type="text" name="name" placeholder="请输入单位名称"/>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>单位地址：</a>
+									<input type="text" name="name" placeholder="请输入单位地址"/>
+								</div>
+								<div class="mz_content" >
+									<a href="##"><i>*</i>申请类别：</a>
+									<select  class="st1">
+										<option>请选择</option>
+										<option>请选择</option>
+										<option>请选择</option>
+										<option>请选择</option>
+									</select>
+								</div>
+								<div class="zj_content">
+									<a href="##"><i>*</i>争议案由：</a>
+									<input type="text" name="name" placeholder="简要说明争议焦点"/>
+								</div>
+								<div class="sq_content">
+									<a href=""><i>*</i>案情描述：</a>
+									<textarea placeholder="请输入咨询内容(最多500字)"></textarea>
+								</div>
+								<div class="sm_box clearfix">
+									<div class="sm_text">
+										<a href="##"><i>*</i>上传身份证件：</a>
+										<div class="IDzheng-wrap" style="margin-left: 20px;">
+											<img src="images/sfz_z.png" :src="showIdzheng" id="idimg1" />
+	
+										</div>
+									</div>
+									<!--身份证正面-->
+									<div class="zj_img zj_pic" style="margin: 0 20px 0 0;">
+										<div class="tianjia1">
+											<input class="stopClick" id="idfile1" type="file" @change="IDzhengupdate" onchange="previewFile1()" >
+										</div>
+									</div>
+	
+									<!--身份证反面-->
+									<div class="zj_img zj_fanpic" style="margin-left: 10px;">
+										<div class="tianjia1">
+											<input class="stopClick" type="file" id="idfile2" @change="IDfanupdate" onchange="previewFile2()">
+										</div>
+										<div class="idfan-wrap">
+											<img src="images/sfz_f.png" :src='showIdfan' id="idimg2" />
+	
+										</div>
+									</div>
+								</div>
+								<div class="sm_box clearfix">
+									<div class="sm_text">
+										<a href="##"><i>*</i>上传资料：</a>
+										<div class="IDzheng-wrap" style="margin-left: 20px;">
+											<img src="images/sfz_z.png" :src="showIdzheng" id="idimg1" />
+	
+										</div>
+									</div>
+									<!--身份证正面-->
+									<div class="zj_img zj_pic" style="margin: 0 20px 0 25px;">
+										<div class="tianjia1">
+											<input class="stopClick" id="idfile1" type="file" @change="IDzhengupdate" onchange="previewFile1()" >
+										</div>
+									</div>
+	
+									<!--身份证反面-->
+									<div class="zj_img zj_fanpic" style="margin-left: 17px;">
+										<div class="tianjia1">
+											<input class="stopClick" type="file" id="idfile2" @change="IDfanupdate" onchange="previewFile2()">
+										</div>
+										<div class="idfan-wrap">
+											<img src="images/sfz_f.png" :src='showIdfan' id="idimg2" />
+	
+										</div>
+									</div>
+								</div>
+								<div class="anniu" style="text-align: center;">
+									<button type="button" class="tijiao active">提交</button>
+									<button type="reset" class="chongzhi">重置信息</button>
+								</div>
+							</form>
+					</div>
+					<!-- 任务列表 -->
+					<div class="renwu_over tab-togg">
+						<div class="details-box">
+							<div class="details">
+								<i class="icon iconfont icon-wendang"></i>
+								<span>援助详情</span>
+							</div>
+							<div class="xian"></div>
+							<div class="layer-titlebox">
+								<div class="layer-title clearfix">
+									<h4>关于拖欠工资问题</h4>
+								</div>
+								<div class="information">
+									<ul class="clearfix">
+										<li>
+											<i class="icon iconfont icon-nan"></i>
+											<span>张先生</span>
+										</li>
+										<li>											
+											<span>29岁</span>
+										</li>
+										<li>											
+											<span>阳煤集团职工</span>
+										</li>
+										<li>
+											<span>手机号:13003581234</span>
+										</li>
+									</ul>
+								</div>
+								<div class="channel">
+									<ul class="clearfix">
+										<li>
+											<span>2019-03-10</span>
+										</li>
+										<li>
+											<span>申请诉讼</span>
+										</li>
+										<li>
+											<span>工伤维权</span>
+										</li>
+									</ul>
+								</div>
+								<p class="lpic" style="margin-top: 0;">
+									今天，记者获悉，从5月13日开始，摩拜将
+									在上海地区执行新版计费规则，用车费用
+									由起步价和时长费两部分组成。起步价为
+									1元，15分钟以内为起步价，超过15分钟
+									收取时长费，即每15分钟0.5元，不满15
+									分钟的以15分钟计
+								</p>							
+							</div>
+						</div>
+						<div class="details">
+							<i class="icon iconfont icon-jindu1"></i>
+							<span>受理进度</span>
+						</div>
+						<div class="xian"></div>
+						<div class="channel-list">
+							<ul class="clearfix">
+								<li>
+									<i class="icon iconfont icon-shenhe"></i>
+									<p>已受理</p>
+								</li>
+								<li class="before">
+										<div class="sh_tubiao jindu1"></div>
+								</li>
+								<li>
+									<i class="icon iconfont icon-shenhe"></i>
+									<p>正在诉讼</p>
+								</li>
+								<li class="before">
+										<div class="sh_tubiao jindu1"></div>
+								</li>
+								<li>
+									<i class="icon iconfont icon-shenhe"></i>
+									<p>已完结</p>
+								</li>
+							</ul>
+						</div>
+						<div class="user-content clearfix" style="margin-top: 20px;">
+							<i class="icon iconfont icon-dahuifu"></i>
+							<span>用户评价(1条)</span>
+						</div>
+						<div class="xian"></div>
+						<div class="layer-person clearfix">
+							<div class="layer-img">
+								<img src="images/user.png" />
+							</div>
+							<div class="layer-text">
+								<h4>刘静律师</h4>
+								<span>2019-05-10</span>
+								<p>律师服务态度很好，很专业，真正的为职工着想。律师服务态度很好</p>
+							</div>
+						</div>
+						<div class="xian"></div>
+						
+						<div class="protection">
+							<p>在工作中受伤致残，单位不管，我该怎么维权？</p>
+						</div>
+						<div class="information">
+							<ul class="clearfix">
+								<li>
+									<i class="icon iconfont icon-nan"></i>
+									<span>张先生</span>
+								</li>
+								<li>											
+									<span>29岁</span>
+								</li>
+								<li>											
+									<span>阳煤集团职工</span>
+								</li>
+								<li>
+									<span>手机号:13003581234</span>
+								</li>
+							</ul>
+						</div>								
+						<div class="channel">
+							<ul class="clearfix">
+								<li>
+									<span>2019-03-10</span>
+								</li>
+								<li>
+									<span>申请诉讼</span>
+								</li>
+								<li>
+									<span>工伤维权</span>
+								</li>
+							</ul>
+						</div>	
+						<div class="xian"></div>
+						<div class="protection">
+							<p>在工作中受伤致残，单位不管，我该怎么维权？</p>
+						</div>
+						<div class="information">
+							<ul class="clearfix">
+								<li>
+									<i class="icon iconfont icon-nan"></i>
+									<span>张先生</span>
+								</li>
+								<li>											
+									<span>29岁</span>
+								</li>
+								<li>											
+									<span>阳煤集团职工</span>
+								</li>
+								<li>
+									<span>手机号:13003581234</span>
+								</li>
+							</ul>
+						</div>								
+						<div class="channel">
+							<ul class="clearfix">
+								<li>
+									<span>2019-03-10</span>
+								</li>
+								<li>
+									<span>申请诉讼</span>
+								</li>
+								<li>
+									<span>工伤维权</span>
+								</li>
+							</ul>
+						</div>	
+						<div class="xian"></div>	
+						<div class="protection">
+							<p>在工作中受伤致残，单位不管，我该怎么维权？</p>
+						</div>
+						<div class="information">
+							<ul class="clearfix">
+								<li>
+									<i class="icon iconfont icon-nan"></i>
+									<span>张先生</span>
+								</li>
+								<li>											
+									<span>29岁</span>
+								</li>
+								<li>											
+									<span>阳煤集团职工</span>
+								</li>
+								<li>
+									<span>手机号:13003581234</span>
+								</li>
+							</ul>
+						</div>								
+						<div class="channel">
+							<ul class="clearfix">
+								<li>
+									<span>2019-03-10</span>
+								</li>
+								<li>
+									<span>申请诉讼</span>
+								</li>
+								<li>
+									<span>工伤维权</span>
+								</li>
+							</ul>
+						</div>	
+						<div class="xian"></div>	
+						<div class="protection">
+							<p>在工作中受伤致残，单位不管，我该怎么维权？</p>
+						</div>
+						<div class="information">
+							<ul class="clearfix">
+								<li>
+									<i class="icon iconfont icon-nan"></i>
+									<span>张先生</span>
+								</li>
+								<li>											
+									<span>29岁</span>
+								</li>
+								<li>											
+									<span>阳煤集团职工</span>
+								</li>
+								<li>
+									<span>手机号:13003581234</span>
+								</li>
+							</ul>
+						</div>								
+						<div class="channel">
+							<ul class="clearfix">
+								<li>
+									<span>2019-03-10</span>
+								</li>
+								<li>
+									<span>申请诉讼</span>
+								</li>
+								<li>
+									<span>工伤维权</span>
+								</li>
+							</ul>
+						</div>	
+						<div class="xian"></div>	
+						<div class="protection">
+							<p>在工作中受伤致残，单位不管，我该怎么维权？</p>
+						</div>
+						<div class="information">
+							<ul class="clearfix">
+								<li>
+									<i class="icon iconfont icon-nan"></i>
+									<span>张先生</span>
+								</li>
+								<li>											
+									<span>29岁</span>
+								</li>
+								<li>											
+									<span>阳煤集团职工</span>
+								</li>
+								<li>
+									<span>手机号:13003581234</span>
+								</li>
+							</ul>
+						</div>								
+						<div class="channel">
+							<ul class="clearfix">
+								<li>
+									<span>2019-03-10</span>
+								</li>
+								<li>
+									<span>申请诉讼</span>
+								</li>
+								<li>
+									<span>工伤维权</span>
+								</li>
+							</ul>
+						</div>	
+						<div class="xian"></div>	
+						<div class="protection">
+							<p>在工作中受伤致残，单位不管，我该怎么维权？</p>
+						</div>
+						<div class="information">
+							<ul class="clearfix">
+								<li>
+									<i class="icon iconfont icon-nv2 incol"></i>
+									<span>张女士</span>
+								</li>
+								<li>											
+									<span>29岁</span>
+								</li>
+								<li>											
+									<span>阳煤集团职工</span>
+								</li>
+								<li>
+									<span>手机号:13003581234</span>
+								</li>
+							</ul>
+						</div>								
+						<div class="channel">
+							<ul class="clearfix">
+								<li>
+									<span>2019-03-10</span>
+								</li>
+								<li>
+									<span>申请诉讼</span>
+								</li>
+								<li>
+									<span>工伤维权</span>
+								</li>
+							</ul>
+						</div>	
+						<div class="xian"></div>	
+						<div class="jwn_list">
+							<ul class="clearfix">
+								<li class="active"><a href="">1</a></li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">5</a></li>
+								<li><a href="">6</a></li>
+								<li><a href="">上一页</a></li>
+								<li><a href="">下一页</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="renwu_myover tab-togg">
+						<div class="details-box">
+							<div class="details">
+								<i class="icon iconfont icon-wendang"></i>
+								<span>援助详情</span>
+							</div>
+							<div class="xian"></div>
+							<div class="layer-titlebox">
+								<div class="layer-title clearfix">
+									<h4>关于拖欠工资问题</h4>
+								</div>
+								<div class="information">
+									<ul class="clearfix">
+										<li>
+											<i class="icon iconfont icon-nan"></i>
+											<span>张先生</span>
+										</li>
+										<li>											
+											<span>29岁</span>
+										</li>
+										<li>											
+											<span>阳煤集团职工</span>
+										</li>
+										<li>
+											<span>手机号:13003581234</span>
+										</li>
+									</ul>
+								</div>
+								<div class="channel">
+									<ul class="clearfix">
+										<li>
+											<span>2019-03-10</span>
+										</li>
+										<li>
+											<span>申请诉讼</span>
+										</li>
+										<li>
+											<span>工伤维权</span>
+										</li>
+									</ul>
+								</div>
+								<p class="lpic" style="margin-top: 0;">
+									今天，记者获悉，从5月13日开始，摩拜将
+									在上海地区执行新版计费规则，用车费用
+									由起步价和时长费两部分组成。起步价为
+									1元，15分钟以内为起步价，超过15分钟
+									收取时长费，即每15分钟0.5元，不满15
+									分钟的以15分钟计
+								</p>							
+							</div>
+						</div>
+						<div class="details">
+							<i class="icon iconfont icon-jindu1"></i>
+							<span>受理进度</span>
+						</div>
+						<div class="xian"></div>
+						<div class="channel-list">
+							<ul class="clearfix">
+								<li>
+									<i class="icon iconfont icon-shenhe"></i>
+									<p>已受理</p>
+								</li>
+								<li class="before">
+										<div class="sh_tubiao jindu1"></div>
+								</li>
+								<li>
+									<i class="icon iconfont icon-shenhe"></i>
+									<p>正在诉讼</p>
+								</li>
+								<li class="before">
+										<div class="sh_tubiao jindu1"></div>
+								</li>
+								<li>
+									<i class="icon iconfont icon-shenhe"></i>
+									<p>已完结</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+                    <!-- 已完成 -->
+                    <div class="my-overcount  tab-togg">
+                    	<div class="successbox">
+							<div class="success clearfix">
+								<div class="success-text">
+									<span>在工作中受伤致残，单位不管，我该怎么维权？</span>
+								</div>
+								<div class="success-time">
+									<i>2019-03-10</i>
+								</div>
+							</div>
+							<div class="success clearfix">
+								<div class="success-text">
+									<span>在工作中受伤致残，单位不管，我该怎么维权？</span>
+								</div>
+								<div class="success-time">
+									<i>2019-03-10</i>
+								</div>
+							</div>
+							<div class="success clearfix">
+								<div class="success-text">
+									<span>在工作中受伤致残，单位不管，我该怎么维权？</span>
+								</div>
+								<div class="success-time">
+									<i>2019-03-10</i>
+								</div>
+							</div>
+							<div class="success clearfix">
+								<div class="success-text">
+									<span>在工作中受伤致残，单位不管，我该怎么维权？</span>
+								</div>
+								<div class="success-time">
+									<i>2019-03-10</i>
+								</div>
+							</div>
+							<div class="success clearfix">
+								<div class="success-text">
+									<span>在工作中受伤致残，单位不管，我该怎么维权？</span>
+								</div>
+								<div class="success-time">
+									<i>2019-03-10</i>
+								</div>
+							</div>
+							<div class="success clearfix">
+								<div class="success-text">
+									<span>在工作中受伤致残，单位不管，我该怎么维权？</span>
+								</div>
+								<div class="success-time">
+									<i>2019-03-10</i>
+								</div>
+							</div>
+						</div>
+						<div class="details-box">
+							<div class="details">
+								<i class="icon iconfont icon-wendang"></i>
+								<span>援助详情</span>
+							</div>
+							<div class="xian"></div>
+							<div class="layer-titlebox">
+								<div class="layer-title clearfix">
+									<h4>关于拖欠工资问题</h4>
+								</div>
+								<i>2019-03-10</i>
+								<p class="lpic" style="margin-top: 0;">
+									今天，记者获悉，从5月13日开始，摩拜将
+									在上海地区执行新版计费规则，用车费用
+									由起步价和时长费两部分组成。起步价为
+									1元，15分钟以内为起步价，超过15分钟
+									收取时长费，即每15分钟0.5元，不满15
+									分钟的以15分钟计
+								</p>							
+							</div>
+							<div class="details">
+								<i class="icon iconfont icon-jindu1"></i>
+								<span>受理进度</span>
+							</div>
+							<div class="xian"></div>
+							<div class="details-list">
+								<ul class="clearfix">
+									<li>
+										<i class="icon iconfont icon-shenhe"></i>
+										<p>正在审核</p>
+									</li>
+									<li class="before">
+											<div class="sh_tubiao jindu1"></div>
+									</li>
+									<li>
+										<i class="icon iconfont icon-shenhe"></i>
+										<p>已受理</p>
+									</li>
+									<li class="before">
+											<div class="sh_tubiao jindu1"></div>
+									</li>
+									<li>
+										<i class="icon iconfont icon-shenhe"></i>
+										<p>正在诉讼</p>
+									</li>
+									<li class="before">
+											<div class="sh_tubiao jindu1"></div>
+									</li>
+									<li>
+										<i class="icon iconfont icon-shenhe"></i>
+										<p>已完结</p>
+									</li>
+								</ul>
+							</div>
+							<div class="user-content clearfix" style="margin-top: 20px;">
+								<i class="icon iconfont icon-dahuifu"></i>
+								<span>用户评价(1条)</span>
+							</div>
+							<div class="xian"></div>
+							<div class="layer-person clearfix">
+								<div class="layer-img">
+									<img src="images/user.png" />
+								</div>
+								<div class="layer-text">
+									<h4>刘静律师</h4>
+									<span>2019-05-10</span>
+									<p>律师服务态度很好，很专业，真正的为职工着想。律师服务态度很好</p>
+								</div>
+							</div>
+							<div class="xian"></div>
+							<div class="answer-textarea ftop">
+								<span>请对律师服务进行评价</span>
+							</div>
+							<div class="answer-btn">
+								<button>发表评价</button>
+							</div>
+						</div>
+					</div>
+					<!-- 未完成 -->
+					<div class="my-weicount  tab-togg">
+						<div class="details-box">
+							<div class="details">
+								<i class="icon iconfont icon-wendang"></i>
+								<span>援助详情</span>
+							</div>
+							<div class="xian"></div>
+							<div class="layer-titlebox">
+								<div class="layer-title clearfix">
+									<h4>关于拖欠工资问题</h4>
+								</div>
+								<i>2019-03-10</i>
+								<p class="lpic" style="margin-top: 0;">
+									今天，记者获悉，从5月13日开始，摩拜将
+									在上海地区执行新版计费规则，用车费用
+									由起步价和时长费两部分组成。起步价为
+									1元，15分钟以内为起步价，超过15分钟
+									收取时长费，即每15分钟0.5元，不满15
+									分钟的以15分钟计
+								</p>							
+							</div>
+							<div class="details">
+								<i class="icon iconfont icon-jindu1"></i>
+								<span>受理进度</span>
+							</div>
+							<div class="xian"></div>
+							<div class="details-list">
+								<ul class="clearfix">
+									<li>
+										<i class="icon iconfont icon-shenhe"></i>
+										<p>正在审核</p>
+									</li>
+									<li class="before">
+											<div class="sh_tubiao jindu1"></div>
+									</li>
+									<li>
+										<i class="icon iconfont icon-shenhe"></i>
+										<p>已受理</p>
+									</li>
+									<li class="before">
+											<div class="sh_tubiao jindu1"></div>
+									</li>
+									<li>
+										<i class="icon iconfont icon-shenhe"></i>
+										<p>正在诉讼</p>
+									</li>
+									<li class="before">
+											<div class="sh_tubiao jindu1"></div>
+									</li>
+									<li>
+										<i class="icon iconfont icon-shenhe"></i>
+										<p>已完结</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 友情链接 -->
+				<div style="margin:35px 0 15px 15px;" class="clearfix">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#all" data-toggle="tab">全总及省级工会</a></li>
+							<li><a href="#qu" data-toggle="tab">区县工会</a></li>
+							<li><a href="#jc" data-toggle="tab">基层工会</a></li>
+							<li><a href="#meiti" data-toggle="tab">新闻媒体网站</a></li>
+						</ul>
+					    <div  class="tab-content clearfix" style="height: 85px">
+						     <div class="tab-pane active" id="all">
+							<ul class="nav nav-tabs" style="border:0">
+								<li><a href="http://www.acftu.org/">中华全国总工会</a></li>
+								<li><a href="http://www.sxgh.org.cn/">山西省总工会</a></li>
+								<li><a href="http://www.bjzgh.org/">北京市总工会</a></li>
+								<li><a href="http://www.shzgh.org/">上海市总工会</a></li>
+								<li><a href="http://www.xmzgh.org/">厦门市总工会</a></li>
+								<li><a href="http://www.cqgh.org/">重庆市总工会</a></li>
+								<li><a href="http://www.hebgh.org/">河北省总工会</a></li>
+								<li><a href="http://www.hbzgh.org.cn/">湖北省总工会</a></li>
+								<li><a href="https://www.ahghw.org/">安徽省总工会</a></li>
+
+							</ul>
+						     </div>
+						     <div class="tab-pane fade" id="qu">
+							<ul class="nav nav-tabs" style="border:0">
+
+								<li><a href="javascript:;">城区总工会</a></li>
+								<li><a href="javascript:;">郊区总工会</a></li>
+								<li><a href="javascript:;">开发区总工会</a></li>
+								<li><a href="javascript:;">平定县总工会</a></li>
+								<li><a href="javascript:;">盂县总工会</a></li>
+							</ul>
+						     </div>
+						     <div class="tab-pane fade" id="jc">
+							<ul class="nav nav-tabs" style="border:0">
+								<li><a href="javascript:;">公交建通工委</a></li>
+								<li><a href="javascript:;">文教工委</a></li>
+								<li><a href="javascript:;">财贸工委</a></li>
+								<li><a href="javascript:;">煤矿工委</a></li>
+								<li><a href="javascript:;">市直机关</a></li>
+								<li><a href="javascript:;">市级行业工会</a></li>
+								<li><a href="javascript:;">阳煤集团工会</a></li>
+							</ul>
+						     </div>
+						     <div class="tab-pane fade" id="meiti">
+							<ul class="nav nav-tabs" style="border:0">
+								<li><a href="http://acftu.workercn.cn">工会网媒话工会（中工网、山西省总网站合办） </a></li>
+								<li><a href="http://www.sxszcwb.org">山西省总工会财务部软件交流平台</a></li>
+							</ul>
+						     </div>
+					    </div>
+			    </div>
+		</div>
+	</div>
+
+
+	<!-- 底部 -->
+	<div class="zg_bottom" style="border-top:2px solid #db2c28;background-color: #d9d9d9;padding: 20px;">
+		<div style="width:1200px;margin:30px auto;text-align:center;">
+			<div class="zg_bottom_link">
+				<li>
+					<a href="">关于我们</a>
+				</li>
+				<li class="zg_fg">|</li>
+				<li>
+					<a href="##">问题答复</a>
+				</li>
+				<li class="zg_fg">|</li>
+				<li>
+					<a href="##">导航地图</a>
+				</li>
+				<li class="zg_fg">|</li>
+				<li>
+					<a href="##">联系我们</a>
+				</li>
+			</div>
+			<div>地址：山西省阳泉市桃南东路192号   电话：2022724</div>
+			<div>版权所有：© 阳泉市总工会 版权所有</div>
+			<div>备案：晋ICP备13007903-1</div>
+			<div class="copy_img">
+				<a href="##"><img src="images/footer_img.png"></a>
+			</div>
+		</div>
+	</div>
+	<!--右侧功能栏-->
+	<div class="slide">
+		<ul>
+			<li class="open-hyzx">
+				<i class="icon iconfont icon-member"></i>
+				<a href="##">{{membercenter}}</a>
+			</li>
+			<li><i class="icon iconfont icon-diligently"></i><a href="wdfw.html">我的服务</a></li>
+			<li class="kefu"><i class="icon iconfont icon-kefu1 "></i><a href="##">智能客服</a></li>
+			<li><i class="icon iconfont icon-xinlang"></i><a href="##">微博</a></li>
+			<li><i class="icon iconfont icon-weixin2"></i><a href="##">微信</a></li>
+			<li><i class="icon iconfont icon-APP"></i><a href="##">APP</a></li>
+			<li id="top"><i class="icon iconfont icon-fanhuidingbu-"></i><a href="##">TOP</a></li>
+		</ul>
+		<div class="sina">
+			<a href="">
+				<img src="images/sina.png" width="100px" height="100px">
+			</a>
+			<p>新浪微博二维码</p>
+		</div>
+		<div class="ewm">
+			<a href="">
+				<img src="images/erweima.jpg" width="100px" height="100px">
+			</a>
+			<p>工会微信公众号</p>
+		</div>
+		<div class="exit">
+			<img src="images/user.png" width="80px" height="80px" onclick="window.open('hyzx.html')"/>
+			<p>{{userPhone}}</p>
+			<button @click="clear()">退出</button>
+		</div>
+	</div>
+		<!--智能客服-->
+	<div class="customer-service" >
+		<div class="kf_box">
+			<div class="kf clearfix">
+				<div class="kf_left">
+					<a href=""><img src="images/gh_x.png" width="23px" height="23px"></a>
+					<span>工会智能小K</span>
+				</div>
+				<div class="kf_right">
+					<i class="icon iconfont icon-xiajiantou"></i>
+				</div>
+			</div>
+		</div>
+		<div class="chat_box">
+			<div id="chat" class="chat clearfix">
+				<div class="chat_left">
+					<a href=""><img src="images/gh_l.png" style="margin-bottom: 5px;"></a>
+					<span>客服</span>
+					<i>{{kfnowTime}}</i>
+					<p>我是阳泉工会智能机器人，请问您有什么需要吗？</p>
+				</div>
+
+			</div>
+			<div class="down"></div>
+			<div class="shuru">
+				<input type="text" placeholder="请输入文字..."  v-model="userinp"/>
+			</div>
+			<div class="send clearfix">
+				<div class="send_left">
+					<i class="icon iconfont icon-smiling" ></i>
+				</div>
+				<div class="send_right">
+					<button type="button" @click="sendModel">发送</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/vue2.5.22.js"></script>
+<script src="js/axios.0.18.0.js"></script>
+<script src="js/qs.6.60.js"></script>
+
+<script src="js/content.js"></script>
+<script src="js/usertoken.js"></script>
+<script>
+    var vm = new Vue({
+        el: "#nameselect",
+        data: {
+        	newsList:[],
+            isactive:false,
+            oldpassword:'',
+            yespassword:'',
+            newpassword:'',
+            phone:'',
+            userinp:'',
+			userPhone:'',
+            usertoken:'',
+
+			/*实名认证*/
+			renpic:'',      //人像采集
+			IDzhengpic:'',	//正面身份证
+			IDfanpic:'',    //反面身份证
+            userName:'',	//姓名
+            nationality:'', //民族
+            birthday:'',	//出生日期
+            IDnumber:'',	//证件号码
+            IDpositive:'',
+            IDanti:'',
+
+            showIdfan:'',
+			showIdzheng:'',
+			showPerpeo:'',
+
+         	/*个人信息*/
+            loginAccount:'',  //登录账号
+            loginName:'',			 //真实姓名
+			loginNumber:'',   //手机号码
+            membercenter:'',
+			kfnowTime:'',
+            Nationality:[
+				{name:'汉族'},
+				{name:'满族'},
+				{name:'蒙古族'},
+				{name:'回族'},
+				{name:'藏族'},
+				{name:'维吾尔族'},
+				{name:'苗族'},
+				{name:'彝族'},
+				{name:'壮族'},
+				{name:'布依族'},
+				{name:'侗族'},
+				{name:'瑶族'},
+				{name:'白族'},
+				{name:'土家族'},
+				{name:'哈尼族'},
+				{name:'哈萨克族'},
+				{name:'傣族'},
+				{name:'黎族'},
+				{name:'傈僳族'},
+				{name:'佤族'},
+				{name:'傈僳族'},
+				{name:'畲族'},
+				{name:'高山族'},
+				{name:'傈僳族'},
+				{name:'拉祜族'},
+				{name:'水族'},
+				{name:'东乡族'},
+				{name:'纳西族'},
+				{name:'景颇族'},
+				{name:'柯尔克孜族'},
+				{name:'土族'},
+				{name:'达斡尔族'},
+				{name:'仫佬族'},
+				{name:'羌族'},
+				{name:'布朗族'},
+				{name:'撒拉族'},
+				{name:'毛南族'},
+				{name:'仡佬族'},
+				{name:'锡伯族'},
+				{name:'阿昌族'},
+				{name:'普米族'},
+				{name:'朝鲜族'},
+				{name:'塔吉克族'},
+				{name:'怒族'},
+				{name:'乌孜别克族'},
+				{name:'俄罗斯族'},
+				{name:'鄂温克族'},
+				{name:'德昂族'},
+				{name:'保安族'},
+				{name:'裕固族'},
+				{name:'京族'},
+				{name:'塔塔尔族'},
+				{name:'独龙族'},
+				{name:'鄂伦春族'},
+				{name:'赫哲族'},
+				{name:'门巴族'},
+				{name:'珞巴族'},
+				{name:'基诺族'},
+			],
+
+			//实名认证信息回填
+			renzheng:'',    //是否已经认证
+			userStrat:'',	//用户状态
+			addUnion:''		//是否入会
+
+        },
+        methods:{
+             // 援助案例/律师说法
+             yuanzhutList(){
+             	const that = this;
+             	 $.ajax({
+             	 	type:"post",
+                    url: LawUrl + "/api/tAttPublicity/selectAllByPage",
+                    data:{
+                        pubType:1,
+                        "pageNum":1,
+                        "pageSize":10,
+                    },
+                    async: false,
+                    dataType:"json",
+                    success:  function (result) {
+                    	console.log(result.data);
+                    	that.newsList = result.data.list;
+
+                    }
+                })
+             },
+            clear(){
+            	  sessionStorage.clear();
+            	  window.open("denglu.html","_self")
+            },
+            //客服
+            sendModel(){
+                kfhuifu();
+			},
+			//身份证图片上传
+            renupdate (e){  // 上传照片
+				var that = this
+                var self = this;
+                let file = e.target.files[0];
+				/* eslint-disable no-undef */
+                // 创建form对象
+                var param = new FormData();
+                param.append('file', file, file.name);// 通过append向form对象添加数据
+                //param.append('chunk', '0') // 添加form表单中其他数据
+                 // FormData私有类对象，访问不到，可以通过get判断值是否传进去
+                let config = {
+                    headers: {'Content-Type': 'multipart/form-data'}
+                };
+                axios.post(unionUrl + '/passLaborweb/api/laborun/file/upload', param, config)
+
+                    .then(response => {
+                        that.renpic   = response.data.data.newFileName
+						console.log(response.data.data.newFileName)
+                    })
+
+            },
+            IDzhengupdate (e){  // 上传照片
+				var that = this
+                var self = this;
+                let file = e.target.files[0];
+				/* eslint-disable no-undef */
+                // 创建form对象
+                var param = new FormData();
+                param.append('file', file, file.name);// 通过append向form对象添加数据
+                //param.append('chunk', '0') // 添加form表单中其他数据
+                // FormData私有类对象，访问不到，可以通过get判断值是否传进去
+                let config = {
+                    headers: {'Content-Type': 'multipart/form-data'}
+                };
+                axios.post(unionUrl + '/passLaborweb/api/laborun/file/upload', param, config)
+
+                    .then(response => {
+						/*if (response.data.code === 0){
+						 self.ImgUrl = response.data.data
+						 }
+						 if (response.data.msg === 'success') {
+						 alert('上传成功')
+						 }*/
+
+                        that.IDzhengpic = response.data.data.newFileName
+						console.log(that.IDzhengpic)
+                    })
+            },
+            IDfanupdate (e){  // 上传照片
+				var that = this
+                var self = this;
+                let file = e.target.files[0];
+				/* eslint-disable no-undef */
+                // 创建form对象
+                var param = new FormData();
+                param.append('file', file, file.name);// 通过append向form对象添加数据
+                //param.append('chunk', '0') // 添加form表单中其他数据
+                // FormData私有类对象，访问不到，可以通过get判断值是否传进去
+                let config = {
+                    headers: {'Content-Type': 'multipart/form-data'}
+                };
+                axios.post(unionUrl + '/passLaborweb/api/laborun/file/upload', param, config)
+
+                    .then(response => {
+						/*if (response.data.code === 0){
+						 self.ImgUrl = response.data.data
+						 }
+						 if (response.data.msg === 'success') {
+						 alert('上传成功')
+						 }*/
+                        that.IDfanpic = response.data.data.newFileName
+						console.log(that.IDfanpic)
+                    })
+            },
+
+			//获取用户信息
+			getUserInfo(){
+                var that = this
+                that.loginAccount = userTok.phone,  //登录账号
+                that.loginName = userTok.name,		//真实姓名
+                that.loginNumber = userTok.phone    //手机号码
+
+			},
+
+            gotoAdd(){
+			    window.open('grrh测.html')
+			}
+
+        },
+        mounted(){
+             
+            const that = this;
+            // 援助案例/律师说法
+            that.yuanzhutList();
+            that.getUserInfo()
+
+			//获取用户手机号
+            var chanpass = location.search
+            that.usertoken = chanpass.substring(1)
+			that.kfnowTime = nowTime   //获取客服当前时间
+
+
+			//验证是否登录
+            if(userTok.token == null){
+                this.membercenter = '请登录';
+                $('.slide ul li:nth-child(2)').hide();
+                //跳转登录界面 去登录
+                $('.open-hyzx').click(function () {
+                    window.open('denglu.html')
+                });
+            }else{
+                this.membercenter = '会员中心'
+                this.userPhone = userTok.phone;
+                $('.slide ul li:nth-child(2)').hide();
+                tuilogin()
+                //登录成功 跳转会员中心
+                $('.open-hyzx').click(function () {
+                    window.open('hyzx.html')
+                });
+            }
+
+        }
+
+
+
+    })
+
+
+</script>
+<!--智能客服-->
+<script src="js/znkf.js"></script>
+<!--上传图片 显示缩略图-->
+<script>
+
+    function previewFile() {
+        // 通过标签选择器获取HTML元素
+        var preview = document.getElementById('idimg');
+        var file = document.getElementById('renxiang').files[0];
+        // Js内置文件流
+        var reader = new FileReader();
+
+        // 更新img标签的src属性为图片的本地路径，就可以显示了
+        reader.onloadend = function () {
+            preview.src = reader.result;
+        }
+
+        // 图片文件不空就显示
+        if (file) {
+            reader.readAsDataURL(file);
+        } else {
+            // 图片文件是空的
+            preview.src = "";
+        }
+    }
+
+
+    function previewFile1() {
+        // 通过标签选择器获取HTML元素
+        var preview = document.getElementById('idimg1');
+        var file = document.getElementById('idfile1').files[0];
+        // Js内置文件流
+        var reader = new FileReader();
+
+        // 更新img标签的src属性为图片的本地路径，就可以显示了
+        reader.onloadend = function () {
+            preview.src = reader.result;
+        }
+
+        // 图片文件不空就显示
+        if (file) {
+            reader.readAsDataURL(file);
+        } else {
+            // 图片文件是空的
+            preview.src = "";
+        }
+    }
+
+
+    function previewFile2() {
+        // 通过标签选择器获取HTML元素
+        var preview = document.getElementById('idimg2');
+        var file = document.getElementById('idfile2').files[0];
+        // Js内置文件流
+        var reader = new FileReader();
+
+        // 更新img标签的src属性为图片的本地路径，就可以显示了
+        reader.onloadend = function () {
+            preview.src = reader.result;
+        }
+
+        // 图片文件不空就显示
+        if (file) {
+            reader.readAsDataURL(file);
+        } else {
+            // 图片文件是空的
+            preview.src = "";
+        }
+    }
+
+
+</script>
+<!--智能客服-->
+<script src="js/znkf.js"></script>
+<!--上传图片 显示缩略图-->
+<script>
+
+    function previewFile() {
+        // 通过标签选择器获取HTML元素
+        var preview = document.getElementById('idimg');
+        var file = document.getElementById('renxiang').files[0];
+        // Js内置文件流
+        var reader = new FileReader();
+
+        // 更新img标签的src属性为图片的本地路径，就可以显示了
+        reader.onloadend = function () {
+            preview.src = reader.result;
+        }
+
+        // 图片文件不空就显示
+        if (file) {
+            reader.readAsDataURL(file);
+        } else {
+            // 图片文件是空的
+            preview.src = "";
+        }
+    }
+
+
+    function previewFile1() {
+        // 通过标签选择器获取HTML元素
+        var preview = document.getElementById('idimg1');
+        var file = document.getElementById('idfile1').files[0];
+        // Js内置文件流
+        var reader = new FileReader();
+
+        // 更新img标签的src属性为图片的本地路径，就可以显示了
+        reader.onloadend = function () {
+            preview.src = reader.result;
+        }
+
+        // 图片文件不空就显示
+        if (file) {
+            reader.readAsDataURL(file);
+        } else {
+            // 图片文件是空的
+            preview.src = "";
+        }
+    }
+
+
+    function previewFile2() {
+        // 通过标签选择器获取HTML元素
+        var preview = document.getElementById('idimg2');
+        var file = document.getElementById('idfile2').files[0];
+        // Js内置文件流
+        var reader = new FileReader();
+
+        // 更新img标签的src属性为图片的本地路径，就可以显示了
+        reader.onloadend = function () {
+            preview.src = reader.result;
+        }
+
+        // 图片文件不空就显示
+        if (file) {
+            reader.readAsDataURL(file);
+        } else {
+            // 图片文件是空的
+            preview.src = "";
+        }
+    }
+
+
+</script>
+<script>
+	$(function () {
+
+		/*
+		*  1.要点击的元素 类名
+		*	2.要切换的元素 tab
+		* */
+		var heig = $('.my_personalinfo').height();
+		$('.my_ghcontent').css('height',heig)
+
+
+ 
+        tabtogg('.securitySettings','.my_personalinfo','.securitySettings p','.securitySettings i')
+        tabtogg('.personalinfo','.shiming','.personalinfo p','.personalinfo i')
+        tabtogg('.nameAttest','.xinxiang','.nameAttest p','.nameAttest i')
+        tabtogg('.ChairmanMailbox','.my-yuanzhu','.ChairmanMailbox p','.ChairmanMailbox i')
+        tabtogg('.Lawyerservice','.layer-ruzhu','.Lawyerservice p','.Lawyerservice i')
+        tabtogg('.Myanswer','.my-answer','.Myanswer p','.Myanswer i')
+        // tabtogg('.renwu_list','.xinxiang','.renwu_list p','.renwu_list i')
+
+		
+		
+		
+		tabtogg('.my-union','.my-enterUnion','.my-union p','.my-union i')
+        tabtogg('.my-transfer','.my-turnUnion','.my-transfer p','.my-transfer i')
+        tabtogg('.my-tiao','.my-tiaojie','.my-tiao p','.my-tiao i')
+        tabtogg('.my-dai','.my-daishu','.my-dai p','.my-dai i')
+        tabtogg('.my-zhong','.my-zhongcai','.my-zhong p','.my-zhong i')
+        tabtogg('.my-su','.my-susong','.my-su p','.my-su i')
+        tabtogg('.my-over','.my-overcount','.my-over p','.my-over i')
+        tabtogg('.my-wei','.my-weicount','.my-wei p','.my-wei i')
+        tabtogg('.unit-crate','.unit-building','.unit-crate p','.unit-crate i')
+		tabtogg('.legal-person','.legal-content','.legal-person p','.legal-person i')
+		tabtogg('.my-letter','.my-letterbox','.my-letter p','.my-letter i')
+		// tabtogg('.securitySettings ','.my-enterUnion','.securitySettings  p','.securitySettings  i')
+		tabtogg('.my-renwuover','.renwu_over','.my-renwuover p','.my-renwuover i')
+		tabtogg('.my-renwuwei','.renwu_myover','.my-renwuwei p','.my-renwuwei i')
+
+
+		$('.same').click(function () {
+            $(this).next().addClass("hei").prev().siblings().removeClass("hei");
+            $(this).find("i").addClass("rotate").parent().siblings().find("i").removeClass("rotate");
+			if($(this).next().hasClass('hei')){
+				// alert(111);
+				// $(this).prev().removeClass('active');
+                $(this).next().removeClass('hei')
+                $(this).find("i").removeClass('rotate')
+
+			}else{
+				// $(this).prev().addClass('active');
+                $(this).next().addClass('hei')
+                $(this).find("i").addClass('rotate')
+			}
+        })
+
+   })
+</script> <!-- 改成你的路径 -->
+</html>

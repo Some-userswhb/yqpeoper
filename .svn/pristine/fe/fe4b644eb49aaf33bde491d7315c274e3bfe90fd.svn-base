@@ -1,0 +1,515 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>家维权</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/jjs.css">
+	<!--智能客服样式-->
+	<link rel="stylesheet" href="css/znkf.css">
+	<!--全局样式-->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="nameselect" v-cloak>
+	<div class="zg_box">
+		<div class="zg_info">
+			<div class="zg_top">
+				<div class="nav_left">
+					<a href=""><img src="images/logo.png"></a>
+				</div>
+				<div class="nav_center clearfix">
+					<div class="tubiao">
+						<i class="icon iconfont icon-sun"></i>
+					</div>
+					<div class="tianqi">
+						<iframe width="420" scrolling="no" height="60" frameborder="0" allowtransparency="true"
+								src="//i.tianqi.com/index.php?c=code&id=12&icon=1&num=5&site=12"></iframe>
+					</div>
+				</div>
+				<div class="nav_righter" onclick="window.open('index.html')">
+					<i class="icon iconfont icon--fanhuishouye"></i>
+					<a href="javascript:;">返回网站</a>
+				</div>
+			</div>
+			<div class="my_gh">
+				<div class="my_ghtitle clearfix">
+					<div class="my_ghtitleleft">
+						<i class="icon iconfont icon-shouye"></i>
+						<a href="index.html">当前位置：首页></a>
+						<span>家建设</span>
+					</div>
+					<div class="my_ghtitleright">
+						<a href="zg_index.html"><<返回服务大厅</a>
+					</div>
+				</div>
+				<div class="my_ghcontent clearfix">
+					<div class="my_ghcontentleft">
+						<div class="rh_title">
+							<h4>家维权</h4>
+						</div>
+						<div class="rh_list">
+							<ul>
+								<li class="female-title">
+									<p class="bordred">维权指南</p>
+									<i class="icon iconfont icon-jiaobiao"></i>
+								</li>
+								<li class="hard-title">
+									<p>案例分析</p>
+									<i class="icon iconfont icon-jiaobiao"></i>
+								</li>
+								<li class="preferential-title">
+									<p>律师服务</p>
+									<i class="icon iconfont icon-jiaobiao"></i>
+								</li>
+								<li class="worker-title">
+									<p>法律援助</p>
+									<i class="icon iconfont icon-jiaobiao"></i>
+								</li>
+							</ul>
+						</div>	
+					</div>
+					<!--维权指南-->
+
+					<div class="female-content tab-togg on">
+						<ul>
+							<li>维权指南</li>
+							<li>维权指南</li>
+							<li>维权指南</li>
+							<li>维权指南</li>
+							<li>维权指南</li>
+						</ul>
+
+						<div class="jwn_list">
+							<ul class="clearfix">
+								<li class="active"><a href="">1</a></li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">5</a></li>
+								<li><a href="">6</a></li>
+								<li><a href="">上一页</a></li>
+								<li><a href="">下一页</a></li>
+							</ul>
+						</div>
+
+					</div>
+					<!--案例分析-->
+					<div class="hard-content tab-togg">
+						案例分析 <br>
+						案例分析 <br>
+						案例分析 <br>
+						案例分析 <br>
+						案例分析 <br>
+						案例分析 <br>
+						案例分析 <br>
+					</div>
+					<!--律师服务-->
+					<div class="preferential-content tab-togg">
+						律师服务 <br>
+						律师服务 <br>
+						律师服务 <br>
+						律师服务 <br>
+						律师服务 <br>
+						律师服务 <br>
+						律师服务 <br>
+					</div>
+					<!--法律援助-->
+					<div class="worker-content tab-togg">
+						法律援助 <br>
+						法律援助 <br>
+						法律援助 <br>
+						法律援助 <br>
+						法律援助 <br>
+						法律援助 <br>
+						法律援助 <br>
+
+
+
+					</div>
+					<!--主席信箱-->
+					<!-- <div class="my_ghcontentright tab-togg on">
+						<div class="sq">
+							<div class="sq_list">
+								<h4>我要写信</h4>
+							</div>
+							<form action="" method="">
+								<div class="sq_content">
+									<a href=""><i>*</i>信件类型：</a>
+									<select>
+										<option value="01">请选择</option>
+										<option value="02">请选择1</option>
+										<option value="03">请选择2</option>
+										<option value="04">请选择3</option>
+									</select>
+								</div>
+								<div class="sq_content">
+									<a href=""><i>*</i>您的姓名：</a>
+									<input type="text" placeholder="请输入姓名" name="text" />
+								</div>
+								<div class="sq_content">
+									<a href=""><i>*</i>联系电话：</a>
+									<input type="text" placeholder="请输入电话" name="text" />
+								</div>
+								<div class="sq_content">
+									<a href=""><i>*</i>信件标题：</a>
+									<input type="text" placeholder="请输入标题内容" name="text" />
+								</div>
+								<div class="sq_content">
+									<a href=""><i>*</i>主题内容：</a>
+									<input type="text" placeholder="请输入留言内容（最多可输入200字）" name="text" style="width: 500px; height: 150px;padding-bottom: 95px;" />
+								</div>
+								<div class="sq_content" style="margin-left: -90px;">
+									<a href=""><i>*</i>验证码：</a>
+									<input type="text" placeholder="填写验证码" name="text" class="input-val" style="width: 158px; height: 40px;"/>
+  									<canvas id="canvas" width="100px" height="40px"></canvas>
+  									<span id="cfont" style="cursor: pointer">看不清？换一张</span>
+								</div>
+								<div class="anniu">
+									<button type="submit" class="tijiao active">提交</button>
+									<button type="reset" class="chongzhi">重置信息</button>
+								</div>
+							</form>
+						</div>
+					</div> -->
+
+
+				</div>
+			</div>
+			<div style="margin:35px 0 15px 15px;" class="clearfix">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#all" data-toggle="tab">全总及省级工会</a></li>
+							<li><a href="#qu" data-toggle="tab">区县工会</a></li>
+							<li><a href="#jc" data-toggle="tab">基层工会</a></li>
+							<li><a href="#meiti" data-toggle="tab">新闻媒体网站</a></li>
+						</ul>
+					    <div  class="tab-content clearfix" style="height: 85px">
+						     <div class="tab-pane active" id="all">
+							<ul class="nav nav-tabs" style="border:0">
+								<li><a href="http://www.acftu.org/">中华全国总工会</a></li>
+								<li><a href="http://www.sxgh.org.cn/">山西省总工会</a></li>
+								<li><a href="http://www.bjzgh.org/">北京市总工会</a></li>
+								<li><a href="http://www.shzgh.org/">上海市总工会</a></li>
+								<li><a href="http://www.xmzgh.org/">厦门市总工会</a></li>
+								<li><a href="http://www.cqgh.org/">重庆市总工会</a></li>
+								<li><a href="http://www.hebgh.org/">河北省总工会</a></li>
+								<li><a href="http://www.hbzgh.org.cn/">湖北省总工会</a></li>
+								<li><a href="https://www.ahghw.org/">安徽省总工会</a></li>
+
+							</ul>
+						     </div>
+						     <div class="tab-pane fade" id="qu">
+							<ul class="nav nav-tabs" style="border:0">
+
+								<li><a href="javascript:;">城区总工会</a></li>
+								<li><a href="javascript:;">郊区总工会</a></li>
+								<li><a href="javascript:;">开发区总工会</a></li>
+								<li><a href="javascript:;">平定县总工会</a></li>
+								<li><a href="javascript:;">盂县总工会</a></li>
+							</ul>
+						     </div>
+						     <div class="tab-pane fade" id="jc">
+							<ul class="nav nav-tabs" style="border:0">
+								<li><a href="javascript:;">公交建通工委</a></li>
+								<li><a href="javascript:;">文教工委</a></li>
+								<li><a href="javascript:;">财贸工委</a></li>
+								<li><a href="javascript:;">煤矿工委</a></li>
+								<li><a href="javascript:;">市直机关</a></li>
+								<li><a href="javascript:;">市级行业工会</a></li>
+								<li><a href="javascript:;">阳煤集团工会</a></li>
+							</ul>
+						     </div>
+						     <div class="tab-pane fade" id="meiti">
+							<ul class="nav nav-tabs" style="border:0">
+								<li><a href="http://acftu.workercn.cn">工会网媒话工会（中工网、山西省总网站合办） </a></li>
+								<li><a href="http://www.sxszcwb.org">山西省总工会财务部软件交流平台</a></li>
+							</ul>
+						     </div>
+					    </div>
+			    </div>
+			</div>
+		</div>
+		<!-- 底部 -->
+	<div class="zg_bottom" style="border-top:2px solid #db2c28;background-color: #d9d9d9;padding: 20px;">
+		<div style="width:1200px;margin:30px auto;text-align:center;">
+			<div class="zg_bottom_link">
+				<li>
+					<a href="">关于我们</a>
+				</li>
+				<li class="zg_fg">|</li>
+				<li>
+					<a href="">问题答复</a>
+				</li>
+				<li class="zg_fg">|</li>
+				<li>
+					<a href="">导航地图</a>
+				</li>
+				<li class="zg_fg">|</li>
+				<li>
+					<a href="">联系我们</a>
+				</li>
+			</div>
+			<div>地址：山西省阳泉市桃南东路192号   电话：2022724</div>
+			<div>版权所有：© 阳泉市总工会 版权所有</div>
+			<div>备案：晋ICP备13007903-1</div>
+			<div class="copy_img">
+				<a href=""><img src="images/footer_img.png"></a>
+			</div>
+		</div>
+	</div>
+	<div class="slide">
+		<ul>
+			<li class="open-hyzx">
+				<i class="icon iconfont icon-member"></i>
+				<a onclick="window.open('denglu.html')">{{membercenter}}</a>
+			</li>
+			<li><i class="icon iconfont icon-diligently"></i><a href="wdfw.html">我的服务</a></li>
+			<li class="kefu"><i class="icon iconfont icon-kefu1 "></i><a href="javascript:;">智能客服</a></li>
+			<li><i class="icon iconfont icon-xinlang"></i><a href="javascript:;">微博</a></li>
+			<li><i class="icon iconfont icon-weixin2"></i><a href="javascript:;">微信</a></li>
+			<li><i class="icon iconfont icon-APP"></i><a href="javascript:;">APP</a></li>
+			<li id="top"><i class="icon iconfont icon-fanhuidingbu-"></i><a href="javascript:;">TOP</a></li>
+		</ul>
+		<div class="sina">
+			<a href="">
+				<img src="images/sina.png" width="100px" height="100px">
+			</a>
+			<p>新浪微博二维码</p>
+		</div>
+		<div class="ewm">
+			<a href="">
+				<img src="images/erweima.jpg" width="100px" height="100px">
+			</a>
+			<p>工会微信公众号</p>
+		</div>
+		<div class="exit">
+			<img src="images/user.png" width="80px" height="80px" />
+			<p>{{userPhone}}</p>
+			<button @click="clear()">退出</button>
+		</div>
+	</div>
+
+	<!--智能客服-->
+	<div class="customer-service" >
+		<div class="kf_box">
+			<div class="kf clearfix">
+				<div class="kf_left">
+					<a href=""><img src="images/gh_x.png" width="23px" height="23px"></a>
+					<span>工会智能小K</span>
+				</div>
+				<div class="kf_right">
+					<i class="icon iconfont icon-xiajiantou"></i>
+				</div>
+			</div>
+		</div>
+		<div class="chat_box">
+
+			<div id="chat" class="chat clearfix">
+				<div class="chat_left">
+					<a href=""><img src="images/gh_l.png" style="margin-bottom: 5px;"></a>
+					<span>客服</span>
+					<i>2019-3-22  12:12</i>
+					<p>我是阳泉工会智能机器人，请问您有什么需要吗？</p>
+				</div>
+
+
+
+			</div>
+			<div class="down"></div>
+			<div class="shuru">
+				<input type="text" placeholder="请输入文字..."  v-model="userinp"/>
+			</div>
+			<div class="send clearfix">
+				<div class="send_left">
+					<i class="icon iconfont icon-smiling" ></i>
+				</div>
+				<div class="send_right">
+					<button type="button" @click="sendModel" >发送</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	</div>
+
+</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-3.3.1.min.js" ></script>
+	<script type="text/javascript">
+	$(function(){
+		$(".rh_list ul li:first-child").addClass("active");
+		$(".rh_list ul li").on("click",function(){
+		$(this).addClass("active").siblings().removeClass("active");
+	})
+	})
+</script>
+	<script>
+
+	 $(function(){
+	  var show_num = [];
+	  draw(show_num);
+	  $("#cfont").on('click',function(){
+	   draw(show_num);
+	  })
+	  $(".btn").on('click',function(){
+	   var val = $(".input-val").val().toLowerCase();
+	   var num = show_num.join("");
+	   if(val==''){
+		alert('请输入验证码！');
+	   }else if(val == num){
+		alert('提交成功！');
+		$(".input-val").val('');
+		// draw(show_num);
+	   }else{
+		alert('验证码错误！请重新输入！');
+		$(".input-val").val('');
+		// draw(show_num);
+	   }
+	  })
+
+	 //生成并渲染出验证码图形
+	 function draw(show_num) {
+	  var canvas_width=$('#canvas').width();
+	  var canvas_height=$('#canvas').height();
+	  var canvas = document.getElementById("canvas");//获取到canvas的对象，演员
+	  var context = canvas.getContext("2d");//获取到canvas画图的环境，演员表演的舞台
+	  canvas.width = canvas_width;
+	  canvas.height = canvas_height;
+	  var sCode = "a,b,c,d,e,f,g,h,i,j,k,m,n,p,q,r,s,t,u,v,w,x,y,z,A,B,C,E,F,G,H,J,K,L,M,N,P,Q,R,S,T,W,X,Y,Z,1,2,3,4,5,6,7,8,9,0";
+	  var aCode = sCode.split(",");
+	  var aLength = aCode.length;//获取到数组的长度
+	  for (var i = 0; i < 4; i++) { //这里的for循环可以控制验证码位数（如果想显示6位数，4改成6即可）
+	   var j = Math.floor(Math.random() * aLength);//获取到随机的索引值
+	   // var deg = Math.random() * 30 * Math.PI / 180;//产生0~30之间的随机弧度
+	   var deg = Math.random() - 0.5; //产生一个随机弧度
+	   var txt = aCode[j];//得到随机的一个内容
+	   show_num[i] = txt.toLowerCase();
+	   var x = 10 + i * 20;//文字在canvas上的x坐标
+	   var y = 20 + Math.random() * 8;//文字在canvas上的y坐标
+	   context.font = "bold 23px 微软雅黑";
+	   context.translate(x, y);
+	   context.rotate(deg);
+	   context.fillStyle = randomColor();
+	   context.fillText(txt, 0, 0);
+	   context.rotate(-deg);
+	   context.translate(-x, -y);
+	  }
+	 }
+	 //得到随机的颜色值
+	 function randomColor() {
+	  var r = Math.floor(Math.random() * 256);
+	  var g = Math.floor(Math.random() * 256);
+	  var b = Math.floor(Math.random() * 256);
+	  return "rgb(" + r + "," + g + "," + b + ")";
+	 }
+
+
+        function tabtogg(clicClass,togclass,clica,clici) {
+            $(clicClass).click(function () {
+                $('.tab-togg').removeClass('on');
+                $(togclass).addClass('on');
+                var hei = $(togclass).height();
+                $('.my_ghcontent').css('height',hei);
+                $('.rh_list li p').removeClass('bordred');
+                $(clica).addClass('bordred');
+                $('.rh_list li i').css('color','#000');
+                $(clici).css('color','#db2c28')
+            })
+
+        }
+	 tabtogg('.female-title','.female-content','.female-title p','.female-title i');
+	 tabtogg('.hard-title','.hard-content','.hard-title p','.hard-title i');
+	 tabtogg('.preferential-title','.preferential-content','.preferential-title p','.preferential-title i');
+	 tabtogg('.worker-title','.worker-content','.worker-title p','.worker-title i');
+	 tabtogg('.letter-title','.my_ghcontentright','.letter-title p','.letter-title i');
+
+
+
+
+	 })
+	</script>
+<script src="js/vue2.5.22.js"></script>
+<script src="js/axios.0.18.0.js"></script>
+<script src="js/qs.6.60.js"></script>
+<script src="js/content.js"></script>
+<script src="js/usertoken.js"></script>
+<script>
+    var vm = new Vue({
+        el: "#nameselect",
+        data: {
+            isactive:false,
+            friendship:[
+            {groupName:'组织工会',linkName:'平定县总工会'},
+            {groupName:'产业工会',linkName:'盂县总工会'},
+            {groupName:'企事业工会',linkName:'阳泉市总工会'},
+            {groupName:'',linkName:'阳泉市矿区总工会'},
+            {groupName:'',linkName:'阳泉市郊区总工会'}
+            ],
+            userinp:'',
+            userPhone:'',
+            membercenter:''
+        },
+        methods:{
+
+            sendModel(){
+                kfhuifu();
+			},
+			clear(){
+            	  sessionStorage.clear();
+            	  window.open("denglu.html","_self")
+            },
+
+        },
+        mounted(){
+
+            const that = this;
+
+
+
+            if(userTok.token == null){
+                this.membercenter = '请登录';
+                $('.slide ul li:nth-child(2)').hide();
+                //跳转登录界面 去登录
+                $('.open-hyzx').click(function () {
+                    window.open('denglu.html')
+                });
+            }else{
+                this.membercenter = '会员中心'
+                this.userPhone = userTok.phone
+                $('.slide ul li:nth-child(2)').hide();
+                tuilogin()
+                //登录成功 跳转会员中心
+                $('.open-hyzx').click(function () {
+                    window.open('hyzx.html')
+                });
+            }
+
+            $.ajax({
+                url: baseUrl + "/api/cms/message",
+                data:{
+                },
+                async: false,
+                dataType:"json",
+                success:  function (result) {
+                    console.log(result)
+                }
+            })
+
+
+        }
+
+
+
+    })
+
+
+</script>
+<!--智能客服-->
+<script src="js/znkf.js"></script>
+</html>

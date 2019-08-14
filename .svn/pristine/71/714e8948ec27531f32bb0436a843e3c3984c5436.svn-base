@@ -1,0 +1,461 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" type="text/css" href="css/zhuce.css" />
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+	<link rel="stylesheet" href="css/bootstrap.css" >
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/zg_index.css">
+	<!--智能客服样式-->
+	<link rel="stylesheet" href="css/znkf.css">
+	<!--全局样式-->
+	<link rel="stylesheet" href="css/style.css">
+	<title>注册协议</title>
+	<style>
+		.showhd{
+			display: block !important;
+		}
+		.showmask2,.showmask1{
+			display: none;
+		}
+		.xieyi-content{
+			width: 1200px;
+			margin: 0 auto;
+			background: #fff2f0;
+			padding:0 30px 50px 30px;
+			line-height: 30px;
+
+		}
+		.xieyi-content p{
+			margin-top: 30px;
+			font-size: 16px;
+
+		}
+		.title-cont{
+			padding: 20px 0;
+			text-align: center;
+
+		}
+	</style>
+</head>
+<body>
+<div id="wrap" v-cloak>
+
+
+	<div class="nav1">
+		<div class="nav_left">
+			<a href=""><img src="images/logo.png"></a>
+		</div>
+		<div class="nav_center clearfix">
+			<div class="list">
+				<ul class="clearfix">
+					<li><i class="icon iconfont icon-xinwen1"></i><a href="">看新闻</a></li>
+					<li><i class="icon iconfont icon-chanyedai"></i><a href="">找服务</a></li>
+					<li><i class="icon iconfont  icon-shukuzhuanhuan"></i><a href="">学习</a></li>
+					<li><i class="icon iconfont icon-chazhao"></i><a href="">查资料</a></li>
+				</ul>
+			</div>
+			<div class="search clearfix">
+				<form action="">
+					<input type="text" name="text" placeholder="请输入关键字" class="text"/>
+					<input type="button" class="button" value="搜索" />
+				</form>
+			</div>
+			<div class="search_text">
+				<ul class="clearfix">
+					<li><a href="">热门搜索:</a></li>
+					<li><a href="">医疗互助</a></li>
+					<li><a href="">办事大厅</a></li>
+					<li><a href="">工会组件</a></li>
+					<li><a href="">法人资格</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--微信矩阵开始-->
+		<div class="nav_right clearfix" >
+			<!--网站集群-->
+			<div class="juxing" id="showmask1">
+				<i class="icon iconfont icon-pingtai"></i>
+				<p>网站集群</p>
+
+				<div class="top-arrow1"></div>
+				<div class="top-arrow1ccc"></div>
+			</div>
+			<div class="wechat-mask clearfix">
+				<div class="jq showmask1">
+					<div class="jq_list">
+						<ul class="clearfix">
+							<li><a href="">市</a></li>
+							<li><a href="">阳泉</a></li>
+						</ul>
+					</div>
+					<div class="jq_list">
+						<ul class="clearfix">
+							<li><a href="">区/县</a></li>
+							<li><a href="">阳泉城区</a></li>
+							<li><a href="">阳泉矿区</a></li>
+							<li><a href="">阳泉郊区</a></li>
+							<li><a href="">平定县</a></li>
+							<li><a href="">盂县</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			<!--微信矩阵-->
+			<div class="juxing pic" id="showmask2" >
+				<i class="icon iconfont icon-weixin2"></i>
+				<p>微信矩阵</p>
+				<div class="top-arrow2"></div>
+				<div class="top-arrow2ccc"></div>
+			</div>
+			<div class="wechat-mask clearfix">
+
+
+				<div class="jq showmask2">
+
+					<div class="jq_list">
+						<ul class="clearfix">
+							<li><a href="">市</a></li>
+							<li><a href="">阳泉</a></li>
+						</ul>
+					</div>
+					<div class="jq_list">
+						<ul class="clearfix">
+							<li><a href="">区/县</a></li>
+							<li><a href="">阳泉城区</a></li>
+							<li><a href="">阳泉矿区</a></li>
+							<li><a href="">阳泉郊区</a></li>
+							<li><a href="">平定县</a></li>
+							<li><a href="">盂县</a></li>
+						</ul>
+					</div>
+					<div class="jq_list">
+						<ul class="clearfix">
+							<li><a href="">产业工会</a></li>
+							<li><a href="">非公企业工会</a></li>
+							<li><a href="">财贸轻纺烟草工会</a></li>
+							<li><a href="">农林水工会</a></li>
+							<li><a href="">省煤炭工会</a></li>
+							<li><a href="">机冶建材工会</a></li>
+							<li><a href="">省直机关工会工委</a></li>
+							<li><a href="">省监狱工会</a></li>
+							<li><a href="">信息业工会</a></li>
+							<li><a href="">建筑业工会</a></li>
+							<li><a href="">直属基层工委</a></li>
+							<li><a href="">省公路运输工委</a></li>
+							<li><a href="">电业工会</a></li>
+							<li><a href="">教科文卫体工会</a></li>
+							<li><a href="">太铁工会</a></li>
+							<li><a href="">金融工委</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--微信矩阵结束-->
+
+		
+		
+	</div>
+	<div class="dl_navbox">
+		<div class="dl_nav">
+			<ul class="clearfix">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="zzjg.html">组织机构</a></li>
+				<li><a href="xwzx.html">新闻资讯</a></li>
+				<li><a href="zg_index.html">服务大厅</a></li>
+				<li><a href="ztzx.html">专题中心</a></li>
+				<li><a href="jnts.html">技能提升</a></li>
+				<li><a href="data.html">数据中心</a></li>
+				<li><a href="zlzx.html">资料中心</a></li>
+			</ul>
+		</div>
+	</div>
+	<div  class="xieyi-content" >
+		<div class="title-cont">
+			<h1>用户注册协议</h1>
+		</div>
+		<p>1.【目的意义】
+			为保证网上政务服务用户信息的真实性、合法性和有效性，自然人、法人用户注册、验证应采用实名制。统一用户注册和验 证是开展“互联网+政务服务”、建立政务服务实施机构和行政相对人线上服务法律关系的前提，是今后全国政务服务实现网上“一地注册， 各地互认”的基础。在您成为“互联网+政务服务”实名注册用户（简称“注册用户”）之前，请确认您已充分阅读、理解并接受本协议的全 部内容，同意遵循本协议的所有约定。
+		</p>
+		<p>
+			2.【协议适用主体范围】
+			政务服务门户的运营管理权归政务服务机构所有。本协议是您和安徽政务服务管理机构（简称 “政务服务机构”），明确双方通过安徽政务服务门户和平台办理政务服务事项过程中的权利义务所订立的协议。订立 本协议的用户，应当是具备完全民事权利能力和完全民事行为能力的自然人。
+
+		</p>
+		<p>
+			3.【服务内容】
+			注册用户能够访问互联网政务服务门户网站、检索静态信息、进行在线咨询、申办政务服务事项，可在专属用户空间查询所 办事项的过程信息和历史信息，储存信息资料，并自行维护用户空间信息。
+
+		</p>
+		<p>
+			4.【用户承诺与授权】
+			注册用户在政务服务门户进行注册和使用本政务服务平台时承诺并确认：
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;  (1)提供及时、详尽及准确的个人资料；
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; (2)使用本人手机号码、社保账号、银行卡账号、公积金账号、身份证号、驾驶证号等个人信息进行实名验证；
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;  (3)及时更新注册资料；
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; (4)同意接收政务服务机构推送的信息；
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; (5)在提请政务服务事项办理过程中，按服务内容要求提供真实、准确的要件材料，并及时对上传本平台的要件材料做好更新维护；
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; (6)自愿选择物流快递、网上支付等第三方服务时，及时提供真实姓名、联系地址、联系方式、账户等相关个人信息；
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;  (7)不存放与政务服务申办无关的信息内容。
+		</p>
+		<p>
+
+			5.【用户信息保障】
+			政务服务机构依法保护个人隐私，不得违法违规向与政务服务无关的第三方提供用户注册资料。
+		</p>
+		<p>
+			6.【用户的密码和安全性】
+			考虑到注册用户是特定的行政相对人，以其账号操作的行为由注册用户承担相应法律责任。注册用户应妥善保管 密码，不得将账号、密码提供给他人使用。建议定期修改密码，以确保账号安全。
+
+		</p>
+		<p>
+
+			7.【禁止条款】
+			注册用户有违反法律法规行为的，政务服务机构有权终止为用户提供服务，并保留追责的权利。
+		</p>
+		<p>
+			8.【注意事项】
+			政务服务机构将加强网络安全管理和风险防控，因技术原因和网络中断等因素，可能会造成注册用户的实时操作无效或暂停 ，请注意备份相关资料。
+
+		</p>
+		<p>
+
+			9.【其他规定】
+			政务服务机构后期依照本服务条款及相关法律法规发布的补充规则，均为本协议不可分割的组成部分，原则上不再另行签约。
+
+		</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="zg_bottom" style="border-top:2px solid #db2c28;background-color: #d9d9d9;padding: 20px;">
+		<div style="width:1200px;margin:30px auto;text-align:center;">
+			<div class="zg_bottom_link">
+				<li>
+					<a href="">关于我们</a>
+				</li>
+				<li class="zg_fg">|</li>
+				<li>
+					<a href="">问题答复</a>
+				</li>
+				<li class="zg_fg">|</li>
+				<li>
+					<a href="">导航地图</a>
+				</li>
+				<li class="zg_fg">|</li>
+				<li>
+					<a href="">联系我们</a>
+				</li>
+			</div>
+			<div>地址：山西省阳泉市桃南东路192号   电话：2022724</div>
+			<div>版权所有：© 阳泉市总工会 版权所有</div>
+			<div>备案：晋ICP备13007903-1</div>
+			<div class="copy_img">
+				<a href=""><img src="images/footer_img.png"></a>
+			</div>
+		</div>
+	</div>
+	<div class="slide">
+		<ul>
+			<li class="open-hyzx">
+				<i class="icon iconfont icon-member"></i>
+				<a onclick="window.open('denglu.html')">{{membercenter}}</a>
+			</li>
+			<li><i class="icon iconfont icon-diligently"></i><a href="wdfw.html">我的服务</a></li>
+			<li class="kefu"><i class="icon iconfont icon-kefu1 "></i><a href="##">智能客服</a></li>
+			<li><i class="icon iconfont icon-xinlang"></i><a href="##">微博</a></li>
+			<li><i class="icon iconfont icon-weixin2"></i><a href="##">微信</a></li>
+			<li><i class="icon iconfont icon-APP"></i><a href="##">APP</a></li>
+			<li id="top"><i class="icon iconfont icon-fanhuidingbu-"></i><a href="##">TOP</a></li>
+		</ul>
+		<div class="sina">
+			<a href="">
+				<img src="images/sina.png" width="100px" height="100px">
+			</a>
+			<p>新浪微博二维码</p>
+		</div>
+		<div class="ewm">
+			<a href="">
+				<img src="images/erweima.jpg" width="100px" height="100px">
+			</a>
+			<p>工会微信公众号</p>
+		</div>
+		<div class="exit">
+			<img src="images/user.png" width="80px" height="80px" />
+			<p>{{userPhone}}</p>
+			<button @click="clear()">退出</button>
+		</div>
+	</div>
+	<!--智能客服-->
+	<div class="customer-service" >
+		<div class="kf_box">
+			<div class="kf clearfix">
+				<div class="kf_left">
+					<a href=""><img src="images/gh_x.png" width="23px" height="23px"></a>
+					<span>工会智能小K</span>
+				</div>
+				<div class="kf_right">
+					<i class="icon iconfont icon-xiajiantou"></i>
+				</div>
+			</div>
+		</div>
+		<div class="chat_box">
+			<div id="chat" class="chat clearfix">
+				<div class="chat_left">
+					<a href=""><img src="images/gh_l.png" style="margin-bottom: 5px;"></a>
+					<span>客服</span>
+					<!--<i>2019-3-22  12:12</i>-->
+					<p>我是阳泉工会智能机器人，请问您有什么需要吗？</p>
+				</div>
+
+
+			</div>
+			<div class="down"></div>
+			<div class="shuru">
+				<input type="text" placeholder="请输入文字..."  v-model="userinp"/>
+			</div>
+			<div class="send clearfix">
+				<div class="send_left">
+					<i class="icon iconfont icon-smiling" ></i>
+				</div>
+				<div class="send_right">
+					<button type="button" @click="sendModel">发送</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vue2.5.22.js"></script>
+<script src="js/axios.0.18.0.js"></script>
+<script src="js/qs.6.60.js"></script>
+<script src="js/usertoken.js"></script>
+<script>
+	var vm = new Vue({
+		el:'#wrap',
+		data:{
+            phone:'',
+            verification:'',
+            password:'',
+            userinp:'',
+            userPhone:'',
+            membercenter:''
+		},
+		methods: {
+            registered(){
+				var that = this
+
+                $.ajax({
+                    url: "http://112.35.92.177:90/sso/ssoUser/add/phone",
+                    data: {
+                        "phone": that.phone,
+                        "password": '',
+                        "systemCode": 'S1005'
+                    },
+                    dataType: "json",
+                    success: function (result) {
+						console.log(result)
+                    }
+                })
+            },
+
+            sendModel(){
+                kfhuifu();
+            }
+        },
+		mounted(){
+
+		    if(userTok.token == null){
+                this.membercenter = '请登录';
+                $('.slide ul li:nth-child(2)').hide();
+                //跳转登录界面 去登录
+                $('.open-hyzx').click(function () {
+                    window.open('denglu.html')
+                });
+            }else{
+                this.membercenter = '会员中心'
+                this.userPhone = userTok.phone
+                $('.slide ul li:nth-child(2)').hide();
+                tuilogin()
+                //登录成功 跳转会员中心
+                $('.open-hyzx').click(function () {
+                    window.open('hyzx.html')
+                });
+            }
+		}
+
+	})
+</script>
+<script>
+    $(function () {
+		/*微信矩阵 网站集群显示隐藏 复制*/
+        $('#showmask2').mouseenter(function () {
+            $('.showmask2').show();
+            $('.top-arrow2').show()
+            $('.top-arrow2ccc').show()
+            $('.showmask1').hide()
+            $('.top-arrow1').hide()
+            $('.top-arrow1ccc').hide()
+        });
+        $('.showmask2').mouseleave(function () {
+            $('.showmask2').hide()
+            $('.top-arrow2').hide()
+            $('.top-arrow2ccc').hide()
+        });
+        $('#showmask1').mouseenter(function () {
+            $('.showmask1').show()
+            $('.top-arrow1').show()
+            $('.top-arrow1ccc').show()
+            $('.showmask2').hide()
+            $('.top-arrow2').hide()
+            $('.top-arrow2ccc').hide()
+        });
+        $('.showmask1').mouseleave(function () {
+            $('.showmask1').hide()
+            $('.top-arrow1').hide()
+            $('.top-arrow1ccc').hide()
+        });
+
+
+
+        var regBtn = $("#register");
+        $('#readme').attr('checked',false)
+        $("#readme").change(function(){
+            var checkedValue = $("#readme").prop("checked");
+            if(checkedValue){
+                regBtn.prop("disabled",false);
+                regBtn.css("background","#db2c28");
+            }else{
+                regBtn.prop("disabled",true);
+                regBtn.css("background","#fa7673");
+            }
+        });
+
+    })
+</script>
+<!--智能客服-->
+<script src="js/znkf.js"></script>
+</html>

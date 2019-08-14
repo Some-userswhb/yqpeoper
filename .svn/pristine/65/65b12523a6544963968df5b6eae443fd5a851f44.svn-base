@@ -1,0 +1,1367 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+	<link rel="stylesheet" href="css/bootstrap.css" >
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/zg_index.css">
+	<link rel="stylesheet" href="css/zzjg.css">
+	<!--智能客服样式-->
+	<link rel="stylesheet" href="css/znkf.css">
+	<!--全局样式-->
+	<link rel="stylesheet" href="css/style.css">
+	<title>阳泉市总工会</title>
+	<link rel="icon" href="images/picture.png" type="image/x-icon"/>
+	<style>
+
+		.showmask2,.showmask1{
+			display: none;
+		}
+		.content,.xiala{
+			display: none;
+		}
+		.active1{
+			background-color: #ed9304 !important;
+		}
+	</style>
+</head>
+<body>
+<div class="nav_box" id="data-center" v-cloak>
+	<div class="nav1">
+		<div class="nav_left">
+			<a href=""><img src="images/logo.png"></a>
+		</div>
+		<div class="tubiao">
+			<p>{{nowTime}}</p>
+			<p>{{nowDay}}</p>
+		</div>
+		<div class="nav_center clearfix">
+			<div class="tianqi">
+				<iframe width="350" scrolling="no" height="60" frameborder="0" allowtransparency="true"
+						src="//i.tianqi.com/index.php?c=code&id=12&icon=1&num=5&site=12"></iframe>
+			</div>
+		</div>
+		<!--微信矩阵开始-->
+		<div class="nav_right clearfix" >
+			<!--网站集群-->
+			<div class="juxing" id="showmask2">
+				<i class="icon iconfont icon-pingtai"></i>
+				<p>网站集群</p>
+
+				<div class="top-arrow1"></div>
+				<div class="top-arrow1ccc"></div>
+			</div>
+			<div class="wechat-mask clearfix">
+				<div class="jq showmask1">
+					<div class="jq_list">
+						<ul class="clearfix">
+							<li><a href="">市</a></li>
+							<li><a href="">阳泉</a></li>
+						</ul>
+					</div>
+					<div class="jq_list">
+						<ul class="clearfix">
+							<li><a href="">区/县</a></li>
+							<li><a href="">阳泉城区</a></li>
+							<li><a href="">阳泉矿区</a></li>
+							<li><a href="">阳泉郊区</a></li>
+							<li><a href="">平定县</a></li>
+							<li><a href="">盂县</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			<!--微信矩阵-->
+			<div class="juxing pic" id="showmask1" >
+				<i class="icon iconfont icon-weixin2"></i>
+				<p>微信矩阵</p>
+				<div class="top-arrow2"></div>
+				<div class="top-arrow2ccc"></div>
+			</div>
+			<div class="wechat-mask clearfix">
+
+
+				<div class="jq showmask2">
+
+					<div class="jq_list">
+						<ul class="clearfix">
+							<li><a href="">市</a></li>
+							<li><a href="">阳泉</a></li>
+						</ul>
+					</div>
+					<div class="jq_list">
+						<ul class="clearfix">
+							<li><a href="">区/县</a></li>
+							<li><a href="">阳泉城区</a></li>
+							<li><a href="">阳泉矿区</a></li>
+							<li><a href="">阳泉郊区</a></li>
+							<li><a href="">平定县</a></li>
+							<li><a href="">盂县</a></li>
+						</ul>
+					</div>
+					<div class="jq_list">
+						<ul class="clearfix">
+							<li><a href="">产业工会</a></li>
+							<li><a href="">非公企业工会</a></li>
+							<li><a href="">财贸轻纺烟草工会</a></li>
+							<li><a href="">农林水工会</a></li>
+							<li><a href="">市煤炭工会</a></li>
+							<li><a href="">机冶建材工会</a></li>
+							<li><a href="">市直机关工会工委</a></li>
+							<li><a href="">市监狱工会</a></li>
+							<li><a href="">信息业工会</a></li>
+							<li><a href="">建筑业工会</a></li>
+							<li><a href="">直属基层工委</a></li>
+							<li><a href="">市公路运输工委</a></li>
+							<li><a href="">电业工会</a></li>
+							<li><a href="">教科文卫体工会</a></li>
+							<li><a href="">太铁工会</a></li>
+							<li><a href="">金融工委</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--微信矩阵结束-->
+	</div>
+		<div class="list_online">
+			<div class="list">
+				<ul class="clearfix">
+					<li><i class="icon iconfont icon-xinwen1"></i><a href="">看新闻</a></li>
+					<li><i class="icon iconfont icon-chanyedai"></i><a href="">找服务</a></li>
+					<li><i class="icon iconfont  icon-shukuzhuanhuan"></i><a href="">学习</a></li>
+					<li><i class="icon iconfont icon-chazhao"></i><a href="">查资料</a></li>
+				</ul>
+			</div>
+			<div class="search clearfix">
+				<form action="">
+					<input type="text" name="text" placeholder="请输入关键字" class="text"/>
+					<input type="button" class="button" value="搜索" />
+				</form>
+			</div>
+		</div>
+		<div class="list_box">
+			<div class="menu">
+				<ul class="clearfix">
+						<li class="hideMask">
+							<a href="index.html">
+								<i class="icon iconfont icon-shouye"></i>首页
+							</a>
+						</li>
+
+						<li class="tissue-jg active">
+							<a href="javascript:;">
+								<i class="icon iconfont icon-zuzhijigou1"></i>组织机构
+							</a>
+						</li>
+						<li class="news-zx">
+							<a href="xwzx.html">
+								<i class="icon iconfont icon-xinwen2"></i>新闻资讯
+							</a>
+						</li>
+						<li class="hideMask">
+							<a href="zg_index.html">
+								<i class="icon iconfont icon-daohangtubiao_fuwudating"></i>服务大厅
+							</a>
+						</li>
+						<li class="hideMask">
+							<a href="ztzx.html">
+								<i class="icon iconfont icon-zhuanti"></i>专题中心
+							</a>
+						</li>
+					<li>
+						<a href="jnts.html">
+							<i class="icon iconfont icon-shu1"></i>技能提升
+						</a>
+					</li>
+						<li class="hideMask">
+							<a href="data.html">
+								<i class="icon iconfont icon-shuju"></i>数据中心
+							</a>
+						</li>
+						<li class="hideMask">
+							<a href="zlzx.html">
+								<i class="icon iconfont icon-ziliao"></i>资料中心
+							</a>
+						</li>
+				</ul>
+			</div>
+			<!--新闻资讯-->
+			<div class="content clearfix">
+				<div class="content_left">
+					<ul>
+
+						<li :class="{active1:isShow == index}"
+							@click="rightContent(item.categoryId)"
+							v-for="(item,index) in mask1left" :key="index">
+							<a href="##">{{item.categoryName}}</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="content_center">
+					<ul>
+						<li v-for="(item,name) in mask1right">
+							<a href="##">
+								<div class="circle"></div>
+								{{item.title}}
+							</a>
+							<span>【{{item.inputdate}}】</span>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<!--组织机构-->
+			<div class="xiala">
+				<div class="xiala_left">
+					<ul>
+						<li><a href="##">市总简介</a></li>
+						<li><a href="##">市总领导</a></li>
+						<li class="active1"><a href="##">内设机构</a></li>
+					</ul>
+				</div>
+				<div class="xiala_right">
+					<div class="xiala_list">
+						<ul class="clearfix">
+							<li><a href="javascript:;">市总部门：</a></li>
+							<li><a href="javascript:;">办公室</a></li>
+							<li><a href="javascript:;">组织部</a></li>
+							<li><a href="javascript:;">宣教部</a></li>
+							<li><a href="javascript:;">经济部</a></li>
+							<li><a href="javascript:;">保障部</a></li>
+							<li><a href="javascript:;">劳保部</a></li>
+							<li><a href="javascript:;">法工部</a></li>
+							<li><a href="javascript:;">女工部</a></li>
+							<li><a href="javascript:;">财务部</a></li>
+							<li><a href="javascript:;">网络部</a></li>
+						</ul>
+					</div>
+					<div class="xiala_list">
+						<ul class="clearfix">
+							<li><a href="javascript:;">地方工会：</a></li>
+							<li><a href="javascript:;">平定县总工会</a></li>
+							<li><a href="javascript:;">盂县总工会</a></li>
+							<li><a href="javascript:;">城区总工会</a></li>
+							<li><a href="javascript:;">矿区总工会</a></li>
+							<li><a href="javascript:;">郊区总工会</a></li>
+							<li><a href="javascript:;">经济开发区总工会</a></li>
+						</ul>
+					</div>
+					<div class="xiala_list">
+						<ul class="clearfix">
+							<li><a href="javascript:;">产业工会：</a></li>
+							<li><a href="javascript:;">阳泉市煤矿电力工会</a></li>
+							<li><a href="javascript:;">阳泉市公交建通工会</a></li>
+							<li><a href="javascript:;">阳泉市文教卫生工会</a></li>
+							<li><a href="javascript:;">阳泉市财贸工会</a></li>
+							<li><a href="javascript:;">阳泉市市直机关工会</a></li>
+						</ul>
+					</div>
+					<div class="xiala_list">
+						<ul class="clearfix">
+							<li><a href="javascript:;">市直机关工会委员会：</a></li>
+							<li><a href="javascript:;">阳泉煤业(集团)有限责任公司工会</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="my_ghtitleleft">
+				<i class="icon iconfont icon-shouye"></i>
+				<a href="index.html">当前位置：首页></a>
+				<span>组织机构</span>
+			</div>
+			<div class="my_ghcontent clearfix">
+				<div class="my_ghcontentleft">
+					<div class="rh_title">
+						<h4>组织机构</h4>
+					</div>
+					<div class="rh_list">
+						<ul>
+							<li class="shi-jianjie">
+								<p>市总简介</p>
+								<i class="icon iconfont icon-jiaobiao"></i>
+							</li>
+							<li class="shi-lingdao">
+								<p>市总领导</p>
+								<i class="icon iconfont icon-jiaobiao"></i>
+							</li>
+							<li class="shi-jigou">
+								<p>内设机构</p>
+								<i class="icon iconfont icon-jiaobiao"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+
+				<!--市总简介-->
+				<div class="my_ghcontentright tab-togg" style="width: 845px;">
+					<div class="jianjie_title">
+						<h4>市总简介</h4>
+						<div class="online"></div>
+						<p class="one">
+							阳泉市总工会是全市工会组织的领导机关，成立于
+							1948年2月。内设9部1室和6个事业单位，下辖平
+							定、盂县、郊区、城区、矿区和经济技术开发
+							区6个地方总工会，7个产业工会，直属阳煤集团
+							公司工会。全市共有工会组织2861个，职工340491人，
+							工会会员334692人，职工入会率达91％。
+						</p>
+						<p>
+							近年来，在市委和省总领导下，全市各级工会紧紧围
+							绕党委政府中心工作和经济社会发展大局，着力推进
+							“五大”创新，全面构建“五新”格局，不负使命，忠诚
+							展职，大深案，勇于实践，各项工作取得新的进展。
+							创造了许多在全省乃至全国具有广泛影响的活经验，
+							展示了査发进取的端新形象。市总工会荣获全省唯一
+							的“全国工会系统先进集体”，成功跨入“全国文明单
+							位”行列。
+						</p>
+					</div>
+					<div class="shuju">
+						<div class="shuju_title">
+							<h4>工会数据<span>（截至2019年6月20日）</span></h4>
+							<div class="online"></div>
+						</div>
+						<div class="shuju_content">
+							<ul class="clearfix">
+								<li>
+									<a href="">
+										<div class="sj_text">
+											<strong>2861</strong>
+											<span>个</span>
+											<p>全市工会组织</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="sj_text">
+											<strong>340491</strong>
+											<span>人</span>
+											<p>职工人数</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="sj_text">
+											<strong>334692</strong>
+											<span>人</span>
+											<p>全市工会会员</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="zhize">
+						<div class="shuju_title">
+							<h4>主要职责</h4>
+							<div class="online"></div>
+						</div>
+						<div class="zhize_content clearfix">
+							<div class="zhize_img">
+								<span>01</span>
+							</div>
+							<div class="zhize_text">
+								<p>
+									坚持党的领导。坚决贯彻党的意志和主张，坚定不移
+									走中国特色社会主义工会发展道路，切实增强工会工
+									作的政治性和工会组织的先进性群众性，汇聚全市广
+									大职工推进社会主义现代化建设的强大合力。
+								</p>
+							</div>
+						</div>
+						<div class="zhize_content clearfix">
+							<div class="zhize_img">
+								<span>02</span>
+							</div>
+							<div class="zhize_text">
+								<p>
+									加强对广大职工的政治引领和思想引导。切实承担
+									引导广大职工听党话、跟党走的政治任务，把职工
+									最广泛最紧密地团结在党的周围，引导广大职工弘
+									扬劳动精神、劳模精神，增强主人翁责任感。
+								</p>
+							</div>
+						</div>
+						<div class="zhize_content clearfix">
+							<div class="zhize_img">
+								<span>03</span>
+							</div>
+							<div class="zhize_text">
+								<p>
+									依法依章程独立自主开展工作。按照阳泉市委和全国总
+									工会的要求，贯彻执行阳泉市工会代表大会确定的方针
+									任务和作出的决议，组织和指导各级工会认真履行工会
+									工作职能。
+								</p>
+							</div>
+						</div>
+						<div class="zhize_content clearfix">
+							<div class="zhize_img">
+								<span>04</span>
+							</div>
+							<div class="zhize_text">
+								<p>
+									团结动员广大职工干事创业。组织动员广大职工围绕中
+									心、服务大局，积极主动参与党委、政府各项中心工作，
+									把工人阶级主力军作用转化为促进经济社会发展的强大力量。
+								</p>
+							</div>
+						</div>
+						<div class="zhize_content clearfix five">
+							<div class="zhize_img">
+								<span>05</span>
+							</div>
+							<div class="zhize_text">
+								<p>
+									突出代表维护职工权益的职责。以普通劳动者为主要
+									工作对象，以企业、行业、乡镇（街道）、园区等为
+									主阵地，充分履行维护职工合法权益的基本职责。组
+									织对涉及职工利益重大问题的调查研究，参与相关法
+									律、法规的制定，以及劳动关系矛盾纠纷的协调处置
+									和职工重大伤亡事故的调查处理。
+								</p>
+							</div>
+						</div>
+						<div class="zhize_content clearfix">
+							<div class="zhize_img">
+								<span>06</span>
+							</div>
+							<div class="zhize_text">
+								<p>
+									拓展工会组织覆盖。适应人口流动、新兴群
+									体发展等新情况，加强产业工会建设以及对
+									非公经济组织和社会组织的组织覆盖。
+								</p>
+							</div>
+						</div>
+						<div class="zhize_content clearfix">
+							<div class="zhize_img">
+								<span>07</span>
+							</div>
+							<div class="zhize_text">
+								<p>
+									拓宽工会工作覆盖。积极探索开展网上职工工作，建设
+									符合广大职工需求的网上职工之家。打造工会工作服务
+									品牌，做实做强“四季帮扶”、“职工之家”建设、技能
+									提升、法律援助和职工文化等品牌。创新会员发展、联
+									系职工、开展活动的方式，健全完善工会工作效果评价
+									制度，联系和引导职工服务类社会组织。
+								</p>
+							</div>
+						</div>
+						<div class="zhize_content clearfix">
+							<div class="zhize_img">
+								<span>08</span>
+							</div>
+							<div class="zhize_text">
+								<p>
+									积极参与社会治理。动员和组织广大职工
+									参与社会治安综合治理、基层社区网格化
+									管理、平安创建，协调化解矛盾纠纷和利
+									益冲突，发挥维护社会和谐稳定的作用。
+									按照法定程序承担市政府转移的社会管理
+									服务职能，牵头做好全国、阳泉市劳动模范
+									和先进工作者的推荐评选和管理服务工作。
+								</p>
+							</div>
+						</div>
+						<div class="zhize_content clearfix">
+							<div class="zhize_img">
+								<span>09</span>
+							</div>
+							<div class="zhize_text">
+								<p>
+									发挥民主参与和社会监督作用。依照党的政策和
+									国家法律法规，代表和组织职工参与国家和社会
+									事务管理，参与企事业和机关的民主管理。推动
+									基层单位建立平等协商、集体合同制度和监督保
+									证机制。
+								</p>
+							</div>
+						</div>
+						<div class="zhize_content clearfix">
+							<div class="zhize_img">
+								<span>10</span>
+							</div>
+							<div class="zhize_text">
+								<p>
+									研究指导工会自身改革和建设。负责机关
+									和所属单位的干部队伍建设工作。负责工
+									会经费的收、管、用和工会财产的管理。
+									依法加强工会经费的审查监督，对下级工
+									会及其有关单位的经费收支和资产管理进
+									行审查。做好工会国际联络、国际交往有
+									关工作。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--市总领导-->
+				<div class="my_jigou tab-togg">
+					<div class="jigou_list">
+						<ul class="clearfix">
+							<li class="active"><a href="javascript:;">市总部门</a></li>
+						</ul>
+					</div>
+					<div class="jigou_xiala">
+						<ul class=" ">
+							<li class="act">办公室</li>
+							<li>组织部</li>
+							<li>宣教部</li>
+							<li>经济部</li>
+							<li>保障部</li>
+							<li>劳保部</li>
+							<li>法工部</li>
+							<li>女工部</li>
+							<li>财务部</li>
+							<li>网络部</li>
+						</ul>
+					</div>
+					<div class="jigou_tab">
+						<!-- 办公室 -->
+						<div style="display: block;">
+					        <div class="lianxi clearfix">
+						        <div class="lianxi_left">
+							         <h4>办公室</h4>
+						        </div>
+						        <div class="lianxi_right">
+							       <div class="dizhi btop">
+								      <a href="##">山西省阳泉市桃南东路192号</a>
+								      <!-- <span>市总办公楼201室</span> -->
+							        </div>
+							        <div class="dizhi">
+								      <a href="##">电话：2018586</a>
+								      <span>邮编：045000</span>
+							        </div>
+						        </div> 
+						        <div class="huangxian"></div>
+					        </div>
+					        <div class="work">
+						       <div class="shuju_title">
+							      <h4>工作职责</h4>
+							      <div class="online"></div>
+						       </div>
+						       <div class="work_content">
+							      <h4>阳泉市总工会办公室工作职责</h4>
+							      <span>
+								     负责文秘、档案、信息、统计、机要保密工作；
+								     负责综合反映全市工会工作和职工队伍的重要情
+								     况和动态；协调和督查主席办公会、常委会、全
+								     委会对全市各级工会和市总工会机关各部门、直
+								     属事业单位工作部署与要求的落实；负责市总工
+								     会文件和领导讲话的起草与文稿审核工作；负责
+								     纪检、监察工作。
+							      </span>
+						        </div>
+					        </div>
+						</div>
+						<!-- 组织部 -->
+						<div>
+							<div class="lianxi clearfix">
+						        <div class="lianxi_left">
+							         <h4>组织部</h4>
+						        </div>
+						        <div class="lianxi_right">
+							       <div class="dizhi btop">
+								      <a href="##">山西省阳泉市桃南东路192号</a>
+								      <!-- <span>市总办公楼201室</span> -->
+							        </div>
+							        <div class="dizhi">
+								      <a href="##">电话：2034782</a>
+								      <span>邮编：045000</span>
+							        </div>
+						        </div> 
+						        <div class="huangxian"></div>
+					        </div>
+					        <div class="work">
+						       <div class="shuju_title">
+							      <h4>工作职责</h4>
+							      <div class="online"></div>
+						       </div>
+						       <div class="work_content">
+							      <h4>阳泉市总工会组织部工作职责</h4>
+							      <span>
+								     负责指导全市工会组织建设和会籍管理工作，协助管理县区总工会、市级产业工会、公司工会和直属基层工会领导班子；负责市工会代表大会和全委会有关人事问题的具体组织工作；负责工会干部教育培训工作；指导基层工会开展建设“职工之家”活动和全国、全省“模范职工之家”的推荐、评选以及全市“先进职工之家”的评选、表彰工作；负责市总工会机关及直属单位的机构编制、干部人事管理工作；指导工会组织职工参与企事业单位民主选举、民主决策、民主管理和民主监督工作；指导基层工会推行厂务公开，坚持和发展职工代表大会制度；指导国有独资和国有控股公司建立职工董事、职工监事制度；指导县区总工会和产业工会与同级地方政府及有关部门建立联席（联系）会议制度。
+							      </span>
+						        </div>
+					        </div>
+						</div>
+						<!-- 宣教部 -->
+						<div>
+							<div class="lianxi clearfix">
+						        <div class="lianxi_left">
+							         <h4>宣教部</h4>
+						        </div>
+						        <div class="lianxi_right">
+							       <div class="dizhi btop">
+								      <a href="##">山西省阳泉市桃南东路192号</a>
+								      <!-- <span>市总办公楼201室</span> -->
+							        </div>
+							        <div class="dizhi">
+								      <a href="##">电话：2021571</a>
+								      <span>邮编：045000</span>
+							        </div>
+						        </div> 
+						        <div class="huangxian"></div>
+					        </div>
+					        <div class="work">
+						       <div class="shuju_title">
+							      <h4>工作职责</h4>
+							      <div class="online"></div>
+						       </div>
+						       <div class="work_content">
+							      <h4>阳泉市总工会宣教部工作职责</h4>
+							      <span>
+								     参与制定有关职工思想教育工作的方针政策和对工人阶级、工会工作的宣传教育规划与任务；负责劳动模范典型事迹的宣传，指导基层开展精神文明创建活动；调查研究和反映职工的思想状况；负责与新闻单位的联络和新闻发布工作；指导职工文化体育工作。
+							      </span>
+						        </div>
+					        </div>
+						</div>
+						<!-- 经济部 -->
+						<div>
+							<div class="lianxi clearfix">
+						        <div class="lianxi_left">
+							         <h4>经济部</h4>
+						        </div>
+						        <div class="lianxi_right">
+							       <div class="dizhi btop">
+								      <a href="##">山西省阳泉市桃南东路192号</a>
+								      <!-- <span>市总办公楼201室</span> -->
+							        </div>
+							        <div class="dizhi">
+								      <a href="##">电话：2034782</a>
+								      <span>邮编：045000</span>
+							        </div>
+						        </div> 
+						        <div class="huangxian"></div>
+					        </div>
+					        <div class="work">
+						       <div class="shuju_title">
+							      <h4>工作职责</h4>
+							      <div class="online"></div>
+						       </div>
+						       <div class="work_content">
+							      <h4>阳泉市总工会经济部工作职责</h4>
+							      <span>
+									 参与有关经济建设、经济改革、科学技术规划和政策的研究制定；
+									  指导基层工会实施群众性“经济技术创新工程”；组织开展全市职工的社会主义劳动竞赛、
+									  合理化建议等活动；协助市委、市政府做好全国、全省劳模和全国、全省“五一”劳动奖章、
+									  奖状获得者的评选、推荐、管理和本市劳模、本市“五一”劳动奖章、奖状获得者的评选、表彰、
+									  管理等具体工作；承担市劳动竞赛委员会的日常工作。
+							      </span>
+						        </div>
+					        </div>
+						</div>
+						<!-- 保障部 -->
+						<div>
+							<div class="lianxi clearfix">
+						        <div class="lianxi_left">
+							         <h4>保障部</h4>
+						        </div>
+						        <div class="lianxi_right">
+							       <div class="dizhi btop">
+								      <a href="##">山西省阳泉市桃南东路192号</a>
+								      <!-- <span>市总办公楼201室</span> -->
+							        </div>
+							        <div class="dizhi">
+								      <a href="##">电话：2034783</a>
+								      <span>邮编：045000</span>
+							        </div>
+						        </div> 
+						        <div class="huangxian"></div>
+					        </div>
+					        <div class="work">
+						       <div class="shuju_title">
+							      <h4>工作职责</h4>
+							      <div class="online"></div>
+						       </div>
+						       <div class="work_content">
+							      <h4>阳泉市总工会保障部工作职责</h4>
+							      <span>
+								     参与制定有关职工劳动就业和工资分配的法律法规、政策与实施监督；参与制定有关职工养老保险、失业保险、医疗保险、工伤保险、生育保险的法律法规和政策，监督社会保险基金的正确使用和有关社会保险法律法规与政策的执行；参与涉及职工切身利益的物价、住房和社会救济等政策的制定与实施监督；调查研究和掌握困难职工群体和特困职工的情况，指导和组织实施送温暖工程，维护特困职工和困难职工群体的合法权益；参与退休职工有关政策的研究制定。
+							      </span>
+						        </div>
+					        </div>
+						</div>
+						<!-- 劳保部 -->
+						<div>
+							<div class="lianxi clearfix">
+						        <div class="lianxi_left">
+							         <h4>劳保部</h4>
+						        </div>
+						        <div class="lianxi_right">
+							       <div class="dizhi btop">
+								      <a href="##">山西省阳泉市桃南东路192号</a>
+								      <!-- <span>市总办公楼201室</span> -->
+							        </div>
+							        <div class="dizhi">
+								      <a href="##">电话：2034424</a>
+								      <span>邮编：045000</span>
+							        </div>
+						        </div> 
+						        <div class="huangxian"></div>
+					        </div>
+					        <div class="work">
+						       <div class="shuju_title">
+							      <h4>工作职责</h4>
+							      <div class="online"></div>
+						       </div>
+						       <div class="work_content">
+							      <h4>阳泉市总工会劳保部工作职责</h4>
+							      <span>
+								     参与和指导职工劳动保护工作。参与有关职业安全卫生法律法规和政策措施的制定；监督检查劳动保护法律法规和政策措施的贯彻执行情况，预防伤亡事故和职业危害的发生；组织参加市内建设项目劳动保护设施的审查验收；组织参加职工重大伤亡事故和严重职业危害的调查处理；监督和协助企业开展职业安全卫生教育培训工作；承担市总工会安全生产监督委员会的日常工作。
+							      </span>
+						        </div>
+					        </div>
+						</div>
+						<!-- 法工部 -->
+						<div>
+							<div class="lianxi clearfix">
+						        <div class="lianxi_left">
+							         <h4>法工部</h4>
+						        </div>
+						        <div class="lianxi_right">
+							       <div class="dizhi btop">
+								      <a href="##">山西省阳泉市桃南东路192号</a>
+								      <!-- <span>市总办公楼201室</span> -->
+							        </div>
+							        <div class="dizhi">
+								      <a href="##">电话：2022075</a>
+								      <span>邮编：045000</span>
+							        </div>
+						        </div> 
+						        <div class="huangxian"></div>
+					        </div>
+					        <div class="work">
+						       <div class="shuju_title">
+							      <h4>工作职责</h4>
+							      <div class="online"></div>
+						       </div>
+						       <div class="work_content">
+							      <h4>阳泉市总工会法工部工作职责</h4>
+							      <span>
+								     参与和指导涉及职工和工会工作的立法和执法监督，负责指导平等协商和签订集体合同的工作。参与劳动法律法规执行情况的监督检查和重大劳动争议案件的调查处理；指导劳动争议调处和推进劳动争议仲裁工作；指导和承担工会法律援助与法律服务工作；承担市总工会法律顾问工作。指导企业、行业、区域建立和完善平等协商、集体合同制度；研究工资政策，指导基层工会进行工资协商谈判；推动基层建立和完善调整劳动关系、维护职工劳动权益的监督制约和保证机制；指导和推动地方和行业建立劳动关系三方协调机制。
+							      </span>
+						        </div>
+					        </div>
+						</div>
+						<!-- 女工部 -->
+						<div>
+							<div class="lianxi clearfix">
+						        <div class="lianxi_left">
+							         <h4>女工部</h4>
+						        </div>
+						        <div class="lianxi_right">
+							       <div class="dizhi btop">
+								      <a href="##">山西省阳泉市桃南东路192号</a>
+								      <!-- <span>市总办公楼201室</span> -->
+							        </div>
+							        <div class="dizhi">
+								      <a href="##">电话：2033815</a>
+								      <span>邮编：045000</span>
+							        </div>
+						        </div> 
+						        <div class="huangxian"></div>
+					        </div>
+					        <div class="work">
+						       <div class="shuju_title">
+							      <h4>工作职责</h4>
+							      <div class="online"></div>
+						       </div>
+						       <div class="work_content">
+							      <h4>阳泉市总工会女工部工作职责</h4>
+							      <span>
+								     参与有关女职工合法权益特别是特殊权益的法律法规和政策的制定及实施监督；调查研究女职工合法权益保护及工作、学习、生活等方面存在的问题，提出意见和建议；负责工会女职工工作的理论政策研究；负责女职工组织建设和女职工干部培训工作；承担市总工会女职工委员会的日常工作。
+							      </span>
+						        </div>
+					        </div>
+						</div>
+						<!-- 财务部 -->
+						<div>
+							<div class="lianxi clearfix">
+						        <div class="lianxi_left">
+							         <h4>财务部</h4>
+						        </div>
+						        <div class="lianxi_right">
+							       <div class="dizhi btop">
+								      <a href="##">山西省阳泉市桃南东路192号</a>
+								      <!-- <span>市总办公楼201室</span> -->
+							        </div>
+							        <div class="dizhi">
+								      <a href="##">电话：2460012</a>
+								      <span>邮编：045000</span>
+							        </div>
+						        </div> 
+						        <div class="huangxian"></div>
+					        </div>
+					        <div class="work">
+						       <div class="shuju_title">
+							      <h4>工作职责</h4>
+							      <div class="online"></div>
+						       </div>
+						       <div class="work_content">
+							      <h4>阳泉市总工会财务部工作职责</h4>
+							      <span>
+								     研究制定工会及职工劳动福利事业的财务管理体制和规章制度；负责市总工会经费的预决算；审批县区总工会和直接管理工会经费的市级产业工会、机关及有关直属单位经费的预决算，管理留成工会经费及政府拨款；负责对各级工会经费“收、管、用”及职工劳动福利事业财务工作的政策指导和审查监督；做好市工会代表大会财务工作报告的有关工作；承担市总工会经费审查委员会的日常工作。
+							      </span>
+						        </div>
+					        </div>
+						</div>
+						<!-- 网络部 -->
+						<div>
+							<div class="lianxi clearfix">
+						        <div class="lianxi_left">
+							         <h4>网络部</h4>
+						        </div>
+						        <div class="lianxi_right">
+							       <div class="dizhi btop">
+								      <a href="##">山西省阳泉市桃南东路192号</a>
+								      <!-- <span>市总办公楼201室</span> -->
+							        </div>
+							        <div class="dizhi">
+								      <a href="##">电话：2038696</a>
+								      <span>邮编：045000</span>
+							        </div>
+						        </div> 
+						        <div class="huangxian"></div>
+					        </div>
+					        <div class="work">
+						       <div class="shuju_title">
+							      <h4>工作职责</h4>
+							      <div class="online"></div>
+						       </div>
+						       <div class="work_content">
+							      <h4>阳泉市总工会网络部工作职责</h4>
+							      <span>
+								     研究制定全工会网上工作规划；承担市总工会并指导县（区）总工会、基层工会门户网站和网络平台建设工作，做好网上引导、动员和服务职工群众工作；培训管理工会网上工作队伍；与政府有关部门及网络媒体沟通协调；研究制定、监督落实工会网络信息安全保密相关制度；统筹推进全市工会工作数据库建设管理。
+							      </span>
+						        </div>
+					        </div>
+						</div>
+					</div>
+				</div>
+				<!--内设机构-->
+				<div class="my_lingdao tab-togg">
+					<div class="shuju_title">
+						<h4>市总领导</h4>
+						<div class="online"></div>
+					</div>
+					<div class="lingdao_content clearfix">
+						<div class="lingdao_img">
+							<a href=""><img src="images/zzjgman/1d1.jpg"></a>
+						</div>
+						<div class="lingdao_text">
+							<h4>张永忠</h4>
+							<p>市人大常委会副主任、市总工会主席</p>
+						</div>
+					</div>
+					<div class="lingdao_content clearfix">
+						<div class="lingdao_img">
+							<a href=""><img src="images/zzjgman/1d2.jpg"></a>
+						</div>
+						<div class="lingdao_text">
+							<h4>程继喜</h4>
+							<p>市总工会党组书记、常务副主席</p>
+						</div>
+					</div>
+					<div class="lingdao_content clearfix">
+						<div class="lingdao_img">
+							<a href=""><img src="images/zzjgman/1d3.jpg"></a>
+						</div>
+						<div class="lingdao_text">
+							<h4>张建军</h4>
+							<p>市总工会党组成员、副主席</p>
+						</div>
+					</div>
+					<div class="lingdao_content clearfix">
+						<div class="lingdao_img">
+							<a href=""><img src="images/zzjgman/1d4.jpg"></a>
+						</div>
+						<div class="lingdao_text">
+							<h4>马文林</h4>
+							<p>市总工会党组成员、市工人文化宫主任</p>
+						</div>
+					</div>
+					<div class="lingdao_content clearfix">
+						<div class="lingdao_img">
+							<a href=""><img src="images/zzjgman/1d5.jpg"></a>
+						</div>
+						<div class="lingdao_text">
+							<h4>杜莉</h4>
+							<p>市总工会党组成员、副主席</p>
+						</div>
+					</div>
+					<div class="lingdao_content clearfix">
+						<div class="lingdao_img">
+							<a href=""><img src="images/zzjgman/1d6.jpg"></a>
+						</div>
+						<div class="lingdao_text">
+							<h4>杨海平</h4>
+							<p>市总工会党组成员、经费审查委员会主任</p>
+						</div>
+					</div>
+					<div class="lingdao_content clearfix">
+						<div class="lingdao_img">
+							<a href=""><img src="images/zzjgman/1d7.jpg"></a>
+						</div>
+						<div class="lingdao_text">
+							<h4>权红红</h4>
+							<p>市总工会副主席</p>
+						</div>
+					</div>
+					<div class="lingdao_content clearfix">
+						<div class="lingdao_img">
+							<a href=""><img src="images/zzjgman/1d8.jpg"></a>
+						</div>
+						<div class="lingdao_text">
+							<h4>王崇佑</h4>
+							<p>市总工会经费审查委员会主任</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 友情链接 -->
+				<div style="width: 1185px;margin:35px auto;margin-bottom: 15px;" class="clearfix">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#all" data-toggle="tab">全总及省级工会</a></li>
+							<li><a href="#qu" data-toggle="tab">区县工会</a></li>
+							<li><a href="#jc" data-toggle="tab">基层工会</a></li>
+							<li><a href="#meiti" data-toggle="tab">新闻媒体网站</a></li>
+						</ul>
+					    <div  class="tab-content clearfix" style="height: 85px">
+						     <div class="tab-pane active" id="all">
+							<ul class="nav nav-tabs" style="border:0">
+								<li><a href="http://www.acftu.org/">中华全国总工会</a></li>
+								<li><a href="http://www.sxgh.org.cn/">山西省总工会</a></li>
+								<li><a href="http://www.bjzgh.org/">北京市总工会</a></li>
+								<li><a href="http://www.shzgh.org/">上海市总工会</a></li>
+								<li><a href="http://www.xmzgh.org/">厦门市总工会</a></li>
+								<li><a href="http://www.cqgh.org/">重庆市总工会</a></li>
+								<li><a href="http://www.hebgh.org/">河北省总工会</a></li>
+								<li><a href="http://www.hbzgh.org.cn/">湖北省总工会</a></li>
+								<li><a href="https://www.ahghw.org/">安徽省总工会</a></li>
+
+							</ul>
+						     </div>
+						     <div class="tab-pane fade" id="qu">
+							<ul class="nav nav-tabs" style="border:0">
+
+								<li><a href="javascript:;">城区总工会</a></li>
+								<li><a href="javascript:;">郊区总工会</a></li>
+								<li><a href="javascript:;">开发区总工会</a></li>
+								<li><a href="javascript:;">平定县总工会</a></li>
+								<li><a href="javascript:;">盂县总工会</a></li>
+							</ul>
+						     </div>
+						     <div class="tab-pane fade" id="jc">
+							<ul class="nav nav-tabs" style="border:0">
+								<li><a href="javascript:;">公交建通工委</a></li>
+								<li><a href="javascript:;">文教工委</a></li>
+								<li><a href="javascript:;">财贸工委</a></li>
+								<li><a href="javascript:;">煤矿工委</a></li>
+								<li><a href="javascript:;">市直机关</a></li>
+								<li><a href="javascript:;">市级行业工会</a></li>
+								<li><a href="javascript:;">阳煤集团工会</a></li>
+							</ul>
+						     </div>
+						     <div class="tab-pane fade" id="meiti">
+							<ul class="nav nav-tabs" style="border:0">
+								<li><a href="http://acftu.workercn.cn">工会网媒话工会（中工网、山西省总网站合办） </a></li>
+								<li><a href="http://www.sxszcwb.org">山西省总工会财务部软件交流平台</a></li>
+							</ul>
+						     </div>
+					    </div>
+			    </div>
+	<!--底部-->
+	<div class="zg_bottom" style="border-top:2px solid #db2c28;background-color: #d9d9d9;padding: 20px;">
+		<div style="width:1200px;margin:30px auto;text-align:center;">
+			<div>地址：山西省阳泉市桃南东路192号   电话：2022724</div>
+			<div>E--mail:szghwgb@163.com</div>
+			<div>版权所有：© 阳泉市总工会 版权所有</div>
+			<div>备案：晋ICP备13007903-1</div>
+			<div class="copy_img">
+				<a href="javascript:;"><img src="images/footer_img.png"></a>
+			</div>
+		</div>
+	</div>
+		<!--右侧功能栏-->
+		<div class="slide">
+			<ul>
+				<li class="open-hyzx">
+					<i class="icon iconfont icon-member"></i>
+					<a onclick="window.open('denglu.html')">{{membercenter}}</a>
+				</li>
+				<li><i class="icon iconfont icon-diligently"></i><a href="wdfw.html">我的服务</a></li>
+				<li class="kefu"><i class="icon iconfont icon-kefu1 "></i><a href="##">智能客服</a></li>
+				<li><i class="icon iconfont icon-xinlang"></i><a href="##">微博</a></li>
+				<li><i class="icon iconfont icon-weixin2"></i><a href="##">微信</a></li>
+				<li><i class="icon iconfont icon-APP"></i><a href="##">APP</a></li>
+				<li id="top"><i class="icon iconfont icon-fanhuidingbu-"></i><a href="##">TOP</a></li>
+			</ul>
+			<div class="sina">
+				<a href="">
+					<img src="images/sina.png" width="100px" height="100px">
+				</a>
+				<p>新浪微博二维码</p>
+			</div>
+			<div class="ewm">
+				<a href="">
+					<img src="images/erweima.jpg" width="100px" height="100px">
+				</a>
+				<p>工会微信公众号</p>
+			</div>
+			<div class="exit">
+				<img src="images/user.png" width="80px" height="80px" />
+				<p>{{userPhone}}</p>
+				<button @click="clear()">退出</button>
+			</div>
+		</div>
+		<!--智能客服-->
+		<div class="customer-service" >
+		<div class="kf_box">
+			<div class="kf clearfix">
+				<div class="kf_left">
+					<a href=""><img src="images/gh_x.png" width="23px" height="23px"></a>
+					<span>工会智能小K</span>
+				</div>
+				<div class="kf_right">
+					<i class="icon iconfont icon-xiajiantou"></i>
+				</div>
+			</div>
+		</div>
+		<div class="chat_box">
+			<div id="chat" class="chat clearfix">
+				<div class="chat_left">
+					<a href=""><img src="images/gh_l.png" style="margin-bottom: 5px;"></a>
+					<span>客服</span>
+					<!--<i>2019-3-22  12:12</i>-->
+					<p>我是阳泉工会智能机器人，请问您有什么需要吗？</p>
+				</div>
+
+			</div>
+			<div class="down"></div>
+			<div class="shuru">
+				<input type="text" placeholder="请输入文字..."  v-model="userinp"/>
+			</div>
+			<div class="send clearfix">
+				<div class="send_left">
+					<i class="icon iconfont icon-smiling" ></i>
+				</div>
+				<div class="send_right">
+					<button type="button" @click="sendModel">发送</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+
+		/*微信矩阵 网站集群显示隐藏 复制*/
+        $('#showmask1').mouseenter(function () {
+            $('.showmask2').show();
+            $('.top-arrow2').show()
+            $('.top-arrow2ccc').show()
+            $('.showmask1').hide()
+            $('.top-arrow1').hide()
+            $('.top-arrow1ccc').hide()
+        });
+        $('.showmask2').mouseleave(function () {
+            $('.showmask2').hide()
+            $('.top-arrow2').hide()
+            $('.top-arrow2ccc').hide()
+        });
+        $('#showmask2').mouseenter(function () {
+            $('.showmask1').show()
+            $('.top-arrow1').show()
+            $('.top-arrow1ccc').show()
+            $('.showmask2').hide()
+            $('.top-arrow2').hide()
+            $('.top-arrow2ccc').hide()
+        });
+        $('.showmask1').mouseleave(function () {
+            $('.showmask1').hide()
+            $('.top-arrow1').hide()
+            $('.top-arrow1ccc').hide()
+        });
+
+
+
+        $('.hideMask').mouseenter(function () {
+
+            $('.xiala').hide();
+            $('.content').hide()
+
+        })
+
+		/*搜索框上 导航列表*/
+        function  addactive(classdom,classname) {
+            $(classdom).click(function () {
+                $(classdom).removeClass(classname)
+                $(this).addClass(classname)
+            });
+        }
+        addactive('.list_online .list ul li','active');
+        addactive('.home_list li','active');
+        addactive('.matter_list ul li','active');
+        addactive('.slide ul li','active');
+        addactive('.menu ul li','mu1');
+
+
+		/*组织机构 新闻资讯*/
+        $('.tissue-jg').mouseover(function () {
+
+            $('.xiala').show();
+            $('.content').hide()
+        });
+        $('.content').mouseleave(function () {
+            $('.xiala').hide();
+            $('.content').hide();
+        });
+        $('.news-zx').mouseover(function () {
+            $('.content').show();
+            $('.xiala').hide();
+        });
+        $('.xiala').mouseleave(function () {
+            $('.content').hide();
+            $('.xiala').hide();
+        })
+
+        $('.hideMask').mouseenter(function () {
+
+            $('.xiala').hide();
+            $('.content').hide()
+
+        })
+
+        //字体放大 缩小 正常
+        let num = 16
+        $('.sizeBig').click(function () {
+            num += 2
+            $('.tt_text  p').css('font-size', num + 'px')
+
+        })
+
+        $('.sizeNormal').click(function () {
+            num = 16
+            $('.tt_text  p').css('font-size',  num+ 'px')
+        })
+
+        $('.sizeSmall').click(function () {
+            num-=2
+            $('.tt_text  p').css('font-size', num + 'px')
+
+        })
+
+
+		//tab切换
+        var hei = $('.my_ghcontentright').height();
+        $('.my_ghcontent').css('height',hei)
+
+        function tabtogg(clicClass,togclass,clica,clici) {
+            $(clicClass).click(function () {
+                $('.tab-togg').removeClass('on')
+                $(togclass).addClass('on')
+                var hei = $(togclass).height();
+                $('.my_ghcontent').css('height',hei)
+                $('.rh_list li p').removeClass('bordred')
+                $(clica).addClass('bordred')
+                $('.rh_list li i').css('color','#000')
+                $(clici).css('color','#db2c28')
+            })
+
+        }
+        tabtogg('.shi-jianjie','.my_ghcontentright','.shi-jianjie p','.shi-jianjie i')
+        tabtogg('.shi-jigou','.my_jigou','.shi-jigou p','.shi-jigou i')
+        tabtogg('.shi-lingdao','.my_lingdao','.shi-lingdao p','.shi-lingdao i')
+        var r = window.location.search;
+        r = r.substring(1);
+        if(r==1){
+        	$('.my_ghcontentright').addClass('on');
+        	$('.shi-jianjie p').addClass('bordred');
+        	$('.shi-jianjie i').css('color','#db2c28');
+        }else if(r==2){
+        	$('.my_lingdao').addClass('on');
+        	$('.shi-lingdao p').addClass('bordred');
+        	$('.shi-lingdao i').css('color','#db2c28');
+        }else if(r==3){
+        	$('.my_jigou').addClass('on');
+        	$('.shi-jigou p').addClass('bordred');
+        	$('.shi-jigou i').css('color','#db2c28');
+        }else{
+        	$('.my_ghcontentright').addClass('on');
+        	$('.shi-jianjie p').addClass('bordred');
+        	$('.shi-jianjie i').css('color','#db2c28');
+        }
+         
+
+
+    })
+</script>
+<script src="js/vue2.5.22.js"></script>
+<script src="js/axios.0.18.0.js"></script>
+<script src="js/qs.6.60.js"></script>
+<script src="js/content.js"></script>
+<script src="js/usertoken.js"></script>
+<script>
+    var vm = new Vue({
+        el: "#data-center",
+        data: {
+            mask1left:[],
+            mask1right:[],
+            isShow:false,
+            isactive:false,
+            userinp:'',
+            userPhone:'',
+            membercenter:'',
+            nowTime:'',
+            nowDay:''
+        },
+        methods:{
+
+            //遮罩层1左侧菜单列表
+            getMask1LeftMenu(){
+                const that = this;
+                $.ajax({
+                    url: baseUrl + "/api/category/list",
+                    data:{
+                        parentId:"290"
+                    },
+                    async: false,
+                    dataType:"json",
+                    success:  function (result) {
+                        that.mask1left = (result.data);
+                        console.log(that.mask1left)
+                    }
+                })
+            },
+            //右侧
+            getMask1LeftContent(){
+                const that = this;
+                $.ajax({
+                    url: baseUrl + "/api/category/list",
+                    data:{
+                        parentId:"290"
+                    },
+                    async: false,
+                    dataType:"json",
+                    success:  function (result) {
+                        that.mask1left = (result.data);
+                        console.log(that.mask1left);
+                    }
+                })
+            },
+            rightContent(id){
+                console.log(id);
+                const that = this;
+                $.ajax({
+                    url:baseUrl + "/api/content/list",
+                    data:{
+                        "categoryId" : id,
+                        "num" : "1",
+                        "pageSize" : "10"
+                    },
+                    dataType:"json",
+                    success:  function (result) {
+                        that.mask1right = result.data.list;
+                        console.log(that.mask1right)
+                    }
+                })
+            },
+
+            //跳转到搜索界面
+            goToSer(path){
+                window.open(path,'_self')
+            },
+            sendModel(){
+                kfhuifu();
+			}
+        },
+        mounted(){
+
+            const that = this;
+            that.getMask1LeftMenu();
+            that.getMask1LeftContent();
+            that.nowTime = nowTimeDay
+
+            getDay()
+            that.nowDay = nowDay
+            //默认显示id 199
+            $.ajax({
+                url:baseUrl + "/api/content/list",
+                data:{
+                    "categoryId" : "306",
+                    "num" : "1",
+                    "pageSize" : "10"
+                },
+                dataType:"json",
+                success:  function (result) {
+                    that.mask1right = result.data.list;
+                    console.log(that.mask1right)
+                }
+            })
+
+            if(userTok.token == null){
+                this.membercenter = '请登录';
+                $('.slide ul li:nth-child(2)').hide();
+                //跳转登录界面 去登录
+                $('.open-hyzx').click(function () {
+                    window.open('denglu.html')
+                });
+            }else{
+                this.membercenter = '会员中心'
+                this.userPhone = userTok.phone
+                $('.slide ul li:nth-child(2)').hide();
+                tuilogin()
+                //登录成功 跳转会员中心
+                $('.open-hyzx').click(function () {
+                    window.open('hyzx.html')
+                });
+            }
+
+
+        }
+
+
+
+    })
+
+
+</script>
+<!--智能客服-->
+<script src="js/znkf.js"></script>
+<!-- 市总部门切换 -->
+<script type="text/javascript">
+	$(function(){
+
+       $(".jigou_xiala ul li").on("click",function(){
+		   console.log(111);
+		   $(this).addClass("act").siblings().removeClass("act");
+		   var  index=$(this).index();
+		    $(".jigou_tab>div").eq(index).show().siblings().hide();
+		     
+		    $(".jigou_tab").css({
+                'height': 450//获取子元素的高度
+            });
+	   })
+	    $(".jigou_tab").css({ 
+                'height':450//获取子元素的高度
+        });
+	})
+</script>
+</html>

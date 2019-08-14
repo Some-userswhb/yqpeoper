@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>阳泉市总工会</title>
+	<link rel="icon" href="images/picture.png" type="image/x-icon"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/hyzx.css">
+	<link rel="stylesheet" href="css/flyz.css">
+	<!--智能客服样式-->
+	<link rel="stylesheet" href="css/znkf.css">
+	<!--全局样式-->
+	<link rel="stylesheet" href="css/style.css">
+		<style>
+		.sm_img{
+			background: url('images/jiahao.png') no-repeat;
+			background-position: center;
+		}
+		#renxiang{
+			opacity:0 ;
+			width: 100%;
+			height: 100%;
+		}
+		.my-fuwu{
+			transition: 1s;
+			/*height:0 ;*/
+			display: none;
+			overflow: hidden;
+		}
+		.hei{
+			/*height: 130px;*/
+			display: block;
+			transition: 1s;
+		}
+		.rotate{
+			transform: rotate(90deg);
+			transition: 1s;
+		}
+		.my-fuwu li p{
+			border-left: none !important;
+			margin-left: 30px;
+		}
+
+
+		.IDzheng-wrap{
+			position: absolute;
+			left: 109px;
+			top: 1px;
+			width: 236px;
+			height: 137px;
+			z-index: 5;
+			margin-left: 15px;
+		}
+		.IDzheng-wrap img {
+			width: 100%;
+			height: 100%;
+		}
+		.green{
+			color: green;
+		}
+		.jwn_box{
+			border-bottom: 1px dashed #cccccc;
+			padding: 15px 0;
+		}
+		.jwn_img{
+			float: left;
+			width: 250px;
+			height: 189px;
+		}
+		.jwn_text{
+			float: left;
+			margin-left: 20px;
+			width: 556px;
+		}
+		.jwn_text h4{
+			font-size: 16px;
+			color: #333333;
+			font-weight: bold;
+		}
+		.jwn_text p{
+			width: 565px;
+			font-size: 14px;
+			color: #474747;
+			line-height: 24px;
+			margin-top: 20px;
+		}
+		.jwn_text span{
+			float:left;
+			margin-right: 6px;
+			margin-top: 30px;
+			font-size: 14px;
+			color: #666666;
+			width: 200px;
+		}
+		.jwn_text i{
+			float: right;
+			font-style: normal;
+			font-size: 14px;
+			color: #666666;
+			margin-top: 30px;
+		}
+		.layer-button div{
+			width: 110px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			background: #cccccc;
+			border: none;
+			color: #000;
+			display: inline-block;
+			cursor: pointer;
+		}
+		.layer-button div.actived{
+			background: #db2c28;
+			color: #fff;
+		}
+		.rh_list li.active i {
+         color:#db2c28;
+		}
+	</style>
+</head>
+<body>
+	
+<div class="sm_box clearfix" >
+	<div class="sm_text">
+		<a href="javascript:;"><i>*</i>上传照片：</a>
+		<div class="tianjia" >
+			<img src="images/greyheader.jpg" :src='showPerpeo' id="idimg" />
+		</div>
+	</div>
+	<div class="sm_img">
+		<input class="stopClick" type="file" id="renxiang"  onchange="previewFile()"
+			   @change="renupdate" style="cursor: pointer">
+	</div>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/vue2.5.22.js"></script>
+<script src="js/axios.0.18.0.js"></script>
+<script src="js/qs.6.60.js"></script>
+
+<script src="js/content.js"></script>
+<script src="js/usertoken.js"></script>
+<script>
+    var vm = new Vue({
+        el: "#nameselect",
+        data: {
+        	newsList:[],
+        	zixunBox:[],
+        	meDa:[],
+            isactive:false,
+            oldpassword:'',
+            yespassword:'',
+            newpassword:'',
+            phone:'',
+            userinp:'',
+			userPhone:'',
+            usertoken:'',
+
+			/*实名认证*/
+			renpic:'',      //人像采集
+			IDzhengpic:'',	//正面身份证
+			IDfanpic:'',    //反面身份证
+            userName:'',	//姓名
+            nationality:'', //民族
+            birthday:'',	//出生日期
+            IDnumber:'',	//证件号码
+            IDpositive:'',
+            IDanti:'',
+
+            showIdfan:'',
+			showIdzheng:'',
+			showPerpeo:'',
+
+         	/*个人信息*/
+            loginAccount:'',  //登录账号
+            loginName:'',			 //真实姓名
+			loginNumber:'',   //手机号码
+            membercenter:'',
+			kfnowTime:'',
+            Nationality:[
+				{name:'汉族'},
+				{name:'满族'},
+				{name:'蒙古族'},
+				{name:'回族'},
+				{name:'藏族'},
+				{name:'维吾尔族'},
+				{name:'苗族'},
+				{name:'彝族'},
+				{name:'壮族'},
+				{name:'布依族'},
+				{name:'侗族'},
+				{name:'瑶族'},
+				{name:'白族'},
+				{name:'土家族'},
+				{name:'哈尼族'},
+				{name:'哈萨克族'},
+				{name:'傣族'},
+				{name:'黎族'},
+				{name:'傈僳族'},
+				{name:'佤族'},
+				{name:'傈僳族'},
+				{name:'畲族'},
+				{name:'高山族'},
+				{name:'傈僳族'},
+				{name:'拉祜族'},
+				{name:'水族'},
+				{name:'东乡族'},
+				{name:'纳西族'},
+				{name:'景颇族'},
+				{name:'柯尔克孜族'},
+				{name:'土族'},
+				{name:'达斡尔族'},
+				{name:'仫佬族'},
+				{name:'羌族'},
+				{name:'布朗族'},
+				{name:'撒拉族'},
+				{name:'毛南族'},
+				{name:'仡佬族'},
+				{name:'锡伯族'},
+				{name:'阿昌族'},
+				{name:'普米族'},
+				{name:'朝鲜族'},
+				{name:'塔吉克族'},
+				{name:'怒族'},
+				{name:'乌孜别克族'},
+				{name:'俄罗斯族'},
+				{name:'鄂温克族'},
+				{name:'德昂族'},
+				{name:'保安族'},
+				{name:'裕固族'},
+				{name:'京族'},
+				{name:'塔塔尔族'},
+				{name:'独龙族'},
+				{name:'鄂伦春族'},
+				{name:'赫哲族'},
+				{name:'门巴族'},
+				{name:'珞巴族'},
+				{name:'基诺族'},
+			],
+
+			//实名认证信息回填
+			renzheng:'',    //是否已经认证
+			userStrat:'',	//用户状态
+			addUnion:'',		//是否入会
+			pubType:1,
+
+        },
+        methods:{
+             // 援助案例/律师说法
+             yuanzhutList(){
+             	const that = this;
+             	 $.ajax({
+             	 	type:"post",
+                    url: LawUrl + "/api/tAttPublicity/selectAllByPage",
+                    data:{
+                        pubType:1,
+                        "pageNum":1,
+                        "pageSize":10,
+                    },
+                    async: false,
+                    dataType:"json",
+                    success:  function (result) {
+                    	console.log(result.data);
+                    	that.newsList = result.data.list;
+
+                    }
+                })
+             },
+             yuanList(){
+             	const that = this;
+             	$.ajax({
+             	 	type:"post",
+                    url: LawUrl + "/api/tAttPublicity/selectAllByPage",
+                    data:{
+                        pubType:2,
+                        "pageNum":1,
+                        "pageSize":10,
+                    },
+                    async: false,
+                    dataType:"json",
+                    success:  function (result) {
+                    	console.log(result.data);
+                    	that.newsList = result.data.list;
+
+                    }
+                })
+             },
+             sendId(id){
+                        console.log(id)
+                        window.location.href=('xw_xq.html' + '?'+id);
+            },
+            clear(){
+            	  sessionStorage.clear();
+            	  window.open("denglu.html","_self")
+            },
+           
+            //客服
+            sendModel(){
+                kfhuifu();
+			},
+			//身份证图片上传
+            renupdate (e){  // 上传照片
+				var that = this
+                var self = this;
+                let file = e.target.files[0];
+				/* eslint-disable no-undef */
+                // 创建form对象
+                var param = new FormData();
+                param.append('file', file, file.name);// 通过append向form对象添加数据
+                //param.append('chunk', '0') // 添加form表单中其他数据
+                 // FormData私有类对象，访问不到，可以通过get判断值是否传进去
+                let config = {
+                    headers: {'Content-Type': 'multipart/form-data'}
+                };
+                axios.post(unionUrl + '/passLaborweb/api/laborun/file/upload', param, config)
+
+                    .then(response => {
+                        that.renpic   = response.data.data.newFileName
+						console.log(response.data.data.newFileName)
+                    })
+
+            },
+            IDzhengupdate (e){  // 上传照片
+				var that = this
+                var self = this;
+                let file = e.target.files[0];
+				/* eslint-disable no-undef */
+                // 创建form对象
+                var param = new FormData();
+                param.append('file', file, file.name);// 通过append向form对象添加数据
+                //param.append('chunk', '0') // 添加form表单中其他数据
+                // FormData私有类对象，访问不到，可以通过get判断值是否传进去
+                let config = {
+                    headers: {'Content-Type': 'multipart/form-data'}
+                };
+                axios.post(unionUrl + '/passLaborweb/api/laborun/file/upload', param, config)
+
+                    .then(response => {
+
+                        that.IDzhengpic = response.data.data.newFileName
+						console.log(that.IDzhengpic)
+                    })
+            },
+            IDfanupdate (e){  // 上传照片
+				var that = this
+                var self = this;
+                let file = e.target.files[0];
+				/* eslint-disable no-undef */
+                // 创建form对象
+                var param = new FormData();
+                param.append('file', file, file.name);// 通过append向form对象添加数据
+                //param.append('chunk', '0') // 添加form表单中其他数据
+                // FormData私有类对象，访问不到，可以通过get判断值是否传进去
+                let config = {
+                    headers: {'Content-Type': 'multipart/form-data'}
+                };
+                axios.post(unionUrl + '/passLaborweb/api/laborun/file/upload', param, config)
+
+                    .then(response => {
+						/*if (response.data.code === 0){
+						 self.ImgUrl = response.data.data
+						 }
+						 if (response.data.msg === 'success') {
+						 alert('上传成功')
+						 }*/
+                        that.IDfanpic = response.data.data.newFileName
+						console.log(that.IDfanpic)
+                    })
+            },
+
+			//获取用户信息
+			getUserInfo(){
+                var that = this
+                that.loginAccount = userTok.phone,  //登录账号
+                that.loginName = userTok.name,		//真实姓名
+                that.loginNumber = userTok.phone    //手机号码
+
+			},
+
+            gotoAdd(){
+			    window.open('grrh.html')
+			}
+
+        },
+        mounted(){
+             
+            const that = this;
+            // 援助案例/律师说法
+            that.yuanzhutList();
+            that.getUserInfo();
+             // 咨询类别
+            	$.ajax({
+             	 	type:"post",
+                    url: LawUrl + "/tType/selectAll",
+                    data:{
+                        // pubType:2,
+                        // "pageNum":1,
+                        // "pageSize":10,
+                    },
+                    async: false,
+                    dataType:"json",
+                    success:  function (result) {
+                    	console.log(result.data);
+                    	that.zixunBox = result.data;
+
+                    }
+                }),
+                // 我来答
+                $.ajax({
+             	 	type:"post",
+                    url: LawUrl + "/tAttConsults/queryConsultsAllList",
+                    data:{
+                        "conState":2,
+                        "pageNum":1,
+                        "pageSize":10,
+                    },
+                    async: false,
+                    dataType:"json",
+                    success:  function (result) {
+                    	console.log(result.data);
+                    	that.meDa = result.data;
+
+                    }
+                })
+			//获取用户手机号
+            var chanpass = location.search
+            that.usertoken = chanpass.substring(1)
+			that.kfnowTime = nowTime   //获取客服当前时间
+
+
+			//验证是否登录
+            if(userTok.token == null){
+                this.membercenter = '请登录';
+                $('.slide ul li:nth-child(2)').hide();
+                //跳转登录界面 去登录
+                $('.open-hyzx').click(function () {
+                    window.open('denglu.html')
+                });
+            }else{
+                this.membercenter = '会员中心'
+                this.userPhone = userTok.phone;
+                $('.slide ul li:nth-child(2)').hide();
+                tuilogin()
+                //登录成功 跳转会员中心
+                $('.open-hyzx').click(function () {
+                    window.open('hyzx.html')
+                });
+            }
+
+        }
+
+
+
+    })
+
+
+</script>
+<!--智能客服-->
+<script src="js/znkf.js"></script>
+<!--上传图片 显示缩略图-->
+<script>
+
+    function previewFile() {
+        // 通过标签选择器获取HTML元素
+        var preview = document.getElementById('idimg');
+        var file = document.getElementById('renxiang').files[0];
+        // Js内置文件流
+        var reader = new FileReader();
+
+        // 更新img标签的src属性为图片的本地路径，就可以显示了
+        reader.onloadend = function () {
+            preview.src = reader.result;
+        }
+
+        // 图片文件不空就显示
+        if (file) {
+            reader.readAsDataURL(file);
+        } else {
+            // 图片文件是空的
+            preview.src = "";
+        }
+    }
+</script>
+
+
+
